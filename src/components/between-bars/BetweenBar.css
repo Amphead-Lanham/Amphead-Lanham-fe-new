@@ -1,0 +1,6 @@
+.betweenBar {
+ height: 150px;
+ min-width: 100vw;
+ background-color: rgba(0,100,102, .85);
+ border: solid black 2px;
+}

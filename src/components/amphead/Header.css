@@ -1,0 +1,19 @@
+.headerBox {
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: rgba(0,100,102, 0.85);
+  border: solid black 2px;
+  min-width: 100vw;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+p {
+  margin: 15px;
+}

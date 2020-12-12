@@ -1,0 +1,38 @@
+.newsBox, .serviceBox, .guitarService, .tubeOverhaul, .restoration, .modification {
+  
+  background-image: url('https://happymag.tv/wp-content/uploads/2020/01/Marshall-JTM-45.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  min-width: 100vw;
+
+  
+}
+
+
+
+
+.serviceBox {
+  background-image: url('https://cdn.theatlantic.com/static/mt/assets/culture_test/motorhead%20lemmy%20marshall%20amp%20arena%20rock%20615.jpg')
+}
+
+.guitarService {
+  background-image: url('https://g4marchive.files.wordpress.com/2018/08/gibson-2019-banner.png');
+}
+
+.tubeOverhaul {
+  background-image: url('https://www.acdcaudio.net/wp-content/uploads/2011/11/el34.jpg');
+}
+
+.restoration {
+  background-image: url('https://www.roadhousevintage.com/wp-content/uploads/2020/05/IMG_8739-scaled.jpeg');
+}
+
+.modification {
+  background-image: url('https://i.pinimg.com/originals/65/62/e1/6562e1b15d0a8655d7acbcd634f2c027.png')
+}
+
+.BigLogo {
+  max-width: 50vw;
+}
