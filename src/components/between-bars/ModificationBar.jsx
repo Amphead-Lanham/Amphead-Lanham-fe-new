@@ -7,7 +7,7 @@ import styles from './BetweenBar.css';
 const ModificationBar = () => {
   return (
     <ParallaxBanner
-      className={styles.betweenBar}
+      className={styles.bar}
       layers={[
         {
           image: ampheadLogo,

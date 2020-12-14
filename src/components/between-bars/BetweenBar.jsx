@@ -9,7 +9,7 @@ const BetweenBar = () => {
   return (
     
     <ParallaxBanner
-      className={styles.betweenBar}
+      className={styles.bar}
       layers={[
         {
           image: ampheadLogo,

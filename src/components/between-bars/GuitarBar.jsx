@@ -2,12 +2,12 @@ import React from 'react';
 import { ParallaxBanner } from 'react-scroll-parallax';
 import ampheadLogo from '../../assets/amphead-between.png';
 import guitar from '../../assets/guitar-service-parallax.png';
-import styles from './betweenBar.css';
+import styles from './BetweenBar.css';
 
 const GuitarBar = () => {
   return (
     <ParallaxBanner
-      className={styles.betweenBar}
+      className={styles.bar}
       layers={[
         {
           image: ampheadLogo,
