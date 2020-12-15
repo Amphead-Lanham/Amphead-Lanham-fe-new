@@ -14,7 +14,6 @@ export const getAnnouncements = async() => {
 export const getAnnouncementById = async(id) => {
   const res = await fetch(`${url}/${id}`);
   const json = await res.json();
-
   if(!res.ok) throw 'error, not retrieved';
 
   return {
