@@ -1,0 +1,126 @@
+.listBox {
+  padding-bottom: 20px;
+}
+
+.listItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  box-shadow: darkgreen 3px 3px;
+  border: darkgreen solid 2px;
+  border-radius: 5px;
+  list-style: none;
+  margin: 20px;
+
+  button {
+    width: 75px;
+    margin-bottom: 10px;
+    box-shadow: darkgreen 3px 3px;
+    border: darkgreen solid 2px;
+    border-radius: 4px;
+    background-color: lightgray;
+    cursor: pointer;
+  }
+}
+
+.createBox {
+  background-color: rgb(88, 179, 88);
+  background-size: cover;
+  padding: 20px;
+
+}
+
+.createForm {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+
+    .formButton {
+      
+      margin: 10px 0 10px 20px;
+      box-shadow: darkgreen 3px 3px;
+      background-color: lightgray;
+      border: darkgreen solid 2px;
+      border-radius: 4px;
+      height: 25px;
+      cursor: pointer;
+    }
+
+    .formText {
+      margin: 10px 0 10px 5px;
+      box-shadow: darkgreen 3px 3px;
+      background-color: lightgray;
+      border: darkgreen solid 2px;
+      border-radius: 4px;
+      height: 50px;
+    }
+
+    .formEl {
+      margin: 10px 0 10px 5px;
+      box-shadow: darkgreen 3px 3px;
+      background-color: lightgray;
+      border: darkgreen solid 2px;
+      border-radius: 4px;
+      height: 25px;
+    }
+    
+    .formLabel {
+      margin-left: 20px;
+    }
+
+}
+
+.adminBox {
+  background-color: rgb(88, 179, 88);
+  background-size: cover;
+
+}
+
+.updateBox {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(88, 179, 88);
+  height: 100%;
+  min-height: 100vh;
+  background-size: cover;
+
+
+  .updateHeadline {
+    margin: 10px 20px 20px 20px;
+    
+  }
+
+  .updateCategory {
+    margin-left: 10px;
+  }
+
+  .updateForm {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+
+  }
+
+  .formLabel {
+    margin-left: 20px;
+  }
+
+  .formEl {
+    margin: 10px 0 10px 20px;
+    box-shadow: darkgreen 3px 3px;
+    background-color: lightgray;
+    border: darkgreen solid 2px;
+    border-radius: 4px;
+  }
+
+  button {
+    width: 75px;
+    box-shadow: darkgreen 3px 3px;
+    border: darkgreen solid 2px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+}

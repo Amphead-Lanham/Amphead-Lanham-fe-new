@@ -6,7 +6,7 @@ import {
   removeAnnouncement
 } from '../../actions/announcementActions';
 import { selectAnnouncements } from '../../selectors/ampheadSelectors';
-import styles from './AnnouncementList.css';
+import styles from './admin.css';
 
 
 const AnnouncementList = () => {
@@ -36,7 +36,7 @@ const AnnouncementList = () => {
   ));
 
   return (
-    <ul>
+    <ul className={styles.listBox} >
       {announcementElements}
     </ul>
   );

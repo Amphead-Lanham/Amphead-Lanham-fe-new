@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import {
   changeAnnouncement,
   fetchAnnouncement
 } from '../../actions/announcementActions';
 import { selectAnnouncement } from '../../selectors/ampheadSelectors';
+import styles from './admin.css';
 
 const UpdateAnnouncement = () => {
   const announcement = useSelector(selectAnnouncement);
@@ -40,38 +41,49 @@ const UpdateAnnouncement = () => {
   };
  
   return (
-    <div>
-      <h2>update announcement</h2>
-      <h3>side:</h3>
-      <h2>{announcement.side}</h2>
-      <h3>title:</h3>
-      <h2>{announcement.title}</h2>
-      <h3>body:</h3>
-      <h2>{announcement.body}</h2>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="a-side">Side</label>
-        <select id="a-side" name="side" value={side} onChange={handleChange}>
+    <div className={styles.updateBox} >
+      <h2 className={styles.updateHeadline} >update announcement</h2>
+      <h3 className={styles.updateCategory} >side:</h3>
+      <h2 className={styles.updateHeadline} >{announcement.side}</h2>
+      <h3 className={styles.updateCategory} >title:</h3>
+      <h2 className={styles.updateHeadline} >{announcement.title}</h2>
+      <h3 className={styles.updateCategory} >body:</h3>
+      <h2 className={styles.updateHeadline} >{announcement.body}</h2>
+      <form onSubmit={handleSubmit} className={styles.updateForm} >
+        <label htmlFor="a-side" className={styles.formLabel} >Side</label>
+        <select
+          id="a-side"
+          name="side"
+          value={side}
+          onChange={handleChange}
+          className={styles.formEl} >
+          <option value="">pick one</option>
           <option value="amphead">Amphead</option>
           <option value="lanham">Lanham</option>
         </select>
-        <label htmlFor="a-title">Title</label>
+        <label htmlFor="a-title" className={styles.formLabel} >Title</label>
         <input
           placeholder={announcement.title}
           id="a-title"
           name="title"
           value={title}
           onChange={handleChange}
+          className={styles.formEl}
         />
-        <label htmlFor="a-body">Body</label>
+        <label htmlFor="a-body" className={styles.formLabel} >Body</label>
         <textarea
           placeholder={announcement.body}
           id="a-body"
           name="body"
           value={body}
           onChange={handleChange}
+          className={styles.formEl}
         />
-        <button>submit</button>
+        <button className={styles.formEl} >submit</button>
       </form>
+      <Link to={'/admin'}>
+        <button className={styles.formEl} >admin home</button>
+      </Link>
     </div>
   );
 };
