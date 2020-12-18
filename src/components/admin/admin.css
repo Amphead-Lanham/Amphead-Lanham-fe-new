@@ -38,7 +38,6 @@
     padding: 20px;
 
     .formButton {
-      
       margin: 10px 0 10px 20px;
       box-shadow: darkgreen 3px 3px;
       background-color: lightgray;
@@ -72,10 +71,23 @@
 
 }
 
+.formButton {
+      
+  margin: 10px 0 10px 20px;
+  box-shadow: darkgreen 3px 3px;
+  background-color: lightgray;
+  border: darkgreen solid 2px;
+  border-radius: 4px;
+  height: 25px;
+  cursor: pointer;
+}
+
+
+
 .adminBox {
   background-color: rgb(88, 179, 88);
   background-size: cover;
-
+  min-height: 100vh;
 }
 
 .updateBox {

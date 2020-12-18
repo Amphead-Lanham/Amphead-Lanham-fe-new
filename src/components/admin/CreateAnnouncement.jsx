@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { useHistory } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
 import { createAnnouncement } from '../../actions/announcementActions';
 import styles from './admin.css';
 
@@ -64,6 +64,10 @@ const CreateAnnouncement = () => {
         />
         <button className={styles.formButton}>submit</button>
       </form>
+      <Link to={'/'}>
+        <button className={styles.formButton}>Amphead home</button>
+      </Link>
+      <button className={styles.formButton}>Lanham home</button>
     </div>
   );
 };

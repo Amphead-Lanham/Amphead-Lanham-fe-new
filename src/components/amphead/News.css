@@ -22,8 +22,26 @@
     .infoBox {
       margin: 50px;
       padding: 10px;
-      background-color: rgba(169,180,194, 0.85);
+      background-color: rgba(169,180,194, 0.75);
       border: solid black 2px;
       border-radius: 5px;
       max-width: 50vw;
+    }
+
+    .announcementBox {
+      margin-bottom: 400px;
+    }
+    
+    .announcement {
+      list-style: none;
+      margin: 10px;
+      padding: 10px;
+      background-color: rgba(169,180,194, 0.75);
+      border: solid black 2px;
+      border-radius: 5px;
+      max-width: 75vw;
+
+      h1 {
+        font-size: 50px;
+      }
     }
