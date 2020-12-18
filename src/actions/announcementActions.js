@@ -10,7 +10,7 @@ export const SET_ANNOUNCEMENTS = 'SET_ANNOUNCEMENTS';
 export const setAnnouncements = announcements => ({
   type: SET_ANNOUNCEMENTS,
   payload: announcements
-})
+});
 
 export const SET_ANNOUNCEMENT = 'SET_ANNOUNCEMENT';
 export const setAnnouncement = announcement => ({
@@ -35,17 +35,16 @@ export const DELETE_ANNOUNCEMENT = 'DELETE_ANNOUNCEMENT';
 export const fetchAnnouncements = () => dispatch => {
   getAnnouncements()
     .then(announcements => {
-      dispatch(setAnnouncements(announcements))
+      dispatch(setAnnouncements(announcements));
     })
-    .then(console.log)
     .finally(() => dispatch(setLoading(false)));
 };
 
 export const fetchAnnouncement = id => dispatch => {
   getAnnouncementById(id)
     .then(announcement => {
-      dispatch(setAnnouncement(announcement))
-  })
+      dispatch(setAnnouncement(announcement));
+    })
     .finally(() => dispatch(setLoading(false)));
 };
 
@@ -55,22 +54,22 @@ export const removeAnnouncement = id => dispatch => {
       dispatch({
         type: DELETE_ANNOUNCEMENT,
         payload: announcement.id
+      });
     });
-});
 };
 
 export const createAnnouncement = announcement => dispatch => {
   postAnnouncement(announcement)
     .then(createdAnnouncement => {
-      dispatch(appendAnnouncement(createdAnnouncement))
+      dispatch(appendAnnouncement(createdAnnouncement));
     
     });
 };
 
 export const changeAnnouncement = (id, announcement) => dispatch => {
   updateAnnouncement(id, announcement)
-  .then(updatedAnnouncement => {
-    dispatch(appendAnnouncement(updatedAnnouncement))
-  })
-  .finally(setLoading(false))
+    .then(updatedAnnouncement => {
+      dispatch(appendAnnouncement(updatedAnnouncement));
+    });
+    
 };
