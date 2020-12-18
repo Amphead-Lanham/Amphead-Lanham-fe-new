@@ -28,7 +28,7 @@ const News = () => {
         <BigLogo />
       </div>
       <div className={styles.infoBox}>
-        <h1>
+        <h1 className={styles.headline}>
           Providing Amplifier Repair and Maintenance to Portland
            Area Musicians since 1996
         </h1>

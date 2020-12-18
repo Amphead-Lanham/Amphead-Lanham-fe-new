@@ -64,10 +64,12 @@ const CreateAnnouncement = () => {
         />
         <button className={styles.formButton}>submit</button>
       </form>
-      <Link to={'/'}>
-        <button className={styles.formButton}>Amphead home</button>
-      </Link>
-      <button className={styles.formButton}>Lanham home</button>
+      <div className={styles.buttonBox}>
+        <Link to={'/'}>
+          <button className={styles.formButton}>Amphead home</button>
+        </Link>
+        <button className={styles.formButton}>Lanham home</button>
+      </div>
     </div>
   );
 };
