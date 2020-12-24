@@ -1,7 +1,7 @@
 import React from 'react';
 import { ParallaxBanner } from 'react-scroll-parallax';
-import ampheadLogo from '../../assets/amphead-between.png';
-import restoration from '../../assets/restoration-parallax.png';
+import ampheadLogo from '../../assets/amphead-parallax-left.png';
+import restoration from '../../assets/restoration-parallax-II.png';
 import styles from './BetweenBar.css';
 
 const RestorationBar = () => {
@@ -15,7 +15,7 @@ const RestorationBar = () => {
         },
         {
           image: restoration,
-          amount: -0.1,
+          amount: -0.2,
         },
       ]}
       style={{

@@ -19,6 +19,7 @@
 }
 
 .infoBox {
+  font-family: 'Goldman', cursive;
   margin: 50px 0 350px 0;
   padding: 10px;
   background-color: rgba(169,180,194, 0.85);

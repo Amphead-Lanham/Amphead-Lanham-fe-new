@@ -11,6 +11,7 @@
   min-width: 100vw;
 
 } 
+
     .logo {
       margin-top: 50px;
       height: 200px;
@@ -21,11 +22,21 @@
 
     .infoBox {
       margin: 50px;
-      padding: 10px;
+      padding: 15px;
       background-color: rgba(169,180,194, 0.75);
       border: solid black 2px;
       border-radius: 5px;
       max-width: 50vw;
+      
+      .headline {
+        font-family: 'Goldman', cursive;
+        color: rgb(0,100,102);
+        text-shadow: 1px 1px black;
+      }
+
+      h3 {
+        font-family: 'roboto';
+      }
     }
 
     .announcementBox {
@@ -41,7 +52,14 @@
       border-radius: 5px;
       max-width: 75vw;
 
-      h1 {
-        font-size: 50px;
+      h2 {
+        font-family: 'Goldman', cursive;
+        color: rgb(0,100,102);
+        text-shadow: 1px 1px black;
+        
+      }
+
+      p {
+        font-family: 'roboto';
       }
     }
