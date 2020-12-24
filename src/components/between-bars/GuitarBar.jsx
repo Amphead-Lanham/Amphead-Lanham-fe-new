@@ -1,7 +1,7 @@
 import React from 'react';
 import { ParallaxBanner } from 'react-scroll-parallax';
-import ampheadLogo from '../../assets/amphead-between.png';
-import guitar from '../../assets/guitar-service-parallax.png';
+import ampheadLogo from '../../assets/amphead-parallax-left.png';
+import guitar from '../../assets/guitar-service-II.png';
 import styles from './BetweenBar.css';
 
 const GuitarBar = () => {
@@ -15,7 +15,7 @@ const GuitarBar = () => {
         },
         {
           image: guitar,
-          amount: -0.1,
+          amount: -0.2,
         },
       ]}
       style={{

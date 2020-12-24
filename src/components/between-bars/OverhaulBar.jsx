@@ -1,7 +1,7 @@
 import React from 'react';
 import { ParallaxBanner } from 'react-scroll-parallax';
-import ampheadLogo from '../../assets/amphead-between.png';
-import overhaul from '../../assets/overhaul-parallax.png';
+import ampheadLogo from '../../assets/amphead-parallax-left.png';
+import overhaul from '../../assets/overhaul-parallax-II.png';
 import styles from './BetweenBar.css';
 
 const OverhaulBar = () => {
@@ -16,7 +16,7 @@ const OverhaulBar = () => {
         },
         {
           image: overhaul,
-          amount: -0.1,
+          amount: -0.2,
         },
       ]}
       style={{
