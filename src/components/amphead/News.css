@@ -19,7 +19,9 @@
       background-color: rgba(0,100,102, 0.85);
       border: solid black 2px;
       min-width: 100vw;
+     
     }
+    
 
     .infoBox {
       animation: fadeIn ease 10s;
