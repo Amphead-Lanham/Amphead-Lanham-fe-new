@@ -34,5 +34,12 @@
 }
 
 .BigLogo {
+  animation: slide 5s;
   max-width: 50vw;
+}
+
+
+@keyframes slide {
+  0% {left: 0}
+  100% {right: 0}
 }

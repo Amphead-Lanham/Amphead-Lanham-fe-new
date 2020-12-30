@@ -18,7 +18,7 @@ const AuthProvider = ({ children }) => {
   const login = (email, password) => {
     postLogin(email, password)
       .then(user => setCurrentUser(user))
-      .then(() => history.push('./admin'))
+      .then(() => history.push('/admin'))
       .finally(() => setLoading(false));
   };
 

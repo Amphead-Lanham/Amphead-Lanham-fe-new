@@ -1,5 +1,4 @@
 const request = async(path, method, body) => {
-  console.log(path, method, body);
   const res = await fetch(`${process.env.AUTH_API_URL}${path}`, {
     method,
   
