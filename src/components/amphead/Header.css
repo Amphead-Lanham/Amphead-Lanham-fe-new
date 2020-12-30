@@ -1,5 +1,5 @@
 .headerBox {
-
+  animation: fadeIn ease 7s;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -16,4 +16,9 @@
 
 p {
   margin: 15px;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0}
+  100% {opacity: 1}
 }

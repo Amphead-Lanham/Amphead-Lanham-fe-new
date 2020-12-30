@@ -1,0 +1,36 @@
+.bigBox {
+  background-color: rgb(2, 147, 150);
+  height: 100vh;
+  padding: 200px;
+}
+
+.headline {
+  font-family: 'Goldman', cursive;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(0, 100, 102);
+  max-width: 350px;
+  padding: 20px;
+  box-shadow: rgb(2, 60, 61) 3px 3px;
+  border: rgb(2, 60, 61) solid 2px;
+  border-radius: 4px;
+}
+
+.formEl {
+  max-width: 200px;
+  margin: 10px;
+  box-shadow: rgb(2, 60, 61) 3px 3px;
+  border: rgb(2, 60, 61) solid 2px;
+  border-radius: 4px;
+}
+
+.button {
+  max-width: 100px;
+  margin: 10px;
+  box-shadow: rgb(2, 60, 61) 3px 3px;
+  border: rgb(2, 60, 61) solid 2px;
+  border-radius: 4px;
+}

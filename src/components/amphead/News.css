@@ -13,14 +13,18 @@
 } 
 
     .logo {
+      animation: fadeIn ease 7s;
       margin-top: 50px;
       height: 200px;
       background-color: rgba(0,100,102, 0.85);
       border: solid black 2px;
       min-width: 100vw;
+     
     }
+    
 
     .infoBox {
+      animation: fadeIn ease 10s;
       margin: 50px;
       padding: 15px;
       background-color: rgba(169,180,194, 0.75);
@@ -44,6 +48,7 @@
     }
     
     .announcement {
+      animation: fadeIn ease 10s;
       list-style: none;
       margin: 10px;
       padding: 10px;
@@ -63,3 +68,8 @@
         font-family: 'roboto';
       }
     }
+
+  @keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+  }

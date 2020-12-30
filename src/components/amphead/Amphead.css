@@ -34,5 +34,14 @@
 }
 
 .BigLogo {
+  position: relative;
+  animation: slide 4s;
   max-width: 50vw;
+  left: 400 px;
+}
+
+
+@keyframes slide {
+  from {left: 400px}
+  to {left: 0px}
 }
