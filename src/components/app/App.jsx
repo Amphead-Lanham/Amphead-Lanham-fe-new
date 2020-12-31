@@ -7,7 +7,7 @@ import {
 import { ParallaxProvider } from 'react-scroll-parallax';
 import AuthProvider from '../auth/AuthProvider';
 import PrivateRoute from '../auth/PrivateRoute';
-import Signup from '../auth/signup';
+// import Signup from '../auth/signup';
 import Login from '../auth/Login';
 import Amphead from '../amphead/Amphead';
 import UpdateAnnouncement from '../admin/UpdateAnnouncement';
@@ -25,10 +25,11 @@ export default function App() {
               exact path="/" 
               component={Amphead}
             />
+            {/* disabled 'signup' route for security
             <Route
               exact path="/signup"
               component={Signup}
-            />
+            /> */}
             <Route
               exact path="/login"
               component={Login}
