@@ -1,10 +1,14 @@
 :local(.root) {
   
-  display: flex;
+ display: flex;
+ min-width: 100vw;
+ background-color: rgba(0,100,102, .90);
+ border: solid black 2px;
+ margin-bottom: 300px;
+
+ @media screen and (max-width: 780px) {
   
-  
-  
-  z-index: 1;
+}
 }
 
 .container {
@@ -18,11 +22,12 @@
 
 .logo {
   width: 100%;
-  z-index: 2;
+  z-index: 0;
 }
 
 .section {
  
   width: 100%;
   margin-left: -100%;
+  z-index: 1;
 }

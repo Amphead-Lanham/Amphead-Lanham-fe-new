@@ -21,8 +21,9 @@ const BetweenBar = () => {
         },
       ]}
       style={{
-        height: '220px',
-        width: '100vh'
+        height: '25vh',
+        width: '100vh',
+      
       }}
     >
     </ParallaxBanner>

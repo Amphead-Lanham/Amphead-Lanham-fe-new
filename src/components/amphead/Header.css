@@ -1,22 +1,195 @@
+:root {
+  --medium-green: rgba(0,100,102, 0.85);
+  --white: #eef1ef;
+  --menu-speed: 0.75s;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 .headerBox {
+  height: 50px;
+  min-width: 100vw;
+  background-color: var(--medium-green);
+  position: fixed;
+  z-index: 1;
+}
+
+.desktopMenu {
   animation: fadeIn ease 7s;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-end;
-  background-color: rgba(0,100,102, 0.85);
   border: solid black 2px;
+  height: 50px;
   min-width: 100vw;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
+
+  
 }
 
-p {
+.hItem {
   margin: 15px;
+  color: var(--white);
+
+  @media screen and (max-width: 780px) {
+    display: none;
+  }
+  
 }
+
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.mobileMenu .toggler {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+
+}
+
+.mobileMenu .hamburger {
+  animation: fadeIn ease 7s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 50px;
+  height: 50px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: black solid 1px;
+  border-top: black solid 1px;
+}
+
+.mobileMenu .hamburger > div {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+.mobileMenu .hamburger > div:before,
+.mobileMenu .hamburger > div:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height: 2px;
+  background: inherit;
+}
+
+.mobileMenu .hamburger > div:after {
+  top: 10px;
+}
+
+.mobileMenu .toggler:checked + .hamburger > div {
+  transform: rotate(135deg);
+}
+
+.mobileMenu .toggler:checked + .hamburger > div:before,
+.mobileMenu .toggler:checked + .hamburger > div:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.mobileMenu .toggler:checked:hover + .hamburger > div {
+  transform: rotate(225deg);
+}
+
+.mobileMenu .toggler:checked ~ .menu {
+  visibility: visible;
+
+}
+
+.mobileMenu .toggler:checked ~ .menu > div {
+  transform: scale(1);
+  transition-duration: var(--menu-speed);
+}
+
+.mobileMenu .toggler:checked ~ .menu > div > div {
+  opacity: 1;
+  transition: opacity 0.4s ease;
+
+}
+
+.mobileMenu .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobileMenu .menu > div {
+  background: var(--medium-green);
+  border-radius: 50%;
+  width: 200vw;
+  height: 200vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: all 0.4s ease;
+}
+
+.mobileMenu .menu > div > div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.mobileMenu .menu > div > div > ul > li {
+  list-style: none;
+  color: var(--white);
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.mobileMenu .menu > div > div > ul > li > Link {
+  color: var(--white);
+  
+  
+}
+
+.link {
+  font-family: 'roboto';
+  color: var(--white);
+}
+
+
+
+
+
+
 
 @keyframes fadeIn {
   0% {opacity: 0}
