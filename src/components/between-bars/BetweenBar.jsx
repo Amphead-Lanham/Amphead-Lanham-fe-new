@@ -21,7 +21,7 @@ const BetweenBar = () => {
         },
       ]}
       style={{
-        height: '200px',
+        height: '220px',
         width: '100vh'
       }}
     >
