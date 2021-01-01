@@ -1,5 +1,11 @@
+:root {
+  --MediumGreen: rgb(0, 100, 102);
+  --DarkGreen: rgb(2, 60, 61);
+  --LightGreen: rgb(2, 147, 150);
+}
+
 .bigBox {
-  background-color: rgb(2, 147, 150);
+  background-color: var(--LightGreen);
   height: 100vh;
   padding: 200px;
 }
@@ -11,26 +17,26 @@
 .form {
   display: flex;
   flex-direction: column;
-  background-color: rgb(0, 100, 102);
+  background-color: var(--MediumGreen);
   max-width: 350px;
   padding: 20px;
-  box-shadow: rgb(2, 60, 61) 3px 3px;
-  border: rgb(2, 60, 61) solid 2px;
+  box-shadow: var(--DarkGreen) 3px 3px;
+  border: var(--DarkGreen) solid 2px;
   border-radius: 4px;
 }
 
 .formEl {
   max-width: 200px;
   margin: 10px;
-  box-shadow: rgb(2, 60, 61) 3px 3px;
-  border: rgb(2, 60, 61) solid 2px;
+  box-shadow: var(--DarkGreen) 3px 3px;
+  border: var(--DarkGreen) solid 2px;
   border-radius: 4px;
 }
 
 .button {
   max-width: 100px;
   margin: 10px;
-  box-shadow: rgb(2, 60, 61) 3px 3px;
-  border: rgb(2, 60, 61) solid 2px;
+  box-shadow: var(--DarkGreen) 3px 3px;
+  border: var(--DarkGreen) solid 2px;
   border-radius: 4px;
 }

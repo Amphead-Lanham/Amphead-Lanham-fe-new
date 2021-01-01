@@ -1,3 +1,9 @@
+:root {
+  --MediumGreen: rgb(0, 100, 102);
+  --DarkGreen: rgb(2, 60, 61);
+  --LightGreen: rgb(2, 147, 150);
+}
+
 .listBox {
   padding-bottom: 20px;
 }
@@ -8,9 +14,9 @@
   align-items: center;
   justify-content: center;
   width: 50vw;
-  background-color: rgb(2, 147, 150);
-  box-shadow: rgb(2, 60, 61) 3px 3px;
-  border: rgb(2, 60, 61) solid 2px;
+  background-color: var(--LightGreen);
+  box-shadow: var(--DarkGreen) 3px 3px;
+  border: var(--DarkGreen) solid 2px;
   border-radius: 5px;
   list-style: none;
   margin: 20px;
@@ -18,8 +24,8 @@
   button {
     width: 75px;
     margin-bottom: 10px;
-    box-shadow: rgb(2, 60, 61) 3px 3px;
-    border: rgb(2, 60, 61) solid 2px;
+    box-shadow: var(--DarkGreen) 3px 3px;
+    border: var(--DarkGreen) solid 2px;
     border-radius: 4px;
     background-color: lightgray;
     cursor: pointer;
@@ -27,7 +33,7 @@
 }
 
 .createBox {
-  background-color: rgb(0, 100, 102);
+  background-color: var(--MediumGreen);
   background-size: cover;
   padding: 20px;
 
@@ -46,9 +52,9 @@
 
     .formButton {
       margin: 10px 0 10px 20px;
-      box-shadow: rgb(2, 60, 61)  3px 3px;
+      box-shadow: var(--DarkGreen)  3px 3px;
       background-color: lightgray;
-      border: rgb(2, 60, 61) solid 2px;
+      border: var(--DarkGreen) solid 2px;
       border-radius: 4px;
       height: 25px;
       cursor: pointer;
@@ -56,18 +62,18 @@
 
     .formText {
       margin: 10px 0 10px 5px;
-      box-shadow: rgb(2, 60, 61)  3px 3px;
+      box-shadow: var(--DarkGreen)  3px 3px;
       background-color: lightgray;
-      border: rgb(2, 60, 61)  solid 2px;
+      border: var(--DarkGreen)  solid 2px;
       border-radius: 4px;
       height: 50px;
     }
 
     .formEl {
       margin: 10px 0 10px 5px;
-      box-shadow: rgb(2, 60, 61)  3px 3px;
+      box-shadow: var(--DarkGreen)  3px 3px;
       background-color: lightgray;
-      border: rgb(2, 60, 61)  solid 2px;
+      border: var(--DarkGreen)  solid 2px;
       border-radius: 4px;
       height: 25px;
     }
@@ -84,9 +90,9 @@
   .formButton {
       
   margin: 10px 0 10px 20px;
-  box-shadow: rgb(2, 60, 61)  3px 3px;
+  box-shadow: var(--DarkGreen)  3px 3px;
   background-color: lightgray;
-  border: rgb(2, 60, 61)  solid 2px;
+  border: var(--DarkGreen)  solid 2px;
   border-radius: 4px;
   height: 25px;
   cursor: pointer;
@@ -96,7 +102,7 @@
 
 
 .adminBox {
-  background-color: rgb(0, 100, 102);
+  background-color: var(--MediumGreen);
   background-size: cover;
   min-height: 100vh;
 }
@@ -104,7 +110,7 @@
 .updateBox {
   display: flex;
   flex-direction: column;
-  background-color: rgb(0, 100, 102); 
+  background-color: var(--MediumGreen); 
   height: 100%;
   min-height: 100vh;
   background-size: cover;
@@ -118,7 +124,7 @@
   .updateCategory {
     margin-left: 10px;
     font-family: 'Goldman';
-    color:  rgb(2, 60, 61);
+    color:  var(--DarkGreen);
   }
 
   .updateForm {
@@ -134,16 +140,16 @@
 
   .formEl {
     margin: 10px 0 10px 20px;
-    box-shadow: rgb(2, 60, 61) 3px 3px;
+    box-shadow: var(--DarkGreen) 3px 3px;
     background-color: lightgray;
-    border: rgb(2, 60, 61)  solid 2px;
+    border: var(--DarkGreen)  solid 2px;
     border-radius: 4px;
   }
 
   button {
     width: 75px;
-    box-shadow: rgb(2, 60, 61)  3px 3px;
-    border: rgb(2, 60, 61)  solid 2px;
+    box-shadow: var(--DarkGreen)  3px 3px;
+    border: var(--DarkGreen)  solid 2px;
     border-radius: 4px;
     cursor: pointer;
   }
