@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .newsBox, .serviceBox, .guitarService, .tubeOverhaul, .restoration, .modification {
   
   background-image: url('https://happymag.tv/wp-content/uploads/2020/01/Marshall-JTM-45.jpg');
@@ -6,6 +10,7 @@
   background-attachment: fixed;
   background-position: center;
   min-width: 100vw;
+  max-width: 100vw;
 
   
 }

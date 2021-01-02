@@ -1,14 +1,14 @@
 import React from 'react';
 import { Parallax } from 'react-scroll-parallax';
-import styles from './Experiment.css';
+import styles from './MobileBar.css';
 import ampheadLogo from '../../assets/amphead-parallax.png';
-import ampRepair from '../../assets/amp-repair-parallax.png';
+import ampRepair from '../../assets/modification-parallax.png';
 
-const Experiment = () => {
+const MobileModificationBar = () => {
   return (
 
     <div className={styles.root}>
-      <Parallax className={styles.section}  x={[150, 95]} tagOuter="figure"
+      <Parallax className={styles.section}  x={[150, 80]} tagOuter="figure"
         offsetYMax={150}
         offsetYMin={-50}
         offsetXMax={40}
@@ -32,4 +32,4 @@ const Experiment = () => {
 
 };
 
-export default Experiment;
+export default MobileModificationBar;

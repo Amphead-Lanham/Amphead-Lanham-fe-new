@@ -1,4 +1,6 @@
-
+* {
+  box-sizing: border-box;
+}
 
 .bar {
  min-width: 100vw;
