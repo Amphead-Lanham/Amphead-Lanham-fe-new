@@ -12,6 +12,7 @@ import Overhaul from './Overhaul';
 import Restoration from './Restoration';
 import Modification from './Modification';
 import Header from './Header';
+import Experiment from './Experiment';
 
 
 const Amphead = () => {
@@ -27,6 +28,7 @@ const Amphead = () => {
         </div>
         <div className={styles.serviceBox}>
           <BetweenBar />
+          <Experiment />
           <Maintenance />
         </div>
         <div className={styles.guitarService}>

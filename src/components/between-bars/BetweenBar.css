@@ -1,7 +1,12 @@
+
+
 .bar {
- height: 150px;
  min-width: 100vw;
  background-color: rgba(0,100,102, .90);
  border: solid black 2px;
  margin-bottom: 300px;
+
+ @media screen and (max-width: 780px) {
+  display: none;
+}
 }

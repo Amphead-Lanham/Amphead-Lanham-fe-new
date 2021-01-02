@@ -39,4 +39,5 @@
   box-shadow: var(--DarkGreen) 3px 3px;
   border: var(--DarkGreen) solid 2px;
   border-radius: 4px;
+  cursor: pointer;
 }
