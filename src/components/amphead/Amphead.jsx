@@ -12,7 +12,11 @@ import Overhaul from './Overhaul';
 import Restoration from './Restoration';
 import Modification from './Modification';
 import Header from './Header';
-import Experiment from './Experiment';
+import MobileBar from '../between-bars/MobileBar';
+import MobileGuitarBar from '../between-bars/MobileGuitarBar';
+import MobileModificationBar from '../between-bars/MobileModificationBar';
+import MobileOverhaulBar from '../between-bars/MobileOverhaulBar';
+import MobileRestorationBar from '../between-bars/MobileRestorationBar';
 
 
 const Amphead = () => {
@@ -28,23 +32,27 @@ const Amphead = () => {
         </div>
         <div className={styles.serviceBox}>
           <BetweenBar />
-          <Experiment />
+          <MobileBar />
           <Maintenance />
         </div>
         <div className={styles.guitarService}>
           <GuitarBar />
+          <MobileGuitarBar />
           <GuitarService />
         </div>
         <div className={styles.tubeOverhaul}>
           <OverhaulBar />
+          <MobileOverhaulBar />
           <Overhaul />
         </div>
         <div className={styles.restoration}>
           <RestorationBar />
+          <MobileRestorationBar />
           <Restoration />
         </div>
         <div className={styles.modification}>
           <ModificationBar />
+          <MobileModificationBar />
           <Modification />
         </div>
      

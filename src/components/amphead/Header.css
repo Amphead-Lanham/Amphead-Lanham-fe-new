@@ -15,6 +15,7 @@
   background-color: var(--medium-green);
   position: fixed;
   z-index: 1;
+  border: solid black 1px;
 }
 
 .desktopMenu {
@@ -24,7 +25,6 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-end;
-  border: solid black 2px;
   height: 50px;
   min-width: 100vw;
   position: fixed;
@@ -150,7 +150,7 @@
 
 .mobileMenu .menu > div {
   background: var(--medium-green);
-  border-radius: 50%;
+  border-radius: 60%;
   width: 200vw;
   height: 200vh;
   display: flex;

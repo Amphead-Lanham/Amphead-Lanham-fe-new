@@ -4,7 +4,7 @@
  min-width: 100vw;
  background-color: rgba(0,100,102, .90);
  border: solid black 2px;
- margin-bottom: 300px;
+ margin-bottom: 50px;
 
  @media screen and (min-width: 781px) {
   display: none;
@@ -13,11 +13,6 @@
 
 .container {
   display: flex;
-  
-  
- 
-  
-  
 }
 
 .logo {
@@ -26,7 +21,6 @@
 }
 
 .section {
- 
   width: 100%;
   margin-left: -100%;
   z-index: 1;
