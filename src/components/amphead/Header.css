@@ -1,6 +1,6 @@
 :root {
   --medium-green: rgba(0,100,102, 0.85);
-  --white: #eef1ef;
+  --white: rgb(238, 241, 239);
   --menu-speed: 0.75s;
 }
 
@@ -9,6 +9,7 @@
 }
 
 .headerBox {
+  animation: fadeIn ease 5s;
   height: 50px;
   min-width: 100vw;
   background-color: var(--medium-green);
@@ -29,7 +30,7 @@
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 0;
+  left: -10px;
 
   
 }
@@ -170,7 +171,7 @@
 .mobileMenu .menu > div > div > ul > li {
   list-style: none;
   color: var(--white);
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 1rem;
 }
 

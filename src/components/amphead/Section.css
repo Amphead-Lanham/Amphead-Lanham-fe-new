@@ -1,3 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --medium-green-alpha: rgba(0,100,102, 0.85);
+  --white: rgb(238, 241, 239);
+  --white-alpha: rgba(238, 241, 239, 0.70);
+}
+
 .bigBox {
   display: flex;
   flex-direction: column;
@@ -22,7 +32,7 @@
   font-family: 'Goldman', cursive;
   margin: 50px 0 350px 0;
   padding: 10px;
-  background-color: rgba(169,180,194, 0.85);
+  background-color: var(--white-alpha);
   border: solid black 2px;
   border-radius: 5px;
   max-width: 50vw;

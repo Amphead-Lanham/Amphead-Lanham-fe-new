@@ -6,8 +6,8 @@
  border: solid black 2px;
  margin-bottom: 300px;
 
- @media screen and (max-width: 780px) {
-  
+ @media screen and (min-width: 781px) {
+  display: none;
 }
 }
 

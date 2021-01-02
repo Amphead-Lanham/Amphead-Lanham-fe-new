@@ -8,7 +8,7 @@ const Experiment = () => {
   return (
 
     <div className={styles.root}>
-      <Parallax className={styles.section}  x={[150, 85]} tagOuter="figure"
+      <Parallax className={styles.section}  x={[150, 95]} tagOuter="figure"
         offsetYMax={150}
         offsetYMin={-50}
         offsetXMax={40}
@@ -17,7 +17,7 @@ const Experiment = () => {
         <img src={ampRepair} alt="ok" />
       </Parallax>
       <div className={styles.container}>
-        <Parallax className={styles.logo}  x={[-70, -10]} tagOuter="figure"
+        <Parallax className={styles.logo}  x={[-70, 90]} tagOuter="figure"
           offsetYMax={150}
           offsetYMin={-50}
           offsetXMax={-40}

@@ -1,3 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --medium-green: rgb(0, 100, 102);
+  --medium-green-alpha: rgba(0, 100, 102, 0.85);
+  --white: rgb(238, 241, 239);
+  --white-alpha: rgba(238, 241, 239, 0.70);
+}
+
 .bigBox {
   display: flex;
   flex-direction: column;
@@ -16,7 +27,7 @@
       animation: fadeIn ease 7s;
       margin-top: 50px;
       height: 200px;
-      background-color: rgba(0,100,102, 0.85);
+      background-color: var(--medium-green-alpha);
       border: solid black 2px;
       min-width: 100vw;
 
@@ -31,14 +42,14 @@
       animation: fadeIn ease 10s;
       margin: 50px;
       padding: 15px;
-      background-color: rgba(169,180,194, 0.75);
+      background-color: var(--white-alpha);
       border: solid black 2px;
       border-radius: 5px;
       max-width: 50vw;
       
       .headline {
         font-family: 'Goldman', cursive;
-        color: rgb(0,100,102);
+        color: var(--medium-green);
         text-shadow: 1px 1px black;
       }
 
@@ -56,14 +67,14 @@
       list-style: none;
       margin: 10px;
       padding: 10px;
-      background-color: rgba(169,180,194, 0.75);
+      background-color: var(--white-alpha);
       border: solid black 2px;
       border-radius: 5px;
       max-width: 75vw;
 
       h2 {
         font-family: 'Goldman', cursive;
-        color: rgb(0,100,102);
+        color: var(--medium-green);
         text-shadow: 1px 1px black;
         
       }
