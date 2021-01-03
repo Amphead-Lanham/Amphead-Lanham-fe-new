@@ -12,6 +12,7 @@ import Login from '../auth/Login';
 import Amphead from '../amphead/Amphead';
 import UpdateAnnouncement from '../admin/UpdateAnnouncement';
 import AdminPage from '../admin/AdminPage';
+import DetailPage from '../amphead/DetailPage';
 
 
 export default function App() {
@@ -24,6 +25,10 @@ export default function App() {
             <Route 
               exact path="/" 
               component={Amphead}
+            />
+            <Route
+              exact path="/detail/:name"
+              component={DetailPage}
             />
             {/* disabled 'signup' route for security
             <Route

@@ -6,13 +6,27 @@ const Header = () => {
   return (
     <div className={styles.headerBox} >
       <div className={styles.desktopMenu}>
-        <p className={styles.hItem}>amp repair</p>
-        <p className={styles.hItem}>guitar service</p>
-        <p className={styles.hItem} >overhaul</p>
-        <p className={styles.hItem}>restoration</p>
-        <p className={styles.hItem}>modification</p>
-        <p className={styles.hItem}>gallery</p>
-        <p className={styles.hItem}>LANHAM AMPS</p>
+        <Link
+          to={'/detail/service'}
+          className={styles.hItem}>amp repair</Link>
+        <Link
+          to={'/detail/guitar'}
+          className={styles.hItem}>guitar service</Link>
+        <Link
+          to={'/detail/overhaul'}
+          className={styles.hItem} >overhaul</Link>
+        <Link
+          to={'/detail/restoration'}
+          className={styles.hItem}>restoration</Link>
+        <Link
+          to={'/detail/modification'}
+          className={styles.hItem}>modification</Link>
+        <Link
+          to={'/gallery'}
+          className={styles.hItem}>gallery</Link>
+        <Link
+          to={'/lanham'}
+          className={styles.hItem}>LANHAM AMPS</Link>
       </div>
       <div className={styles.mobileMenu}>
         <input type="checkbox" className={styles.toggler}></input>
@@ -23,6 +37,7 @@ const Header = () => {
               <ul>
                 <li>
                   <Link
+                    to={'/detail/service'}
                     className={styles.link}
                     style={{ textDecoration:'none' }}>
                       amp repair
@@ -30,6 +45,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Link
+                    to={'/detail/guitar'}
                     className={styles.link}
                     style={{ textDecoration:'none' }}>
                       guitar service
@@ -37,12 +53,14 @@ const Header = () => {
                 </li>
                 <li>
                   <Link
+                    to={'/detail/overhaul'}
                     className={styles.link}
                     style={{ textDecoration:'none' }}>
                       overhaul
                   </Link>
                 </li>
                 <li><Link
+                  to={'/detail/restoration'}
                   className={styles.link}
                   style={{ textDecoration:'none' }}>
                       restoration
@@ -50,6 +68,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Link
+                    to={'/detail/modification'}
                     className={styles.link}
                     style={{ textDecoration:'none' }}>
                        modification
@@ -57,6 +76,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Link
+                    to={'/gallery'}
                     className={styles.link}
                     style={{ textDecoration:'none' }}>
                        gallery
@@ -64,6 +84,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Link
+                    to={'/lanham'}
                     className={styles.link}
                     style={{ textDecoration:'none' }}>
                         LANHAM AMPS
