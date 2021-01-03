@@ -33,6 +33,8 @@
 
       @media screen and (max-width: 780px) {
         height: 125px;
+        border: solid black 1px;
+  
       }
      
     }

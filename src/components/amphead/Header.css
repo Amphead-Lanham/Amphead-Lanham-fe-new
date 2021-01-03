@@ -38,6 +38,8 @@
 .hItem {
   margin: 15px;
   color: var(--white);
+  text-decoration: none;
+  font-family: 'roboto';
 
   @media screen and (max-width: 780px) {
     display: none;
