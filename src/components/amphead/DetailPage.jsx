@@ -1,6 +1,7 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { sections } from '../../data/details.js';
+import styles from './DetailPage.css';
 
 const DetailPage = () => {
   const { name } = useParams();
@@ -13,13 +14,19 @@ const DetailPage = () => {
   
   
   return (
-    <div>
-      <h1>{section.header}</h1>
-      <img src={section.photo} />
-      <p>{section.info}</p>
-      <ul>
-        {listItems}
-      </ul>
+    <div className={styles.bigBox}>
+      <div className={styles[name]}>
+        <div className={styles.textBox}>
+          <h1 className={styles.headline}>{section.header}</h1>
+          <p className={styles.info}>{section.info}</p>
+          <ul className={styles.list}>
+            {listItems}
+          </ul>
+        </div>
+        <Link to={'/'}>
+          <button className={styles.button}>home</button>
+        </Link>
+      </div>
     </div>
   );
 };
