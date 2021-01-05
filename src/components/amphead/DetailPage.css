@@ -65,6 +65,32 @@
   min-height: 45px;
 }
 
+.figureBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+  
+}
+
+.figure {
+  margin: 20px;
+}
+
+.figurePic {
+  max-width: 300px;
+  border-radius: 5px;
+}
+
+.figCaption {
+  max-width: 300px;
+  font-family: 'roboto';
+  color: var(--white);
+}
+
+
+
 .service {
   background-image: url('https://www.amphead.org/sites/default/files/styles/large/public/IMG_0076%20test%20bench%20.JPG?itok=VcRzof7x');
   

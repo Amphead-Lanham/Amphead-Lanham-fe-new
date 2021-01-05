@@ -11,6 +11,12 @@ const DetailPage = () => {
       {i}
     </li>
   ));
+  const figures = section.figures.map((figure, index) => (
+    <div className={styles.figure} key={index}>
+      <img className={styles.figurePic} src={figure.imageUrl}/>
+      <p className={styles.figCaption} >{figure.figCaption}</p>
+    </div>
+  ));
   
   
   return (
@@ -21,6 +27,9 @@ const DetailPage = () => {
           <p className={styles.info}>{section.info}</p>
           <ul className={styles.list}>
             {listItems}
+          </ul>
+          <ul className={styles.figureBox} >
+            {figures}
           </ul>
         </div>
         <Link to={'/'}>

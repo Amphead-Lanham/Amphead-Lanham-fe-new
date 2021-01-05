@@ -32,18 +32,11 @@
    display: flex;
    flex-direction: row;
    position: absolute;
-   
    margin-top: 4em;
    width: 100%;
-   
    z-index: 1;
    font-family: 'Goldman';
-   
    color: var(--white);
-   text-shadow: var(--dark-green) 2px 2px;
+   text-shadow: var(--dark-green) 3px 3px;
  
-   @media screen and (max-width: 412px) {
-     
-     
-   }
  }

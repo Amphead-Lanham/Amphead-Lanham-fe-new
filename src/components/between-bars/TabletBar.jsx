@@ -1,6 +1,6 @@
 import React from 'react';
 import { Parallax } from 'react-scroll-parallax';
-import styles from './MobileBar.css';
+import styles from './TabletBar.css';
 import ampheadLogo from '../../assets/amphead-parallax.png';
 import PropTypes from 'prop-types';
 
@@ -8,7 +8,7 @@ const TabletBar = ({ section }) => {
   return (
 
     <div className={styles.root}>
-      <Parallax className={styles.section}  x={[90, 15]} tagOuter="figure"
+      <Parallax className={styles.section}  x={[90, 35]} tagOuter="figure"
         offsetYMax={50}
         offsetYMin={-50}
         // offsetXMax={40}
