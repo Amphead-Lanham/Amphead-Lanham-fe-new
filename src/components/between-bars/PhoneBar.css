@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+
+}
+
+.bar {
+  display: flex;  
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10px;
+  background-color: var(--medium-green-alpha);
+  border: solid var(--dark-green) 1, 0, 1, 0;
+  @media screen and (min-width: 412px) {
+    display: none;
+  }
+}
+
+.logo {
+  width: 95vw;
+  margin-left: -3em;
+
+}
+
+.section {
+  margin-top: -30px;
+  margin-left: 1.5em;
+  font-size: 1.5em;
+  font-family: 'Goldman';
+  color: var(--white);
+  text-shadow: var(--dark-green) 2px 2px;
+}

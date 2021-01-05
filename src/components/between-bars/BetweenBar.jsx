@@ -8,7 +8,7 @@ const BetweenBar = ({ section }) => {
   return (
 
     <div className={styles.root}>
-      <Parallax className={styles.section}  x={[140, 35]} tagOuter="figure"
+      <Parallax className={styles.section}  x={[140, 60]} tagOuter="figure"
         offsetYMax={50}
         offsetYMin={-50}
         // offsetXMax={40}
@@ -17,7 +17,7 @@ const BetweenBar = ({ section }) => {
         <h1 className={styles.barCategory}>{section}</h1>
       </Parallax>
       
-      <Parallax className={styles.logo}  x={[-80, 5]} tagOuter="figure"
+      <Parallax className={styles.logo}  x={[-90, 8]} tagOuter="figure"
         offsetYMax={50}
         offsetYMin={-90}
         // offsetXMax={-40}
