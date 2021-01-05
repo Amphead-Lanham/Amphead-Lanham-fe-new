@@ -158,7 +158,7 @@
 }
 
 .mobileMenu .menu > div {
-  background: var(--medium-green);
+  background: var(--medium-green-alpha);
   border-radius: 60%;
   width: 200vw;
   height: 200vh;
