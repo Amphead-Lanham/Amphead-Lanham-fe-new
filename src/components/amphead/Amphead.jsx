@@ -12,11 +12,9 @@ import Overhaul from './Overhaul';
 import Restoration from './Restoration';
 import Modification from './Modification';
 import Header from './Header';
-import MobileBar from '../between-bars/MobileBar';
-import MobileGuitarBar from '../between-bars/MobileGuitarBar';
-import MobileModificationBar from '../between-bars/MobileModificationBar';
-import MobileOverhaulBar from '../between-bars/MobileOverhaulBar';
-import MobileRestorationBar from '../between-bars/MobileRestorationBar';
+import TabletBar from '../between-bars/TabletBar';
+
+
 
 
 const Amphead = () => {
@@ -31,28 +29,28 @@ const Amphead = () => {
           <News />
         </div>
         <div className={styles.serviceBox}>
-          <BetweenBar />
-          <MobileBar />
+          <BetweenBar section={'Amp Repair and Maintenance'} />
+          <TabletBar section={'Repair and Maintenance'} />
           <Maintenance />
         </div>
         <div className={styles.guitarService}>
-          <GuitarBar />
-          <MobileGuitarBar />
+          <BetweenBar section={'Guitar Service'} />
+          <TabletBar  section={'Guitar Service'} />
           <GuitarService />
         </div>
         <div className={styles.tubeOverhaul}>
-          <OverhaulBar />
-          <MobileOverhaulBar />
+          <BetweenBar section={'Tube Amp Overhaul'} />
+          <TabletBar section={'Tube Amp Overhaul'} />
           <Overhaul />
         </div>
         <div className={styles.restoration}>
-          <RestorationBar />
-          <MobileRestorationBar />
+          <BetweenBar section={'Tube Amp Restoration'} />
+          <TabletBar section={'Tube Amp Restoration'} />
           <Restoration />
         </div>
         <div className={styles.modification}>
-          <ModificationBar />
-          <MobileModificationBar />
+          <BetweenBar section={'Tube Amp Modification'} />
+          <TabletBar section={'Tube Amp Modification'} />
           <Modification />
         </div>
      

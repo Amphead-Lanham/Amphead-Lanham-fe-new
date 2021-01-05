@@ -1,27 +1,45 @@
 :local(.root) {
-  
- display: flex;
- min-width: 100vw;
+ display: block;
+ min-height: 9em;
+ max-width: 100vw;
  background-color: rgba(0,100,102, .90);
  border: solid black 1px;
  margin-bottom: 50px;
+ padding-top: 7px;
 
  @media screen and (min-width: 781px) {
   display: none;
 }
+
+ @media screen and (max-width: 412px) {
+ display: none;
+  
+}
 }
 
-.container {
-  display: flex;
-}
 
 .logo {
-  width: 100%;
+  position: absolute;
   z-index: 0;
+
 }
 
 .section {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  
+  margin-top: 4em;
   width: 100%;
-  margin-left: -100%;
+  
   z-index: 1;
+  font-family: 'Goldman';
+  
+  color: var(--white);
+  text-shadow: var(--dark-green) 2px 2px;
+
+  @media screen and (max-width: 412px) {
+    
+    
+  }
 }

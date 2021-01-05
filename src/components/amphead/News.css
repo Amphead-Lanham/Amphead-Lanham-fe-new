@@ -32,9 +32,13 @@
       min-width: 100vw;
 
       @media screen and (max-width: 780px) {
-        height: 125px;
+        height: 135px;
         border: solid black 1px;
   
+      }
+
+      @media screen and (max-width: 412px) {
+        height: 80px;
       }
      
     }
