@@ -1,14 +1,14 @@
 import React from 'react';
 import { Parallax } from 'react-scroll-parallax';
-import styles from './BetweenBar.css';
+import styles from './MobileBar.css';
 import ampheadLogo from '../../assets/amphead-parallax.png';
 import PropTypes from 'prop-types';
 
-const BetweenBar = ({ section }) => {
+const TabletBar = ({ section }) => {
   return (
 
     <div className={styles.root}>
-      <Parallax className={styles.section}  x={[140, 35]} tagOuter="figure"
+      <Parallax className={styles.section}  x={[90, 15]} tagOuter="figure"
         offsetYMax={50}
         offsetYMin={-50}
         // offsetXMax={40}
@@ -17,7 +17,7 @@ const BetweenBar = ({ section }) => {
         <h1 className={styles.barCategory}>{section}</h1>
       </Parallax>
       
-      <Parallax className={styles.logo}  x={[-80, 5]} tagOuter="figure"
+      <Parallax className={styles.logo}  x={[-40, 10]} tagOuter="figure"
         offsetYMax={50}
         offsetYMin={-90}
         // offsetXMax={-40}
@@ -33,8 +33,8 @@ const BetweenBar = ({ section }) => {
   
 };
 
-BetweenBar.propTypes = {
+TabletBar.propTypes = {
   section: PropTypes.string.isRequired
 };
 
-export default BetweenBar;
+export default TabletBar;

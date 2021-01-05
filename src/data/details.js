@@ -9,7 +9,7 @@ export const sections = [
   },
   {
     name: 'guitar',
-    header: 'Guitar Work',
+    header: 'Guitar Service',
     photo: 'https://www.amphead.org/sites/default/files/styles/large/public/Les%20Paul%20w%20Lindy%20Fralin%20IMG_3202%20small.jpg?itok=tksoQRpX',
     info: 'Ampead has always provided quality guitar service. Set up, wiring and repair. Amphead stocks new tuning machines, knobs, replacement bridges and bridge parts, strap pegs and strap locks, and all the best quality electronic parts; controls, jacks, switches and capacitors.',
     listInfo: []
