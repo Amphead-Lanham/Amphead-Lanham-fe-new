@@ -2,6 +2,12 @@
   --MediumGreen: rgb(0, 100, 102);
   --DarkGreen: rgb(2, 60, 61);
   --LightGreen: rgb(2, 147, 150);
+  --medium-green: rgb(0, 100, 102);
+  --medium-green-alpha: rgba(0, 100, 102, 0.85);
+  --white: rgb(238, 241, 239);
+  --white-alpha: rgba(238, 241, 239, 0.70);
+  --dark-green: rgb(2, 60, 61);
+  --light-green: rgb(2, 147, 150);
 }
 
 .listBox {
@@ -39,6 +45,9 @@
 
   h2 {
     font-family: 'Goldman', cursive;
+    color: var(--white);
+    text-shadow: var(--dark-green) 3px 3px;
+    margin-bottom: 10px;
   }
 
 }

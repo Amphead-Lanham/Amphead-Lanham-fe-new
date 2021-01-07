@@ -10,6 +10,7 @@ import PrivateRoute from '../auth/PrivateRoute';
 // import Signup from '../auth/signup';
 import Login from '../auth/Login';
 import Amphead from '../amphead/Amphead';
+import Lanham from '../lanham/Lanham';
 import UpdateAnnouncement from '../admin/UpdateAnnouncement';
 import AdminPage from '../admin/AdminPage';
 import DetailPage from '../amphead/DetailPage';
@@ -30,6 +31,10 @@ export default function App() {
               exact path="/detail/:name"
               component={DetailPage}
             />
+            <Route
+              exact path="/lanham"
+              component={Lanham}
+            />
             {/* disabled 'signup' route for security
             <Route
               exact path="/signup"
@@ -41,7 +46,7 @@ export default function App() {
             />
             <PrivateRoute  
               exact path="/admin" 
-              component={AdminPage} 
+              component={AdminPage}
             />
             <PrivateRoute
               exact path="/admin/update/:id"
