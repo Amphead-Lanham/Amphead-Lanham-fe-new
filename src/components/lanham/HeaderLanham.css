@@ -5,6 +5,7 @@
   --white-alpha: rgba(238, 241, 239, 0.70);
   --dark-green: rgb(2, 60, 61);
   --light-green: rgb(2, 147, 150);
+  --brown: 463f3a;
   --menu-speed: 0.75s;
 }
 
@@ -13,7 +14,6 @@
 }
 
 .headerBox {
-  animation: fadeIn ease 5s;
   height: 50px;
   min-width: 100vw;
   background-color: var(--dark-green);

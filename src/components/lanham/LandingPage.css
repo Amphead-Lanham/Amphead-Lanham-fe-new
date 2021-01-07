@@ -1,7 +1,78 @@
+:root {
+  --medium-green: rgb(0, 100, 102);
+  --medium-green-alpha: rgba(0, 100, 102, 0.85);
+  --white: rgb(238, 241, 239);
+  --white-alpha: rgba(238, 241, 239, 0.70);
+  --dark-green: rgb(2, 60, 61);
+  --light-green: rgb(2, 147, 150);
+  --brown: #38322d;
+  --menu-speed: 0.75s;
+}
+
 .logo {
+  display: none;
   max-width: 50vw;
+  z-index: 1;
+  margin-left: -586px;
+}
+
+.logoWhite {
+  display: none;
+  max-width: 50vw;
+  z-index: 0;
+
+}
+
+.logoGreen {
+  max-width: 50vw;
+  margin-left: 20px;
+  
 }
 
 .landingBox {
-  padding-top: 60px;
+  display: block;
+  background-color: var(--brown);
+  min-height: 100vh;
+  background-image: url('https://stagecraftgear.com/wp-content/uploads/2015/10/mojotone-black-and-tan-grill-cloth-6302020.jpg');
+  
+}
+
+.topBox {
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 0 20px 0;
+  min-height: 40vh;
+  background-image: url('https://tddhardware.com/wp-content/uploads/2019/08/S013-Cypress-Point-Drawer-Front-Vertical-Cleaf.png');
+}
+
+.announcementBox {
+  margin: 20px;
+  max-width: 15vw;
+  color: var(--white);
+  font-family: 'roboto';
+}
+
+.headerBox {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+}
+
+.headerA {
+  margin-left: 25px;
+  font-family: 'Goldman';
+  color:var(--white);
+  animation: fadeIn ease 3s;
+}
+
+.headerB {
+  margin-left: 25px;
+  font-family: 'Goldman';
+  color:var(--white);
+  animation: fadeIn ease 6s;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0}
+  100% {opacity: 1}
 }
