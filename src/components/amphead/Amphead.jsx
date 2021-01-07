@@ -52,7 +52,7 @@ const Amphead = () => {
         <div className={styles.modification}>
           <BetweenBar section={'Tube Amp Modification'} />
           <TabletBar section={'Tube Amp Modification'} />
-          <PhoneBar section={'tube Amp Modification'} />
+          <PhoneBar section={'Tube Amp Modification'} />
           <Modification />
         </div>
      

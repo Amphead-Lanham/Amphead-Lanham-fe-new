@@ -68,7 +68,9 @@ const CreateAnnouncement = () => {
         <Link to={'/'}>
           <button className={styles.formButton}>Amphead home</button>
         </Link>
-        <button className={styles.formButton}>Lanham home</button>
+        <Link to={'/lanham'}>
+          <button className={styles.formButton}>Lanham home</button>
+        </Link>
       </div>
     </div>
   );
