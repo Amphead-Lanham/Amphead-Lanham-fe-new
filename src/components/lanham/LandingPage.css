@@ -72,6 +72,26 @@
   animation: fadeIn ease 6s;
 }
 
+.modelBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40em;
+  margin-top: 50px;
+  max-width: 30vw;
+  max-height: 20vh;
+}
+
+.modelPic {
+  max-height: 30vh;
+}
+
+
+.displayModel {
+  color: var(--white);
+}
+
 @keyframes fadeIn {
   0% {opacity: 0}
   100% {opacity: 1}
