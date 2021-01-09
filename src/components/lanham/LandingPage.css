@@ -17,11 +17,9 @@
   margin-left: -586px;
 }
 
-.logoWhite {
-  display: none;
-  max-width: 50vw;
-  z-index: 0;
-
+.logoBox {
+  margin-left: 20px;
+  
 }
 
 .logoGreen {
@@ -34,6 +32,7 @@
   display: block;
   background-color: var(--brown);
   min-height: 100vh;
+  padding-bottom: 50px;
   background-image: url('https://stagecraftgear.com/wp-content/uploads/2015/10/mojotone-black-and-tan-grill-cloth-6302020.jpg');
   
 }
@@ -44,6 +43,7 @@
   padding: 70px 0 20px 0;
   min-height: 40vh;
   background-image: url('https://tddhardware.com/wp-content/uploads/2019/08/S013-Cypress-Point-Drawer-Front-Vertical-Cleaf.png');
+  border-bottom: solid var(--dark-green) 7px;
 }
 
 .announcementBox {
@@ -82,6 +82,7 @@
   align-items: center;
   margin-left: 40em;
   margin-top: 4em;
+  margin-bottom: 4em;
   padding: 20px;
   max-width: 40vw;
   max-height: 50vh;
@@ -95,6 +96,7 @@
 }
 
 .modelPic {
+  margin: 10px;
   max-height: 30vh;
 }
 
