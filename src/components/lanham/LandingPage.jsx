@@ -53,6 +53,7 @@ const LandingPage = () => {
       <div className={styles[displayModel.modelStyleCode]}>
         <h1 className={styles.displayModel} >{displayModel.name}</h1>
         <img className={styles.modelPic} src={displayModel.photoUrl}/>
+        <h3  className={styles.quickPitch} >{displayModel.quickPitch}</h3>
       </div>
     </div>
   );
