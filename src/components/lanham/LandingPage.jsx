@@ -14,26 +14,12 @@ const LandingPage = () => {
   const announcements = useSelector(selectAnnouncements);
   const displayModel = models[modelIndex];
 
-  // const getOne = () => {
-  //   console.log(modelIndex);
-  //   // return (modelIndex > 3) ? setModelIndex(0)
-  //   //   : setModelIndex(modelIndex => modelIndex + 1);
-  //   return (modelIndex <= 3) ? setModelIndex(modelIndex => modelIndex + 1)
-  //     : setModelIndex(0);
-  // };
-
-  // useEffect(() => {
-  //   dispatch(fetchAnnouncements());
-  //   setInterval(() =>
-  //     getOne(), 5000);
-  
-  // }, []);
   
   useInterval(() => { 
     if(modelIndex > models.length - 2) setModelIndex(0); 
     else setModelIndex(modelIndex => modelIndex + 1); 
     
-  }, 5000);
+  }, 7000);
   
   useEffect(() => {
     dispatch(fetchAnnouncements());
@@ -64,7 +50,7 @@ const LandingPage = () => {
           </ul>
         </div>
       </div>
-      <div className={styles.modelBox}>
+      <div className={styles[displayModel.modelStyleCode]}>
         <h1 className={styles.displayModel} >{displayModel.name}</h1>
         <img className={styles.modelPic} src={displayModel.photoUrl}/>
       </div>

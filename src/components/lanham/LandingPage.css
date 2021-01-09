@@ -5,6 +5,7 @@
   --white-alpha: rgba(238, 241, 239, 0.70);
   --dark-green: rgb(2, 60, 61);
   --light-green: rgb(2, 147, 150);
+  --light-green-alpha: rgba(2, 147, 150, 80);
   --brown: #38322d;
   --menu-speed: 0.75s;
 }
@@ -62,7 +63,7 @@
   margin-left: 25px;
   font-family: 'Goldman';
   color:var(--white);
-  animation: fadeIn ease 3s;
+  animation: fadeIn ease 4s;
 }
 
 .headerB {
@@ -72,15 +73,23 @@
   animation: fadeIn ease 6s;
 }
 
-.modelBox {
+.dragonSlayer, .phoenix, .reverbCombo, .hydra {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-left: 40em;
-  margin-top: 50px;
-  max-width: 30vw;
-  max-height: 20vh;
+  margin-top: 4em;
+  padding: 20px;
+  max-width: 40vw;
+  max-height: 40vh;
+  background-color: var(--dark-green);
+  border-radius: 10px;
+  box-shadow: var(--medium-green-alpha) 5px 5px;
+
+  
+  animation: fadeOut ease infinite 7s;
+  
 }
 
 .modelPic {
@@ -89,10 +98,23 @@
 
 
 .displayModel {
+  font-family: 'Goldman';
+  text-shadow: var(--light-green) 2px 2px;
   color: var(--white);
 }
+
 
 @keyframes fadeIn {
   0% {opacity: 0}
   100% {opacity: 1}
+}
+
+@keyframes fadeOut {  
+  0% {opacity: 0}
+  10% {opacity: 0}
+  20% {opacity: 1}
+  65% {opacity: 1}
+  80% {opacity: 1}
+  90% {opacity: 0}
+  100% {opacity: 0}
 }

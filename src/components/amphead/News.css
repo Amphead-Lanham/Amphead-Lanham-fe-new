@@ -83,6 +83,7 @@
       background-color: var(--white-alpha);
       border: solid black 2px;
       border-radius: 5px;
+      min-width: 40vw;
       max-width: 75vw;
 
       h2 {
