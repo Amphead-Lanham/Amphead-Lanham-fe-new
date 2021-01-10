@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --medium-green: rgb(0, 100, 102);
+  --medium-green-alpha: rgba(0, 100, 102, 0.85);
+  --white: rgb(238, 241, 239);
+  --white-alpha: rgba(238, 241, 239, 0.70);
+  --dark-green: rgb(2, 60, 61);
+  --light-green: rgb(2, 147, 150);
+  --light-green-alpha: rgba(2, 147, 150, 80);
+  --brown: #38322d;
+  
+}
+
+.bigBox {
+  background-image: url('https://stagecraftgear.com/wp-content/uploads/2015/10/mojotone-black-and-tan-grill-cloth-6302020.jpg');
+  background-attachment: fixed;
+  padding-bottom: 20vh;
+}
