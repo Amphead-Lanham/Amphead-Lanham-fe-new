@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --medium-green: rgb(0, 100, 102);
+  --medium-green-alpha: rgba(0, 100, 102, 0.85);
+  --white: rgb(238, 241, 239);
+  --white-alpha: rgba(238, 241, 239, 0.70);
+  --dark-green: rgb(2, 60, 61);
+  --light-green: rgb(2, 147, 150);
+  --light-green-alpha: rgba(2, 147, 150, 80);
+  --brown: #38322d;
+  
+}
+
+.featureList {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--white);
+  padding: 3vh 0 3vh 0;
+  border-bottom: solid var(--dark-green) 7px;
+  border-top: solid var(--dark-green) 7px;
+  max-height: 30vh;
+  overflow: hidden;
+}
+
+.feature {
+  position: relative;
+  color: var(--brown);
+  font-family: 'roboto';
+  
+  animation: featureFade ease 6s;
+  
+ 
+}
+
+.promise {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  z-index: 0;
+  font-family: 'Goldman';
+  font-size: 2.5em;
+  color: var(--brown);
+  z-index: 1;
+  max-width: 35vw;
+  animation: fadeIn ease 4s;
+}
+
+@keyframes featureFade {
+  0% {margin-bottom: 20vh; opacity: 0}
+  100% {margin-bottom: 0; opacity: 1}
+  
+}
+
+@keyframes fadeOut {  
+  0% {opacity: 0}
+  15% {opacity: 1}
+  80% {opacity: 1}
+  100% {opacity: 0}
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+
+/*@keyframes slideRight {
+  0% {margin-left: 5em; opacity: 1;}
+  90% {margin-left: 25em;}
+  100% {margin-left: 50em; opacity: 0;}
+}*/

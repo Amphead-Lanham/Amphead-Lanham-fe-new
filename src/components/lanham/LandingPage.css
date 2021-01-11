@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --medium-green: rgb(0, 100, 102);
   --medium-green-alpha: rgba(0, 100, 102, 0.85);
@@ -7,8 +11,9 @@
   --light-green: rgb(2, 147, 150);
   --light-green-alpha: rgba(2, 147, 150, 80);
   --brown: #38322d;
-  --menu-speed: 0.75s;
+  
 }
+
 
 .logo {
   display: none;
@@ -30,10 +35,9 @@
 
 .landingBox {
   display: block;
-  background-color: var(--brown);
   min-height: 100vh;
   padding-bottom: 50px;
-  background-image: url('https://stagecraftgear.com/wp-content/uploads/2015/10/mojotone-black-and-tan-grill-cloth-6302020.jpg');
+ 
   
 }
 
@@ -80,9 +84,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 45em;
-  margin-top: 6em;
-  margin-bottom: 4em;
+  margin: 6em 3em 4em 45em;
   padding: 20px;
   max-width: 40vw;
   max-height: 50vh;
@@ -121,10 +123,7 @@
 
 @keyframes fadeOut {  
   0% {opacity: 0}
-  10% {opacity: 0}
-  20% {opacity: 1}
-  65% {opacity: 1}
+  15% {opacity: 1}
   80% {opacity: 1}
-  90% {opacity: 0}
   100% {opacity: 0}
 }
