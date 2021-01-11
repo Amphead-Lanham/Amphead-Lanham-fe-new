@@ -15,7 +15,7 @@ const FeaturesSection = () => {
       <ul >
         {featuresItems}
       </ul>
-      <h1 className={styles.promise} >Our Promise</h1>
+      <h1 className={styles.promise} >Our Promise is Guaranteed Quality</h1>
     </div>
   );
 };
