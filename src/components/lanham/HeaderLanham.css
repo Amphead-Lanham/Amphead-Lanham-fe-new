@@ -14,28 +14,31 @@
 }
 
 .headerBox {
-  height: 50px;
-  min-width: 100vw;
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--dark-green);
-  position: fixed;
+  position: relative;
   z-index: 2;
   border: solid black 1px;
 }
 
 .desktopMenu {
-  animation: fadeIn ease 7s;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   height: 50px;
   min-width: 100vw;
-  position: fixed;
+  position: relative;
   z-index: 1;
   top: 0;
-  left: -10px;
-
+  left: 0px;
+  
+  animation: fadeIn ease 7s;
   
 }
 
@@ -55,6 +58,12 @@
 
 .hItem:hover {
   color: var(--light-green);
+}
+
+.mobileMenu {
+  @media screen and (min-width: 780px) {
+    display: none;
+  }
 }
 
 .mobileMenu {

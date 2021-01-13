@@ -35,85 +35,59 @@
 
 .landingBox {
   display: block;
-  min-height: 100vh;
   padding-bottom: 50px;
+  margin-bottom: 25vh;
+  width: 95vw;
  
-  
 }
 
 .topBox {
   display: flex;
   justify-content: space-between;
-  padding: 70px 0 20px 0;
-  min-height: 40vh;
-  background-image: url('https://tddhardware.com/wp-content/uploads/2019/08/S013-Cypress-Point-Drawer-Front-Vertical-Cleaf.png');
+  padding: 40px 0 20px 0;
+  min-height: 60vh;
+ /* background-image: url('https://tddhardware.com/wp-content/uploads/2019/08/S013-Cypress-Point-Drawer-Front-Vertical-Cleaf.png');*/
   border-bottom: solid var(--dark-green) 7px;
+  background-image: url('../../assets/Phoenix.png');
+  background-repeat: no-repeat;
+  background-size: 110%;
+  
 }
 
 .announcementBox {
-  margin: 20px;
+  margin: 30px 100px 30px 30px;
   max-width: 15vw;
   color: var(--white);
   font-family: 'roboto';
+  overflow: visible;
+  
 }
 
 .headerBox {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin-left: 20px;
 }
 
 .headerA {
-  margin-left: 25px;
+  margin-left: 65px;
   font-family: 'Goldman';
+  font-size: 1.75em;
   color:var(--white);
   text-shadow: var(--dark-green) 3px 3px;
   animation: fadeIn ease 4s;
 }
 
 .headerB {
-  margin-left: 25px;
+  margin-left: 80px;
   font-family: 'Goldman';
+  font-size: 1.75em;
   color:var(--white);
   text-shadow: var(--dark-green) 3px 3px;
   animation: fadeIn ease 6s;
 }
 
-.dragonSlayer, .phoenix, .pacificReverb, .JLT45 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 6em 3em 4em 45em;
-  padding: 20px;
-  max-width: 40vw;
-  max-height: 50vh;
-  background-color: var(--dark-green);
-  border-radius: 10px;
-  box-shadow: var(--medium-green-alpha) 5px 5px;
 
-  
-  animation: fadeOut ease infinite 7s;
-  
-}
-
-.modelPic {
-  margin: 10px;
-  max-height: 30vh;
-}
-
-
-.displayModel {
-  font-family: 'Goldman';
-  text-shadow: var(--light-green) 2px 2px;
-  color: var(--white);
-}
-
-.quickPitch {
-  margin: 10px;
-  font-family: 'roboto';
-  color: var(--white);
-}
 
 
 @keyframes fadeIn {
