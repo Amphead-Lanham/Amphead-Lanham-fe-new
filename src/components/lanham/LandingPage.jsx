@@ -1,25 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { useInterval } from '../../hooks/hooks';
 import { selectAnnouncements } from '../../selectors/ampheadSelectors';
 import { fetchAnnouncements } from '../../actions/announcementActions';
 import lanhamLogoGreen from '../../assets/lanham-logo-green.png';
 import styles from './LandingPage.css';
-import { models } from '../../data/models.js';
+
 
 
 const LandingPage = () => {
-  const [modelIndex, setModelIndex] = useState(0);
   const dispatch = useDispatch();
   const announcements = useSelector(selectAnnouncements);
-  const displayModel = models[modelIndex];
-
-  
-  useInterval(() => { 
-    if(modelIndex > models.length - 2) setModelIndex(0); 
-    else setModelIndex(modelIndex => modelIndex + 1); 
-    
-  }, 7000);
   
   useEffect(() => {
     dispatch(fetchAnnouncements());
@@ -49,11 +39,6 @@ const LandingPage = () => {
             {announcementElements}
           </ul>
         </div>
-      </div>
-      <div className={styles[displayModel.modelStyleCode]}>
-        <h1 className={styles.displayModel} >{displayModel.name}</h1>
-        <img className={styles.modelPic} src={displayModel.photoUrl}/>
-        <h3  className={styles.quickPitch} >{displayModel.quickPitch}</h3>
       </div>
     </div>
   );
