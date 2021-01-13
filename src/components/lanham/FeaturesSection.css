@@ -20,7 +20,7 @@
   align-items: center;
   justify-content: space-around;
   background-color: var(--white);
-  padding: 3vh 0 3vh 0;
+  padding: 3vh 4vw 3vh 4vw;
   border-bottom: solid var(--dark-green) 7px;
   border-top: solid var(--dark-green) 7px;
   max-height: 30vh;

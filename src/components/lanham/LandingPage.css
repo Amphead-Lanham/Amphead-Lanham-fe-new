@@ -44,28 +44,33 @@
 .topBox {
   display: flex;
   justify-content: space-between;
-  padding: 50px 0 20px 0;
-  min-height: 40vh;
-  background-image: url('https://tddhardware.com/wp-content/uploads/2019/08/S013-Cypress-Point-Drawer-Front-Vertical-Cleaf.png');
+  padding: 40px 0 20px 0;
+  min-height: 60vh;
+ /* background-image: url('https://tddhardware.com/wp-content/uploads/2019/08/S013-Cypress-Point-Drawer-Front-Vertical-Cleaf.png');*/
   border-bottom: solid var(--dark-green) 7px;
+  background-image: url('../../assets/Phoenix.png');
+  background-repeat: no-repeat;
+  background-size: 110%;
+  
 }
 
 .announcementBox {
-  margin: 30px;
-  padding: 10px;
+  margin: 30px 100px 30px 30px;
   max-width: 15vw;
   color: var(--white);
   font-family: 'roboto';
+  overflow: visible;
+  
 }
 
 .headerBox {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin-left: 20px;
 }
 
 .headerA {
-  margin-left: 25px;
+  margin-left: 65px;
   font-family: 'Goldman';
   font-size: 1.75em;
   color:var(--white);
@@ -74,7 +79,7 @@
 }
 
 .headerB {
-  margin-left: 25px;
+  margin-left: 80px;
   font-family: 'Goldman';
   font-size: 1.75em;
   color:var(--white);
