@@ -14,14 +14,16 @@ const modelsSplashElement = () => {
 
 
   return (
-    <div className={styles[displayModel.modelStyleCode]} >
-      <h1 className={styles.displayModel} >{displayModel.name}</h1>
-      <div className={styles.imageBox} >
-        <img
-          className={styles.modelPic}
-          src={displayModel.photoUrl}
-          alt={displayModel.name}/>
-        <h3 className={styles.quickPitch} >{displayModel.quickPitch}</h3>
+    <div  className={styles.modelBox}>
+      <div className={styles[displayModel.modelStyleCode]} >
+        <h1 className={styles.displayModel} >{displayModel.name}</h1>
+        <div className={styles.imageBox} >
+          <img
+            className={styles.modelPic}
+            src={displayModel.photoUrl}
+            alt={displayModel.name}/>
+          <h3 className={styles.quickPitch} >{displayModel.quickPitch}</h3>
+        </div>
       </div>
     </div>
   );
