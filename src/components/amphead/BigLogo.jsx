@@ -1,5 +1,5 @@
 import React from 'react';
-import ampheadLogo from '../../../assets/amphead-small-black.png';
+import ampheadLogo from '../../../public/assets/amphead-small-black.png';
 import styles from './Amphead.css';
 
 
