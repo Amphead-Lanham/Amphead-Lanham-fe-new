@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ampheadLogo from '../../../assets/amphead-parallax.png';
+import ampheadLogo from '../../../public/assets/amphead-parallax.png';
 import styles from './PhoneBar.css';
 
 function PhoneBar({ section }) {
