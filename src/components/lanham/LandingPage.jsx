@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { selectAnnouncements } from '../../selectors/ampheadSelectors';
 import { fetchAnnouncements } from '../../actions/announcementActions';
-import lanhamLogoGreen from '../../assets/lanham-logo-green.png';
+import lanhamLogoGreen from '../../../assets/lanham-logo-green.png';
 import styles from './LandingPage.css';
 
 
