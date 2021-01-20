@@ -1,7 +1,7 @@
 import React from 'react';
 import { Parallax } from 'react-scroll-parallax';
 import styles from './TabletBar.css';
-import ampheadLogo from '../../assets/amphead-parallax.png';
+import ampheadLogo from '../../../assets/amphead-parallax.png';
 import PropTypes from 'prop-types';
 
 const TabletBar = ({ section }) => {
