@@ -48,25 +48,33 @@
   min-height: 60vh;
  /* background-image: url('https://tddhardware.com/wp-content/uploads/2019/08/S013-Cypress-Point-Drawer-Front-Vertical-Cleaf.png');*/
   border-bottom: solid var(--dark-green) 7px;
-  background-image: url('../../assets/Phoenix.png');
+  background-image: url('../../assets/lanham-line-up.jpeg');
   background-repeat: no-repeat;
-  background-size: 110%;
+  background-size: cover;
   
 }
 
-.announcementBox {
+.announcementBox ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 30px 100px 30px 30px;
   max-width: 15vw;
   color: var(--white);
   font-family: 'roboto';
   overflow: visible;
-  
+  padding: 3em;
+  background-color: var(--medium-green-alpha);
+  list-style: none;
+  text-align: center;
 }
 
 .headerBox {
   display: flex;
   flex-direction: column;
   margin-left: 20px;
+  
 }
 
 .headerA {
