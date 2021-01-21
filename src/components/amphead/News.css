@@ -5,6 +5,7 @@
 :root {
   --medium-green: rgb(0, 100, 102);
   --medium-green-alpha: rgba(0, 100, 102, 0.85);
+  --light-green: rgb(2, 147, 150);
   --white: rgb(238, 241, 239);
   --white-alpha: rgba(238, 241, 239, 0.70);
 }
@@ -28,7 +29,7 @@
       margin-top: 50px;
       height: 32vh;
       background-color: var(--medium-green-alpha);
-      border: solid black 2px;
+      border: solid var(--light-green) 2px;
       min-width: 100vw;
 
       @media screen and (max-width: 780px) {

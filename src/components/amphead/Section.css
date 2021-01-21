@@ -3,9 +3,15 @@
 }
 
 :root {
-  --medium-green-alpha: rgba(0,100,102, 0.85);
+  --MediumGreen: rgb(0, 100, 102);
+  --DarkGreen: rgb(2, 60, 61);
+  --LightGreen: rgb(2, 147, 150);
+  --medium-green: rgb(0, 100, 102);
+  --medium-green-alpha: rgba(0, 100, 102, 0.85);
   --white: rgb(238, 241, 239);
   --white-alpha: rgba(238, 241, 239, 0.70);
+  --dark-green: rgb(2, 60, 61);
+  --light-green: rgb(2, 147, 150);
 }
 
 .bigBox {
@@ -26,6 +32,8 @@
   margin-top: 50px;
   border: solid black 2px;
   border-radius: 5px;
+  box-shadow: black 4px 4px 10px;
+  max-width: 45vw;
 
   @media screen and (max-width: 412px) {
     max-width: 80vw;

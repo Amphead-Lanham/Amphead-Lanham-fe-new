@@ -44,9 +44,9 @@
   display: flex;
   justify-content: space-between;
   padding: 40px 0 20px 0;
-  min-height: 60vh;
+  min-height: 100vh;
  /* background-image: url('https://tddhardware.com/wp-content/uploads/2019/08/S013-Cypress-Point-Drawer-Front-Vertical-Cleaf.png');*/
-  border-bottom: solid var(--dark-green) 50px;
+  border-bottom: solid var(--dark-green) 7px;
   background-image: url('../../../public/assets/phoenix-crop-top.jpeg');
   background-position: center;
   background-repeat: no-repeat;

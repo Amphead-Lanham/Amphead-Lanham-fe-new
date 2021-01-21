@@ -3,7 +3,7 @@ export const sections = [
   {
     name: 'service',
     header: 'Amplifier Maintenance and Repair',
-    photo: 'https://www.amphead.org/sites/default/files/styles/large/public/IMG_0076%20test%20bench%20.JPG?itok=VcRzof7x',
+    photo: '/assets/work-bench.jpeg',
     info: 'Amphead maintains an extensive stock of the best quality amp parts to get repairs done right and turned around quickly. We stock the best current production tubes: JJ Electronic, Sovtek, Tung Sol and others. When we perform a retube at Amphead,  the preamp tubes are selected by ear for each position as it performs in your amp. Output tubes are biased using both current draw and crossover distortion methods. Lets talk about your sound and get your amp set up right.  New tubes are burned in to eliminate factory defects and assure reliability.  Tubes purchased and installed at Amphead are guaranteed for 3 months.',
     listInfo: [],
     figures: []
