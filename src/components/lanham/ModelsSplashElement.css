@@ -2,11 +2,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 50vh;
+  height: 70vh;
   width: 100vw;
   padding: 2vh;
-  margin-bottom: 40vh;
-  background-color: var(--brown);
+  margin: 25vh 0 30vh 0;
+  /*background-image: url('../../../public/assets/gator-skin.jpeg');
+  border-top: black solid 7px;
+  border-bottom: black solid 7px;
+  background-size: cover;*/
 }
 
 .dragonSlayer, .phoenix, .pacificReverb, .JLT45 {
@@ -17,22 +20,25 @@
   margin: 10vh 8vw 10vh 8vw;
   padding: 20px;
   width: 75vw;
-  max-height: 60vh;
+  height: 60vh;
   background-color: var(--brown);
   border-radius: 10px;
   border: solid var(--white) 3px;
   box-shadow: black 5px 5px 10px;
 
-  
-  animation: fadeOut ease infinite 7s;
+  > h1 {
+    animation: fadeOut ease infinite 7s;
+  }  
   
 }
+
 
 .imageBox {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: fadeOut ease infinite 7s;
 }
 
 .modelPic {
@@ -73,7 +79,7 @@
 
 @keyframes fadeOut {  
   0% {opacity: 0}
-  15% {opacity: 1}
+  20% {opacity: 1}
   80% {opacity: 1}
   100% {opacity: 0}
 }
