@@ -4,7 +4,8 @@
 
 .newsBox, .serviceBox, .guitarService, .tubeOverhaul, .restoration, .modification {
   
-  background-image: url('https://happymag.tv/wp-content/uploads/2020/01/Marshall-JTM-45.jpg');
+  /*background-image: url('https://happymag.tv/wp-content/uploads/2020/01/Marshall-JTM-45.jpg');*/ 
+  background-image: url('../../../public/assets/jim-marshall.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;

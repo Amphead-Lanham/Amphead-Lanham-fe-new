@@ -59,7 +59,8 @@
 }
 
 .displayModel:hover {
-  animation: quake infinite 1.75s;
+  transition: ease 1.5s;
+  color: var(--medium-green);
 
 }
 
@@ -79,8 +80,10 @@
 
 @keyframes fadeOut {  
   0% {opacity: 0}
+  5% {opacity: 0}
   20% {opacity: 1}
   80% {opacity: 1}
+  95% {opacity: 0}
   100% {opacity: 0}
 }
 
