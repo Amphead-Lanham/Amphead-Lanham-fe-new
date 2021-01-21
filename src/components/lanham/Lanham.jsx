@@ -7,11 +7,16 @@ import styles from './Lanham.css';
 
 const Lanham = () => {
   return (
-    <div className={styles.bigBox} >
-      <Header className={styles.header} />
-      <LandingPage className={styles.landingPage} />
-      <ModelsSplashElement className={styles.modelSplash} />
-      <FeaturesSection className={styles.features} />
+    <div>
+      <div className={styles.bigBox} >
+        <Header className={styles.header} />
+        <LandingPage className={styles.landingPage} />
+      </div>
+      <div className={styles.secondBox}>
+        <ModelsSplashElement className={styles.modelSplash} />
+        <FeaturesSection className={styles.features} />
+
+      </div>
     </div>
   );
 };

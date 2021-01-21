@@ -36,8 +36,7 @@
 .landingBox {
   display: block;
   padding-bottom: 50px;
-  margin-bottom: 25vh;
-  width: 95vw;
+  width: 100vw;
  
 }
 
@@ -47,8 +46,9 @@
   padding: 40px 0 20px 0;
   min-height: 60vh;
  /* background-image: url('https://tddhardware.com/wp-content/uploads/2019/08/S013-Cypress-Point-Drawer-Front-Vertical-Cleaf.png');*/
-  border-bottom: solid var(--dark-green) 7px;
-  background-image: url('../../../public/assets/lanham-line-up.jpeg');
+  border-bottom: solid var(--dark-green) 50px;
+  background-image: url('../../../public/assets/phoenix-crop-top.jpeg');
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   
@@ -60,12 +60,14 @@
   justify-content: center;
   align-items: center;
   margin: 30px 100px 30px 30px;
-  max-width: 15vw;
+  max-width: 20vw;
   color: var(--white);
   font-family: 'roboto';
   overflow: visible;
   padding: 3em;
   background-color: var(--medium-green-alpha);
+  border: var(--light-green) solid 2px;
+  border-radius: 7px;
   list-style: none;
   text-align: center;
 }
@@ -82,7 +84,7 @@
   font-family: 'Goldman';
   font-size: 1.75em;
   color:var(--white);
-  text-shadow: var(--dark-green) 3px 3px;
+  text-shadow: var(--dark-green) 4px 4px;
   animation: fadeIn ease 4s;
 }
 
@@ -91,7 +93,7 @@
   font-family: 'Goldman';
   font-size: 1.75em;
   color:var(--white);
-  text-shadow: var(--dark-green) 3px 3px;
+  text-shadow: var(--dark-green) 4px 4px;
   animation: fadeIn ease 6s;
 }
 

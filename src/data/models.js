@@ -6,7 +6,7 @@ export const models = [
     quickPitch: 'The Dragonslayer is a super versatile amp based on an exceptional sounding 1973 Plexi Marshall.',
     description: 'It has two gain controls voiced bright and dark to shape the tone and the distortion character before the cathode follower tone stack. The Dragonslayer utilizes a post phase inverter master volume. It creates warm tube overdrive and fluid sustain and at any volume and punch and girth when loud.',
     features: [],
-    photoUrl: 'assets/dragonslayer-cropped.jpeg'
+    photoUrl: '/assets/dragonslayer-cropped.jpeg'
   },
   {
     name: 'Phoenix',
@@ -22,7 +22,7 @@ export const models = [
     quickPitch: 'Bell-bottoms and bikinis. Is that Freedom rock? Turn it up!',
     description: '',
     features: [],
-    photoUrl: '../assets/pacific-reverb-cropped.jpeg'
+    photoUrl: '/assets/pacific-reverb-cropped.jpeg'
   },
   {
     name: 'JLT45',
@@ -30,6 +30,6 @@ export const models = [
     quickPitch: 'The JLT45 is a 1950\'s tweed type circuit and is the ultimate blues rock amp',
     description: 'Based on Leo Fender\'s 5F6-A Bassman model. The JLT45 uses the GZ34 tube rectifier and KT66 output tubes. These are the tubes that Jim Marshall used to create the world changing sounds of the earliest Marshall heads.',
     features: [],
-    photoUrl: './assets/JLT45-cropped.jpeg'
+    photoUrl: '/assets/JLT45-cropped.jpeg'
   }
 ];

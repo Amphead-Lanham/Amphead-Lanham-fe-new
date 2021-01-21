@@ -23,23 +23,28 @@
 
 
 .serviceBox {
-  background-image: url('https://cdn.theatlantic.com/static/mt/assets/culture_test/motorhead%20lemmy%20marshall%20amp%20arena%20rock%20615.jpg')
+  /*background-image: url('https://cdn.theatlantic.com/static/mt/assets/culture_test/motorhead%20lemmy%20marshall%20amp%20arena%20rock%20615.jpg')*/ 
+  background-image: url('../../../public/assets/marshall.jpeg');
 }
 
 .guitarService {
-  background-image: url('https://g4marchive.files.wordpress.com/2018/08/gibson-2019-banner.png');
+  /*background-image: url('https://g4marchive.files.wordpress.com/2018/08/gibson-2019-banner.png');*/
+  background-image: url('../../../public/assets/guitar-bridge.jpeg');
 }
 
 .tubeOverhaul {
-  background-image: url('https://www.acdcaudio.net/wp-content/uploads/2011/11/el34.jpg');
+  /*background-image: url('https://www.acdcaudio.net/wp-content/uploads/2011/11/el34.jpg');*/ 
+  background-image: url('../../../public/assets/working-hands.jpeg');
 }
 
 .restoration {
-  background-image: url('https://www.roadhousevintage.com/wp-content/uploads/2020/05/IMG_8739-scaled.jpeg');
+  /*background-image: url('https://www.roadhousevintage.com/wp-content/uploads/2020/05/IMG_8739-scaled.jpeg');*/
+  background-image: url('../../../public/assets/Fender-shelf.jpeg');
 }
 
 .modification {
-  background-image: url('https://i.pinimg.com/originals/65/62/e1/6562e1b15d0a8655d7acbcd634f2c027.png')
+  /*background-image: url('https://i.pinimg.com/originals/65/62/e1/6562e1b15d0a8655d7acbcd634f2c027.png')*/
+  background-image: url('../../../public/assets/circuiits.jpeg');
 }
 
 .BigLogo {
