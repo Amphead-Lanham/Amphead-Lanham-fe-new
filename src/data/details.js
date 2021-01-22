@@ -30,7 +30,7 @@ export const sections = [
   {
     name: 'modification',
     header: 'Tube Amp Modification',
-    photo: '/assets/wires.js',
+    photo: '/assets/wires.jpeg',
     blurb: 'Dial in Your Sound Amphead performs proven custom performance upgrades for classic tube guitar amps.',
     info: 'With a properly serviced amp; upgrading tubes, speakers and other components can improve tone quality. There are also preferred circuits that can be referenced to "back date" your amplifier and popular non-factory circuit changes to customize the function and tone of your amplifier. \n Previous changes can be re-done to return your amp to stock.',
     listInfo: ['Marshall -Most tube amps, current and  vintage', ' Vintage Fender', 'Fender Hot Rod Series, Blues series and re-issues', 'Mesa bias control '],
