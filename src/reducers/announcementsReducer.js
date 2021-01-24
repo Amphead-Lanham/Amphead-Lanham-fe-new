@@ -2,7 +2,7 @@ import {
   SET_ANNOUNCEMENTS,
   SET_ANNOUNCEMENT,
   SET_LOADING,
-  APPEND_ANNOUNCEMENT
+  APPEND_ANNOUNCEMENT,
 } from '../actions/announcementActions';
 
 const initialState = {

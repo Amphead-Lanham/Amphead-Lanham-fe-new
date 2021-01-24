@@ -7,6 +7,7 @@ import {
 } from '../services/amphead-api';
 
 export const SET_ANNOUNCEMENTS = 'SET_ANNOUNCEMENTS';
+
 export const setAnnouncements = announcements => ({
   type: SET_ANNOUNCEMENTS,
   payload: announcements

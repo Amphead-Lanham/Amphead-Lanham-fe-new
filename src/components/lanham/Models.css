@@ -1,0 +1,16 @@
+.model > img, h3 {
+  width: 40vw;
+  list-style: none;
+}
+
+.model {
+  list-style: none;
+}
+
+.modelName {
+  font-family: 'Goldman';
+}
+
+.pitch {
+  font-family: 'roboto';
+}

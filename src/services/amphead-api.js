@@ -1,6 +1,7 @@
 /* eslint-disable no-throw-literal */
 // const url = 'http://localhost:7890/api/v1/announcements';
 const url = process.env.API_URL;
+const emailUrl = process.env.EMAIL_API_URL;
 
 export const getAnnouncements = async() => {
   const res = await fetch(url);
@@ -56,6 +57,21 @@ export const updateAnnouncement = async(id, announcement) => {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify(announcement)
+  });
+
+  const json = await res.json();
+  if(!res.ok) throw json;
+
+  return json;
+};
+
+export const sendMessage = async(message) => {
+  const res = await fetch(emailUrl, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(message)
   });
 
   const json = await res.json();

@@ -14,6 +14,7 @@ import Lanham from '../lanham/Lanham';
 import UpdateAnnouncement from '../admin/UpdateAnnouncement';
 import AdminPage from '../admin/AdminPage';
 import DetailPage from '../amphead/DetailPage';
+import Models from '../lanham/models';
 
 
 export default function App() {
@@ -34,6 +35,10 @@ export default function App() {
             <Route
               exact path="/lanham"
               component={Lanham}
+            />
+            <Route
+              exact path="/lanham/models"
+              component={Models}
             />
             {/* disabled 'signup' route for security
             <Route
