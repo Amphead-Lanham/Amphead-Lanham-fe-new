@@ -103,3 +103,130 @@
     0% {opacity: 0}
     100% {opacity: 1}
   }
+
+
+  .popUp {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .popUp .toggle {
+    position: absolute;
+    
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  
+  
+  .popUp .contactText {
+    opacity: 1;
+    position: absolute;
+    
+    z-index: 0;
+    height: 50px;
+    width: 50px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: var(--light-green) solid 1px;
+    border-top: var(--light-green) solid 1px;
+  }
+  
+  .popUp .contactText > div {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: var(--medium-green-alpha);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+  }
+  
+  .popUp .contactText > div:before,
+  .popUp .contactText > div:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+  }
+  
+  .popUp .contactText > div:after {
+    top: 10px;
+  }
+  
+  .popUp .toggle:checked + .contactText > div {
+    transform: rotate(135deg);
+  }
+  
+  .popUp .toggle:checked + .contactText > div:before,
+  .popUp .toggle:checked + .contactText > div:after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  
+  .popUp .toggle:checked:hover + .contactText > div {
+    transform: rotate(225deg);
+  }
+  
+  .popUp .toggle:checked ~ .form {
+    visibility: visible;
+  }
+  
+  .popUp .toggle:checked ~ .form > div {
+    transform: scale(1);
+    transition-duration: 0.75s;
+  }
+  
+  .popUp .toggle:checked ~ .form > div > div {
+    opacity: 1;
+    transition: opacity 0.4s ease;
+  }
+  
+  .popUp .form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .popUp .form > div {
+    background: var(--medium-green-alpha);
+    border-radius: 20%;
+    width: 70vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: all 0.4s ease;
+  }
+  
+  .popUp .form > div > div  {
+    text-align: center;
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+  
+  .popUp .form > div > div  {
+    color: var(--brown);
+  }
+  

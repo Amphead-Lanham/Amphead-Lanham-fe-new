@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
+  z-index: 0;
 }
+
+
 
 .newsBox, .serviceBox, .guitarService, .tubeOverhaul, .restoration, .modification {
   

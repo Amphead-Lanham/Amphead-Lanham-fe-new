@@ -6,6 +6,7 @@ import Header from './Header';
 import TabletBar from '../between-bars/TabletBar';
 import PhoneBar from '../between-bars/PhoneBar';
 import Section from './Section';
+import ContactForm from '../contact/ContactForm';
 
 
 
@@ -16,7 +17,7 @@ const Amphead = () => {
     <>
       
       <Header className={styles.headerBox}/>
-      
+     
       <div className={styles.outerBox}>
         <div className={styles.newsBox}>
           <News />

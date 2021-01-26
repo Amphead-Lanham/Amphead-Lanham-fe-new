@@ -6,6 +6,7 @@ import ModelsSplashElement from './ModelsSplashElement';
 import styles from './Lanham.css';
 
 
+
 const Lanham = () => {
   return (
     <div>
@@ -16,6 +17,7 @@ const Lanham = () => {
       <div className={styles.secondBox}>
         <ModelsSplashElement className={styles.modelSplash} />
         <FeaturesSection className={styles.features} />
+       
         
       </div>
     </div>

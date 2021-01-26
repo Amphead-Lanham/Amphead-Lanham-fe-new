@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --medium-green: rgb(0, 100, 102);
+  --medium-green-alpha: rgba(0, 100, 102, 0.85);
+  --white: rgb(238, 241, 239);
+  --white-alpha: rgba(238, 241, 239, 0.70);
+  --dark-green: rgb(2, 60, 61);
+  --light-green: rgb(2, 147, 150);
+  --light-green-alpha: rgba(2, 147, 150, 80);
+  --brown: #38322d;
+  
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  width: 30em;
+  align-items: center;
+  justify-content: center;
+
+ .contactEl {
+   margin: 20px;
+ }
+
+}
+
+.contactlanham {
+  background-color: blue;
+}
+
+.contact {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  background-color: var(--medium-green-alpha);
+  width: 80vw;
+  height: 80vh;
+}

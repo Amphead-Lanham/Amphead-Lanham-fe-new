@@ -2,7 +2,7 @@ import React, { useEffect }  from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchAnnouncements } from '../../actions/announcementActions';
 import { selectAnnouncements } from '../../selectors/ampheadSelectors';
-
+import PopUp from '../contact/PopUp';
 import BigLogo from './BigLogo';
 import styles from './News.css';
 
@@ -34,6 +34,7 @@ const News = () => {
         </h1>
         <h3>503 231-4035</h3>
         <h3>5225-a SE 78th ave. Portland, OR 97206</h3>
+        <PopUp/>
       </div>
       <ul className={styles.announcementBox} >
         {announcementElements}
