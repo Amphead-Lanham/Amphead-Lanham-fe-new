@@ -34,7 +34,7 @@ const News = () => {
         </h1>
         <h3>503 231-4035</h3>
         <h3>5225-a SE 78th ave. Portland, OR 97206</h3>
-        <PopUp/>
+        <PopUp side={'amphead'}/>
       </div>
       <ul className={styles.announcementBox} >
         {announcementElements}

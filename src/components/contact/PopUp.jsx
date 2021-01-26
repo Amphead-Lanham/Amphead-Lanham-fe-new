@@ -1,8 +1,9 @@
 import React from 'react';
 import ContactForm from './ContactForm';
 import styles from './PopUp.css';
+import PropTypes from 'prop-types';
 
-const PopUp = () => {
+const PopUp = ({ side }) => {
   return (
     <div>
       <div className={styles.popUp}>
@@ -19,7 +20,7 @@ const PopUp = () => {
         <div className={styles.form}>
           <div>
             <div>
-              <ContactForm />
+              <ContactForm side={side}/>
             </div>
           </div>
         </div>
@@ -27,6 +28,10 @@ const PopUp = () => {
     </div>      
    
   );
+};
+
+PopUp.propTypes = {
+  side: PropTypes.string.isRequired
 };
 
 export default PopUp;

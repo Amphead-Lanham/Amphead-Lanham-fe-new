@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
-import { useHistory, useParams } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { sendMessage } from '../../services/amphead-api';
 import styles from './ContactForm.css';
+import PropTypes from 'prop-types';
 
-const ContactForm = () => {
+const ContactForm = ({ side }) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  const [isVisible, setIsVisible] = useState(false);
   const history = useHistory();
-  const { side } = useParams();
+  
 
   const handleSubmit = e => {
     e.preventDefault();
@@ -21,7 +21,8 @@ const ContactForm = () => {
     setName('');
     setEmail('');
     setMessage('');
-    (side === 'Amphead' || side === 'amphead')
+    
+    (side === 'amphead')
       ? history.push('/')
       : history.push('/lanham');
   };
@@ -33,7 +34,13 @@ const ContactForm = () => {
   };
 
   return (
-    <div className={styles[`contact${side}${isVisible}`]} >
+    <div className={styles[`contact${side}`]} >
+      <label htmlFor={'checkbox'} className={styles.Xbox}>X</label>
+      <input
+        type={'checkbox'}
+        id={'checkbox'}
+        className={styles.checkbox}
+      ></input>
       <form
         id={'contact-from'}
         className={styles.contactForm}
@@ -43,7 +50,8 @@ const ContactForm = () => {
           type={'text'}
           id={'name'}
           name={'name'}
-          placeholder={'name'}
+          value={name}
+          placeholder={'name required'}
           className={styles.contactEl}
           onChange={handleChange}
         />
@@ -51,23 +59,28 @@ const ContactForm = () => {
           type={'text'}
           id={'email'}
           name={'email'}
-          placeholder={'email'}
+          value={email}
+          placeholder={'email required'}
           className={styles.contactEl}
           onChange={handleChange}
         />
         <textarea
           id={'message'}
           name={'message'}
-          placeholder={'message'}
+          value={message}
+          placeholder={'message required'}
           className={styles.contactEl}
           onChange={handleChange}
         />
-        <button>submit</button>
+        <button className={styles.contactButton} >submit</button>
       </form>
       
     </div>
   );
 };
 
+ContactForm.proptypes = {
+  side: PropTypes.string.isRequired
+};
 
 export default ContactForm;

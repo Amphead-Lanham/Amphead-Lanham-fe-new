@@ -17,8 +17,9 @@
 .formLabel {
   position: relative;
   color: var(--dark-green);
-  text-decoration: none;
-  margin-top: 2rem;
+  font-size: larger;
+  cursor: pointer;
+  font-family: 'roboto';
 }
 
 
@@ -51,8 +52,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: black solid 1px;
-  border-top: black solid 1px;
 
 }
 
@@ -129,7 +128,8 @@
 
 .popUp .form > div {
   background: var(--medium-green-alpha);
-  border-radius: 60%;
+  border: solid var(--light-green) 2px;
+  border-radius: 20px;
   width: 50vw;
   height: 50vh;
   display: flex;
@@ -139,10 +139,10 @@
   transition: all 0.4s ease;
 }
 
-.popUp .menu > div > div {
+/*.popUp .menu > div > div {
   text-align: center;
   max-width: 90vw;
   max-height: 100vh;
   opacity: 0;
   transition: opacity 0.4s ease;
-}
+}*/
