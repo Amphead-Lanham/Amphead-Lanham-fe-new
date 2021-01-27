@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ContactForm from '../contact/ContactForm';
 import styles from './Header.css';
 
 const Header = () => {
@@ -29,7 +30,11 @@ const Header = () => {
           className={styles.hItem}>LANHAM AMPS</Link>
       </div>
       <div className={styles.mobileMenu}>
-        <input type="checkbox" className={styles.toggler}></input>
+        <input
+          type="checkbox"
+          className={styles.toggler}
+        >
+        </input>
         <div className={styles.hamburger}><div></div></div>
         <div className={styles.menu}>
           <div>

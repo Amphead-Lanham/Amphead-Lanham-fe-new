@@ -14,6 +14,8 @@ import Lanham from '../lanham/Lanham';
 import UpdateAnnouncement from '../admin/UpdateAnnouncement';
 import AdminPage from '../admin/AdminPage';
 import DetailPage from '../amphead/DetailPage';
+import Models from '../lanham/models';
+import ContactForm from '../contact/ContactForm';
 
 
 export default function App() {
@@ -32,8 +34,22 @@ export default function App() {
               component={DetailPage}
             />
             <Route
+              exact path="/contact/:side"
+              component={ContactForm}
+            />
+            {/* <Route
+              exact path="/contact/Lanham"
+              render={(props) => (
+                <ContactForm {...props} side={'lanham'} />
+              )}
+            /> */}
+            <Route
               exact path="/lanham"
               component={Lanham}
+            />
+            <Route
+              exact path="/lanham/models"
+              component={Models}
             />
             {/* disabled 'signup' route for security
             <Route
