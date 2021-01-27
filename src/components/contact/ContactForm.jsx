@@ -9,19 +9,20 @@ const ContactForm = ({ side }) => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const history = useHistory();
-  
+  const flag = `this message was sent from the ${side} contact form.`;
 
   const handleSubmit = e => {
     e.preventDefault();
     sendMessage({
       name,
       email,
-      message
+      message,
+      flag
     });
     setName('');
     setEmail('');
     setMessage('');
-    
+  
     (side === 'amphead')
       ? history.push('/')
       : history.push('/lanham');
@@ -69,7 +70,7 @@ const ContactForm = ({ side }) => {
           name={'message'}
           value={message}
           placeholder={'message required'}
-          className={styles.contactEl}
+          className={styles.messageEl}
           onChange={handleChange}
         />
         <button className={styles.contactButton} >submit</button>

@@ -15,6 +15,7 @@ const UpdateAnnouncement = () => {
 
   useEffect(() => {
     dispatch(fetchAnnouncement(id));
+    
   }, []);
 
   const [side, setSide] = useState('');

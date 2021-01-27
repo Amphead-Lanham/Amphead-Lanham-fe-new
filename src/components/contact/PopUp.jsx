@@ -8,12 +8,12 @@ const PopUp = ({ side }) => {
     <div>
       <div className={styles.popUp}>
         <label
-          htmlFor="checkbox"
+          htmlFor={'checkbox'}
           className={styles.formLabel}
-        >Form</label>
+        >Contact Form</label>
         <input
-          type="checkbox"
-          id="checkbox"
+          type={'checkbox'}
+          id={'checkbox'}
           className={styles.toggle}
         ></input>        
         <div className={styles.contain}><div></div></div>
