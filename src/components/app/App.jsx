@@ -14,7 +14,7 @@ import Lanham from '../lanham/Lanham';
 import UpdateAnnouncement from '../admin/UpdateAnnouncement';
 import AdminPage from '../admin/AdminPage';
 import DetailPage from '../amphead/DetailPage';
-import Models from '../lanham/models';
+import Models from '../lanham/Models';
 import ContactForm from '../contact/ContactForm';
 
 
