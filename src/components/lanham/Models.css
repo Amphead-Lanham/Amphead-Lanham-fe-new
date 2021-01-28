@@ -1,16 +1,83 @@
-.model > img, h3 {
-  width: 40vw;
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --medium-green: rgb(0, 100, 102);
+  --medium-green-alpha: rgba(0, 100, 102, 0.85);
+  --white: rgb(238, 241, 239);
+  --white-alpha: rgba(238, 241, 239, 0.70);
+  --dark-green: rgb(2, 60, 61);
+  --light-green: rgb(2, 147, 150);
+  --light-green-alpha: rgba(2, 147, 150, 80);
+  --brown: #38322d;
+  
+}
+
+.modelPage {
+  min-width: 100vw;
+  max-width: 100vw;
+  min-height: 100vh;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-image: url('https://i.imgur.com/V27d5GX.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1em 0 1em 5em;
+  background-color: var(--brown);
+
+  h1, h3 {
+    color: var(--white);
+    font-family: 'roboto';
+    text-shadow: black 1px 1px 2px;
+    margin: 5px;
+  }
+}
+
+.model > div > img, h3 {
+  width: 60vw;
   list-style: none;
 }
 
 .model {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   list-style: none;
+  margin: 5em 0 5em 2em;
+  padding: 3em;
+  width: 80vw;
+  border: var(--brown) outset 8px;
+  border-radius: 10px;
+  background-color: var(--white-alpha);
+
+  img {
+    border: var(--brown) inset 10px;
+    border-radius: 10px;
+    box-shadow: black 5px 5px 8px;
+    
+  }
 }
 
 .modelName {
   font-family: 'Goldman';
+  color: var(--brown);
+  text-shadow: black 1px 1px 1px;
+  margin: 0 0 1.5em -2em;
+  font-size: 2.5em;
 }
 
 .pitch {
   font-family: 'roboto';
+  margin: 1em 0 0 0;
 }

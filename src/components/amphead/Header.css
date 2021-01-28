@@ -162,9 +162,11 @@
 
 .mobileMenu .menu > div {
   background: var(--medium-green-alpha);
-  border-radius: 60%;
-  width: 200vw;
-  height: 200vh;
+  border: var(--light-green) solid 2px;
+  box-shadow: black 2px 2px 5px;
+  border-radius: 40px;
+  width: 75vw;
+  height: 75vh;
   display: flex;
   align-items: center;
   justify-content: center;

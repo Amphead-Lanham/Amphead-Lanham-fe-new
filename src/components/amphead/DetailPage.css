@@ -93,27 +93,27 @@
 
 
 .service {
-  background-image: url('../../../public/assets/work-bench.jpeg');
+  background-image: url('https://i.imgur.com/SlfEo5l.jpg');
   
 }
 
 .guitar {
-  background-image: url('../../../public/assets/guitar-closeup.jpeg');
+  background-image: url('https://i.imgur.com/mgtsDvm.jpg');
   
 }
 
 .overhaul {
-  background-image: url('../../../public/assets/mullard-tube.jpeg');
+  background-image: url('https://i.imgur.com/qnO5ZLc.jpg');
   
 }
 
 .modification {
-  background-image: url('../../../public/assets/wires.jpeg');
+  background-image: url('https://i.imgur.com/NMISyx9.jpg');
   
 }
 
 .restoration {
-  background-image: url('../../../public/assets/fender-shelf-2.jpeg');
+  background-image: url('https://i.imgur.com/jlqzh5B.jpg');
   
 }
 

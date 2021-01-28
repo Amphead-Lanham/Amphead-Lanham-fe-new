@@ -3,7 +3,7 @@ export const sections = [
   {
     name: 'service',
     header: 'Amplifier Maintenance and Repair',
-    photo: '/assets/work-bench.jpeg',
+    photo: 'https://i.imgur.com/8WK1xSP.jpg',
     blurb: 'Service bench cost is $90 per hour. The schedule varies with the workload with most jobs completed within a week. Let us know your situation, we can usually accommodate. Rush service, when available, is $50.',
     info: 'Amphead maintains an extensive stock of the best quality amp parts to get repairs done right and turned around quickly. We stock the best current production tubes: JJ Electronic, Sovtek, Tung Sol and others. When we perform a retube at Amphead,  the preamp tubes are selected by ear for each position as it performs in your amp. Output tubes are biased using both current draw and crossover distortion methods. Lets talk about your sound and get your amp set up right.  New tubes are burned in to eliminate factory defects and assure reliability.  Tubes purchased and installed at Amphead are guaranteed for 3 months.',
     listInfo: [],
@@ -12,7 +12,7 @@ export const sections = [
   {
     name: 'guitar',
     header: 'Guitar Service',
-    photo: '/assets/guitar-closeup.jpeg',
+    photo: 'https://i.imgur.com/mgtsDvm.jpg',
     blurb:'Amphead has always provided quality guitar service. Set up, wiring and repair.',
     info: 'Ampead has always provided quality guitar service. Set up, wiring and repair. Amphead stocks new tuning machines, knobs, replacement bridges and bridge parts, strap pegs and strap locks, and all the best quality electronic parts; controls, jacks, switches and capacitors.',
     listInfo: [],

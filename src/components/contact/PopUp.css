@@ -27,7 +27,7 @@
 .popUp {
   position: relative;
   
-  z-index: 1;
+  z-index: 2;
 }
 
 .popUp .toggle {
@@ -46,7 +46,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 0;
+  z-index: 2;
   width: 50px;
   height: 50px;
   padding: 1rem;
@@ -89,6 +89,7 @@
   background: var(--medium-green-alpha);
   border: solid var(--light-green) 2px;
   border-radius: 20px;
+  box-shadow: black 2px 2px 5px;
   width: 50vw;
   height: 50vh;
   display: flex;

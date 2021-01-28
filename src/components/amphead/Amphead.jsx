@@ -6,9 +6,6 @@ import Header from './Header';
 import TabletBar from '../between-bars/TabletBar';
 import PhoneBar from '../between-bars/PhoneBar';
 import Section from './Section';
-import ContactForm from '../contact/ContactForm';
-
-
 
 
 const Amphead = () => {
@@ -46,13 +43,6 @@ const Amphead = () => {
           <PhoneBar section={'Tube Amp Restoration'} />
           <Section sectionName={'restoration'} />
         </div>
-        <div className={styles.modification}>
-          <BetweenBar section={'Tube Amp Modification'} />
-          <TabletBar section={'Tube Amp Modification'} />
-          <PhoneBar section={'Tube Amp Modification'} />
-          <Section sectionName={'modification'} />
-        </div>
-     
       </div>
     </>
   );
