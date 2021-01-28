@@ -1,15 +1,21 @@
-import React from 'react';
+import React, { useLayoutEffect } from 'react';
 import Header from './HeaderLanham';
 import LandingPage from './LandingPage';
 import FeaturesSection from './FeaturesSection';
 import ModelsSplashElement from './ModelsSplashElement';
+import AboutSection from './AboutSection';
 import styles from './Lanham.css';
 
 
 
 const Lanham = () => {
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   return (
-    <div>
+    <div className={styles.lanhamBox} >
       <div className={styles.bigBox} >
         <Header className={styles.header} />
         <LandingPage className={styles.landingPage} />
@@ -19,7 +25,7 @@ const Lanham = () => {
         <FeaturesSection className={styles.features} />
       </div>
       <div className={styles.thirdBox}>
-        <ModelsSplashElement />
+        <AboutSection />
       </div>
     </div>
   );

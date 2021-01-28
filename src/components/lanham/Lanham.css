@@ -14,6 +14,10 @@
   
 }
 
+.lanhamBox {
+  background-color: var(--brown);
+}
+
 .bigBox {
   display: flex;
   flex-direction: column;
@@ -41,11 +45,12 @@
   height: 100%;
   width: 100vw;
   position: relative;
-  padding-top: .01em;
+  padding-top: 1em;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  
   
   transform: translateZ(1px) scale(1.07);
 }
@@ -56,7 +61,8 @@
   height: 100%;
   width: 100vw;
   position: relative;
-  padding-top: .01em;
+  padding-top: 1vh;
+  padding-bottom: 40vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

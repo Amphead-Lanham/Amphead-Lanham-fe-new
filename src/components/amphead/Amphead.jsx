@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useLayoutEffect } from 'react';
 import News from './News';
 import BetweenBar from '../between-bars/BetweenBar';
 import styles from './Amphead.css';
@@ -9,6 +9,10 @@ import Section from './Section';
 
 
 const Amphead = () => {
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
   
   return (
     <>

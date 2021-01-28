@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import React, { useEffect } from 'react';
+import React, { useLayoutEffect } from 'react';
 import { models } from '../../data/models';
 import { useInView } from 'react-intersection-observer';
 import ModelItem from './ModelItem';
@@ -7,6 +7,10 @@ import styles from './Models.css';
 import { Link } from 'react-router-dom';
 
 const Models = () => {
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
 
   const [ref, inView] = useInView({
     triggerOnce: true,
