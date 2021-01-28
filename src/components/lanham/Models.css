@@ -10,7 +10,8 @@
   --dark-green: rgb(2, 60, 61);
   --light-green: rgb(2, 147, 150);
   --light-green-alpha: rgba(2, 147, 150, 80);
-  --brown: #38322d;
+  --brown: rgb(56, 50, 45);
+  --brown-alpha: rgba(56, 50, 45, 80);
   
 }
 
@@ -44,7 +45,7 @@
 }
 
 .model > div > img, h3 {
-  width: 60vw;
+  width: 40vw;
   list-style: none;
 }
 
@@ -54,19 +55,28 @@
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  margin: 5em 0 5em 2em;
+  margin: 4em 0 0em 3em;
   padding: 3em;
   width: 80vw;
   border: var(--brown) outset 8px;
   border-radius: 10px;
   background-color: var(--white-alpha);
 
+  animation: grow ease 1s;
+
   img {
     border: var(--brown) inset 10px;
     border-radius: 10px;
     box-shadow: black 5px 5px 8px;
+    width: 60vw;
+
     
+
   }
+}
+
+.modelPagePic {
+  animation: grow ease 1.5s;
 }
 
 .modelName {
@@ -80,4 +90,24 @@
 .pitch {
   font-family: 'roboto';
   margin: 1em 0 0 0;
+}
+
+.button {
+  color: var(--brown);
+  background-color: var(--white);
+  margin-left: 10vw;
+  border: var(--brown) solid 2px;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+@keyframes grow {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }

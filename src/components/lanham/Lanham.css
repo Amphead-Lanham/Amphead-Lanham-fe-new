@@ -18,6 +18,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100vw;
+  z-index: 1;
+  margin-bottom: 2.5em;
   /*background-image: url('https://stagecraftgear.com/wp-content/uploads/2015/10/mojotone-black-and-tan-grill-cloth-6302020.jpg');*/
  /* background-image: url('../../../public/assets/lanhamLineUp-cropped.jpeg');
   height: 100%;
@@ -33,18 +36,34 @@
 }
 
 .secondBox {
+  z-index: 0;
   background-image: url('../../../public/assets/lanhamLineUp-cropped.jpeg');
   height: 100%;
+  width: 100vw;
   position: relative;
-  padding-top: 50px;
+  padding-top: .01em;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   
-  transform: translateZ(1px) scale(1.1);
+  transform: translateZ(1px) scale(1.07);
 }
 
+.thirdBox {
+  z-index: 0;
+  background-image: url('https://i.imgur.com/qWroiOk.jpg');
+  height: 100%;
+  width: 100vw;
+  position: relative;
+  padding-top: .01em;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  transform: translateZ(1px) scale(1.07);
+}
 .header {
   position: fixed;
 }

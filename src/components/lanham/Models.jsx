@@ -2,27 +2,22 @@
 import React, { useEffect } from 'react';
 import { models } from '../../data/models';
 import { useInView } from 'react-intersection-observer';
+import ModelItem from './ModelItem';
 import styles from './Models.css';
+import { Link } from 'react-router-dom';
 
 const Models = () => {
 
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold: .3,
+    threshold: .5,
   });
 
   const modelElements = models.map(model => (
     <li className={styles.model}
       key={model.name}
     >
-      <div>
-        <h1
-          className={styles.modelName}>
-          {model.name}
-        </h1>
-        <img src={model.photoUrl} alt={model.name}/>
-        <h3 className={styles.pitch} >{model.quickPitch}</h3>
-      </div>
+      <ModelItem {...model} />
     </li>
   )
   
@@ -45,6 +40,11 @@ const Models = () => {
           {modelElements}
         </ul>
       </div>
+      <Link to={'/lanham'}>
+        <button className={styles.button}>
+          Home
+        </button>
+      </Link>
     </div>
   );
 };

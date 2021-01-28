@@ -14,18 +14,23 @@
   
 }
 
-.featureList {
+.featureBox {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
   background-color: var(--white);
   padding: 3vh 4vw 3vh 4vw;
+  margin-bottom: 4.05em;
   border-bottom: solid var(--dark-green) 7px;
   border-top: solid var(--dark-green) 7px;
-  max-height: 30vh;
+  height: 30vh;
   width: 100vw;
   overflow: hidden;
+}
+
+.featureList {
+  animation: featureFade ease 3s;
 }
 
 .feature {
@@ -33,7 +38,7 @@
   color: var(--brown);
   font-family: 'roboto';
   
-  animation: featureFade ease 6s;
+  
   
  
 }
@@ -49,12 +54,12 @@
   color: var(--brown);
   z-index: 1;
   max-width: 35vw;
-  animation: fadeIn ease 4s;
+  animation: featureFade ease 2s;
 }
 
 @keyframes featureFade {
-  0% {margin-bottom: 20vh; opacity: 0}
-  100% {margin-bottom: 0; opacity: 1}
+  0% {transform: scale(0); opacity: 0}
+  100% {transform: scale(1); opacity: 1}
   
 }
 
