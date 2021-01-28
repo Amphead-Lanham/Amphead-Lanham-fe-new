@@ -17,8 +17,9 @@ const Lanham = () => {
       <div className={styles.secondBox}>
         <ModelsSplashElement className={styles.modelSplash} />
         <FeaturesSection className={styles.features} />
-       
-        
+      </div>
+      <div className={styles.thirdBox}>
+        <ModelsSplashElement />
       </div>
     </div>
   );

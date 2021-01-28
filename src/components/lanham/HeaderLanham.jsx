@@ -8,7 +8,7 @@ const Header = () => {
     <div className={styles.headerBox} >
       <div className={styles.desktopMenu}>
         <Link
-          to={'/detail/overhaul'}
+          to={'/lanham/models'}
           className={styles.hItem} >models</Link>
         <Link
           to={'/detail/restoration'}

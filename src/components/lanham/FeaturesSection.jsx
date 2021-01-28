@@ -1,8 +1,14 @@
 import React from 'react';
 import { features } from '../../data/amp-features.js';
+import { useInView } from 'react-intersection-observer';
 import styles from './FeaturesSection.css';
 
 const FeaturesSection = () => {
+
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: .3,
+  });
 
   const featuresItems = features.map((item, index) => (
     <li  className={styles.feature} key={item[index]} >
@@ -11,11 +17,24 @@ const FeaturesSection = () => {
   ));
 
   return (
-    <div className={styles.featureList} >
-      <ul >
+    <div
+      className={inView ? styles.featureBox : null}
+      ref={ref}
+      style={{
+        transition: 'ease-in',
+        visibility: inView ? 'visible' : 'hidden'
+      }}>
+      <ul className={inView ? styles.featureList : null}
+        ref={ref}
+      >
         {featuresItems}
       </ul>
-      <h1 className={styles.promise} >Our Promise is Guaranteed Quality</h1>
+      <h1
+        className={inView ? styles.promise : null}
+        ref={ref}
+      >
+        Our Promise is Guaranteed Quality
+      </h1>
     </div>
   );
 };
