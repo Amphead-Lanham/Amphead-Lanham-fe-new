@@ -2,6 +2,7 @@ import React from 'react';
 import {  useInView } from 'react-intersection-observer';
 import PropTypes from 'prop-types';
 import styles from './Models.css';
+import { Link } from 'react-router-dom';
 
 const ModelItem = ({ name, photoUrl, quickPitch }) => {
 
@@ -21,10 +22,15 @@ const ModelItem = ({ name, photoUrl, quickPitch }) => {
       }}
     >
       <div>
-        <h1
-          className={styles.modelName}>
-          {name}
-        </h1>
+        <Link
+          to={`/lanham/model/${name}`}
+          className={styles.link}
+        >
+          <h1
+            className={styles.modelName}>
+            {name}
+          </h1>
+        </Link>
         <img
           src={photoUrl}
           alt={name}

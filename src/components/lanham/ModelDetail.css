@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --medium-green: rgb(0, 100, 102);
+  --medium-green-alpha: rgba(0, 100, 102, 0.85);
+  --medium-green-super-alpha: rgba(0, 100, 102, .85);
+  --white: rgb(238, 241, 239);
+  --white-alpha: rgba(238, 241, 239, 0.70);
+  --dark-green: rgb(2, 60, 61);
+  --light-green: rgb(2, 147, 150);
+  --light-green-alpha: rgba(2, 147, 150, 80);
+  --light-green-super-alpha: rgba(2, 147, 150, .80);
+  --brown: rgb(56, 50, 45);
+  --brown-alpha: rgba(56, 50, 45, .80);
+  
+}
+
+.mainPic {
+  width: 50vw;
+}
+
+.otherPics {
+  width: 30vw;
+}
+
+.dragonSlayer, .phoenix, .pacificReverb, .JLT45 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  
+
+  h1 {
+    font-family: 'Goldman';
+    color: var(--white);
+  }
+
+  h3 {
+    background-color: var(--brown);
+    font-family: 'roboto';
+    color: var(--white);
+  }
+}
+
+.figBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  
+  h3 {
+    border: var(--white) solid 4px;
+    border-radius: 4px;
+    box-shadow: black 3px 3px 4px;
+    padding: 1em;
+    text-align: center;
+    margin: 1em;
+  }
+
+  img {
+    margin: 1em;
+    border: var(--white) solid 4px;
+    border-radius: 8px;
+    box-shadow: black 3px 3px 4px;
+  }
+
+}
+
+.listBox {
+  border: var(--white) solid 4px;
+  border-radius: 4px;
+  box-shadow: black 3px 3px 4px;
+  padding: 1em 1em 1em 2em;
+  margin: 1em;
+  background-color: var(--brown);
+  font-family: 'roboto';
+  color: var(--white);
+  
+
+}
+
+.picBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  img {
+    margin: 2em;
+    border: var(--white) solid 4px;
+    border-radius: 8px;
+    box-shadow: black 3px 3px 4px;
+    background-color: var(--brown);
+   
+  }
+}
+
+.buttonBox {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+
+  .link {
+    margin: 0 10px 0 10px;
+  }
+
+  button {
+    background: var(--brown);
+    color: var(--white);
+    font-family: 'roboto';
+    border: solid var(--white) 2px;
+    border-radius: 4px;
+    padding: 4px;
+    cursor: pointer;
+    box-shadow: black 3px 3px 4px;
+  }
+}
+
+
+
+.dragonSlayer {
+  background: url('https://i.imgur.com/xtGPSL3.jpg') var(--medium-green-super-alpha); 
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: contain;
+  
+}
+
+.phoenix {
+  background: url('https://i.imgur.com/TrILlAD.jpg') var(--medium-green-super-alpha);
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: contain;
+}
+
+.pacificReverb {
+  background: url('https://i.imgur.com/AkDAXso.jpg') var(--medium-green-super-alpha);
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: contain;
+}
+
+.JLT45 {
+  background: url('https://i.imgur.com/uAXh0xl.jpg') var(--medium-green-super-alpha);
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: contain;
+}

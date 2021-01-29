@@ -16,6 +16,7 @@ import AdminPage from '../admin/AdminPage';
 import DetailPage from '../amphead/DetailPage';
 import Models from '../lanham/Models';
 import ContactForm from '../contact/ContactForm';
+import ModelDetail from '../lanham/ModelDetail';
 
 
 export default function App() {
@@ -50,6 +51,10 @@ export default function App() {
             <Route
               exact path="/lanham/models"
               component={Models}
+            />
+            <Route
+              exact path="/lanham/model/:model"
+              component={ModelDetail}
             />
             {/* disabled 'signup' route for security
             <Route

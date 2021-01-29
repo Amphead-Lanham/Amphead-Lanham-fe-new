@@ -26,7 +26,7 @@
   border: solid var(--white) 3px;
   box-shadow: black 5px 5px 10px;
 
-  > h1 {
+  .link > h1 {
     animation: fadeOut ease infinite 7s;
   }  
   
@@ -53,9 +53,13 @@
 
 .displayModel {
   font-family: 'Goldman';
-  text-shadow: var(--dark-green) 2px 2px;
+  text-shadow: black 3px 3px 3px;
   color: var(--white);
   margin-left: 2em;
+}
+
+.link {
+  text-decoration: none;
 }
 
 .displayModel:hover {
