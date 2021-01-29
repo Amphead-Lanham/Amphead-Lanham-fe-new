@@ -73,6 +73,10 @@
     
 
   }
+
+  h3 {
+    
+  }
 }
 
 .modelPagePic {
@@ -93,7 +97,11 @@
 
 .pitch {
   font-family: 'roboto';
-  margin: 1em 0 0 0;
+  margin: 1em 0 0 4em;
+  text-decoration: none;
+  color: var(--brown);
+  font-size: x-large;
+  text-align: center;
 }
 
 .button {

@@ -115,6 +115,11 @@
     padding: 4px;
     cursor: pointer;
     box-shadow: black 3px 3px 4px;
+    transition: ease 1s;
+  }
+
+  button:hover {
+    transform: scale(1.25);
   }
 }
 

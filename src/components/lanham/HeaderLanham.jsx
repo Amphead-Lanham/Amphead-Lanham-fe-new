@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PopUp from '../contact/PopUp';
 import styles from './HeaderLanham.css';
 
 const Header = () => {
@@ -16,9 +17,7 @@ const Header = () => {
         <Link
           to={'/detail/modification'}
           className={styles.hItem}>gallery</Link>
-        <Link
-          to={'/gallery'}
-          className={styles.hItem}>contact</Link>
+        <PopUp side={'lanham'} />
         <Link
           to={'/'}
           className={styles.hItem}>AMPHEAD</Link>
