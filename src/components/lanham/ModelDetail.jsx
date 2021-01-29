@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './ModelDetail.css';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { models } from '../../data/models';
 
 const ModelDetail = () => {
@@ -24,19 +24,29 @@ const ModelDetail = () => {
   ));
 
   return (
-    <div className={styles[model]}>
+    <div className={styles[namedModel.modelStyleCode]}>
       <h1>{namedModel.name}</h1>
-      <img
-        src={namedModel.displayPhoto}
-        alt={namedModel.name}
-        className={styles.mainPic}/>
-      <h3>{namedModel.description}</h3>
-      <ul>
+      <div className={styles.figBox}>
+        <img
+          src={namedModel.displayPhoto}
+          alt={namedModel.name}
+          className={styles.mainPic}/>
+        <h3>{namedModel.description}</h3>
+      </div>
+      <ul className={styles.listBox} >
         {listItems}
       </ul>
-      <ul>
+      <ul className={styles.picBox} >
         {pictures}
       </ul>
+      <div className={styles.buttonBox}>
+        <Link to={'/lanham'} className={styles.link}>
+          <button>Lanham Home</button>
+        </Link>
+        <Link to={'/lanham/models'} className={styles.link}>
+          <button>Models Home</button>
+        </Link>
+      </div>
     </div>
   );
 };

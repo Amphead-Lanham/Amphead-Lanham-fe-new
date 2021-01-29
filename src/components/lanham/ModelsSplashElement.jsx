@@ -18,7 +18,16 @@ const modelsSplashElement = () => {
     <div  className={styles.modelBox}>
         
       <div className={styles[displayModel.modelStyleCode]} >
-        <h1 className={styles.displayModel} >{displayModel.name}</h1>
+        <Link
+          to={`/lanham/model/${displayModel.name}`}
+          className={styles.link}
+        >
+          <h1
+            className={styles.displayModel} 
+          >
+            {displayModel.name}
+          </h1>
+        </Link>
         <div className={styles.imageBox} >
           <Link to={'/lanham/models'}>
             <img
