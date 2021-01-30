@@ -45,7 +45,8 @@
 }
 
 .topBox {
-  border:rgb(0, 100, 102) solid 7px;
+  border-top: var(--medium-green) solid 7px;
+  border-bottom: var(--medium-green) solid 7px;
   display: flex;
   justify-content: space-between;
   padding: 40px 0 20px 0;
@@ -72,7 +73,7 @@
   overflow: visible;
   padding: 3em;
   background-color: var(--medium-green-alpha);
-  border: var(--light-green) solid 2px;
+  border: var(--light-green) solid 2px; 
   border-radius: 7px;
   list-style: none;
   text-align: center;

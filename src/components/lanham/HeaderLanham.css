@@ -66,11 +66,7 @@
   color: var(--light-green);
 }
 
-.lanhamPop {
-  @media screen and (max-width: 780px) {
-    display: block;
-  }
-}
+
 
 .mobileMenu {
   @media screen and (min-width: 780px) {

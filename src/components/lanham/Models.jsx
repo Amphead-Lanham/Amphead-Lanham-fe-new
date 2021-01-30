@@ -31,8 +31,8 @@ const Models = () => {
   return (
     <div className={styles.modelPage}>
       <div className={styles.banner}>
-        <h1>all of our amps are custom built</h1>
-        <h3>and available in a wide variety of finishes and wraps. just ask!</h3>
+        <h1>All of our Amps are Custom Built</h1>
+        <h3>Select a model, then chose function, voicing and finish options to create a unique instrument for your style and sound.</h3>
       </div>
       <div>
         <ul className={inView ? styles.list : null}
