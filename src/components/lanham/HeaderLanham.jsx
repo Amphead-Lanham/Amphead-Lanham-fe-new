@@ -10,19 +10,27 @@ const Header = () => {
       <div className={styles.desktopMenu}>
         <Link
           to={'/lanham/models'}
-          className={styles.hItem} >models</Link>
-        <Link
-          to={'/detail/restoration'}
-          className={styles.hItem}>about</Link>
+          className={styles.hItem}
+        >models
+        </Link>
+        <div
+          onClick={() => window.location.replace('/lanham#about-section')}
+          className={styles.hItem}
+        >about
+        </div>
         <Link
           to={'/detail/modification'}
-          className={styles.hItem}>gallery</Link>
-        <div className={styles.hItem}>
+          className={styles.hItem}
+        >gallery
+        </Link>
+        <div
+          className={styles.hItem}>
           <PopUp side={'lanham'} />
         </div>
         <Link
           to={'/'}
-          className={styles.hItem}>AMPHEAD</Link>
+          className={styles.hItem}>AMPHEAD
+        </Link>
       </div>
       <div className={styles.mobileMenu}>
         <input type="checkbox" className={styles.toggler}></input>
@@ -58,7 +66,10 @@ const Header = () => {
                 </li>
                 <li>
                   <div  className={styles.lanhamPop} >
-                    <PopUp side={'lanham'} className={styles.lanhamPop} style={{ display: 'block' }}/>
+                    <PopUp
+                      side={'lanham'}
+                      className={styles.lanhamPop}
+                    />
                   </div>
                 </li>
                 <li>

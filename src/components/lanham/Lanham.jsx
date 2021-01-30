@@ -24,7 +24,7 @@ const Lanham = () => {
         <ModelsSplashElement className={styles.modelSplash} />
         <FeaturesSection className={styles.features} />
       </div>
-      <div className={styles.thirdBox}>
+      <div className={styles.thirdBox} id={'about-section'}>
         <AboutSection />
       </div>
     </div>
