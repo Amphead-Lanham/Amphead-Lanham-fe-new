@@ -17,7 +17,9 @@ const Header = () => {
         <Link
           to={'/detail/modification'}
           className={styles.hItem}>gallery</Link>
-        <PopUp side={'lanham'} />
+        <div className={styles.hItem}>
+          <PopUp side={'lanham'} />
+        </div>
         <Link
           to={'/'}
           className={styles.hItem}>AMPHEAD</Link>
@@ -32,18 +34,19 @@ const Header = () => {
               
                 <li>
                   <Link
-                    to={'/detail/overhaul'}
+                    to={'/lanham/models'}
                     className={styles.link}
                     style={{ textDecoration:'none' }}>
                       models
                   </Link>
                 </li>
-                <li><Link
-                  to={'/detail/restoration'}
-                  className={styles.link}
-                  style={{ textDecoration:'none' }}>
+                <li>
+                  <Link
+                    to={'/detail/restoration'}
+                    className={styles.link}
+                    style={{ textDecoration:'none' }}>
                       about
-                </Link>
+                  </Link>
                 </li>
                 <li>
                   <Link
@@ -54,12 +57,9 @@ const Header = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    to={'/gallery'}
-                    className={styles.link}
-                    style={{ textDecoration:'none' }}>
-                       contact
-                  </Link>
+                  <div  className={styles.lanhamPop} >
+                    <PopUp side={'lanham'} className={styles.lanhamPop} style={{ display: 'block' }}/>
+                  </div>
                 </li>
                 <li>
                   <Link

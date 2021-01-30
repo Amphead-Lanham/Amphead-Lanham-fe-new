@@ -35,8 +35,8 @@
   box-shadow: black 4px 4px 10px;
   width: 45vw;
 
-  @media screen and (max-width: 412px) {
-    max-width: 80vw;
+  @media screen and (max-width: 414px) {
+    width: 80vw;
   }
 }
 

@@ -35,7 +35,6 @@
   color: var(--light-green);
 }
 
-
 .popUp {
   position: relative;
   z-index: 2;
@@ -102,7 +101,7 @@
   background: var(--medium-green-alpha);
   border: solid var(--light-green) 2px;
   border-radius: 20px;
-  box-shadow: black 2px 2px 5px;
+  box-shadow: inset black 2px 2px 5px 1px;
   width: 50vw;
   height: 50vh;
   display: flex;

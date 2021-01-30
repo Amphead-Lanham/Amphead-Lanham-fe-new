@@ -43,6 +43,11 @@
     font-family: 'roboto';
     color: var(--white);
   }
+
+  @media screen and (max-width: 780px) {
+    min-height: 100vh;
+    
+  }
 }
 
 .figBox {
@@ -130,6 +135,8 @@
   background-blend-mode: overlay;
   background-position: center;
   background-size: contain;
+
+  
   
 }
 
@@ -145,6 +152,8 @@
   background-blend-mode: overlay;
   background-position: center;
   background-size: contain;
+
+  
 }
 
 .JLT45 {

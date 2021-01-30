@@ -21,16 +21,39 @@
   justify-content: space-around;
   background-color: var(--white);
   padding: 3vh 4vw 3vh 4vw;
-  margin-bottom: 4.4em;
+  margin-bottom: 10.5vh;
   border-bottom: solid var(--dark-green) 7px;
   border-top: solid var(--dark-green) 7px;
   height: 30vh;
   width: 100vw;
   overflow: hidden;
+
+  @media screen and (max-width: 780px){
+    padding-right: 10vw;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 414px) {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+  }
 }
 
 .featureList {
   animation: featureFade ease 3s;
+
+  @media screen and (max-width: 780px) {
+    max-width: 50vw;
+  }
+
+  @media screen and (max-width: 414px) {
+    max-width: 70vw;
+    text-align: center;
+    list-style: none;
+
+  }
 }
 
 .feature {
@@ -38,8 +61,10 @@
   color: var(--brown);
   font-family: 'roboto';
   
-  
-  
+  @media screen and (max-width: 414px) {
+    margin:  2em 1em 0 0;
+    
+  }
  
 }
 
@@ -55,6 +80,14 @@
   z-index: 1;
   max-width: 35vw;
   animation: featureFade ease 2s;
+
+  @media screen and (max-width: 780px) {
+    max-width: 25vw;
+  }
+
+  @media screen and (max-width: 414px) {
+    margin: 50px 135px 20px 0;
+  }
 }
 
 @keyframes featureFade {

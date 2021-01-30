@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useLayoutEffect } from 'react';
 import styles from './ModelDetail.css';
 import { Link, useParams } from 'react-router-dom';
 import { models } from '../../data/models';
 
 const ModelDetail = () => {
+  
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   const { model } = useParams();
   const namedModel = models.find(amp => (amp.name === model));
  
