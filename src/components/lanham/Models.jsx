@@ -32,7 +32,7 @@ const Models = () => {
     <div className={styles.modelPage}>
       <div className={styles.banner}>
         <h1>all of our amps are custom built</h1>
-        <h3>And available in a wide variety of finishes and wraps. Just ask!</h3>
+        <h3>and available in a wide variety of finishes and wraps. just ask!</h3>
       </div>
       <div>
         <ul className={inView ? styles.list : null}

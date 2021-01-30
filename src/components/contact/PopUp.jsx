@@ -9,8 +9,8 @@ const PopUp = ({ side }) => {
       <div className={styles.popUp}>
         <label
           htmlFor={'checkbox'}
-          className={styles.formLabel}
-        >Contact Form</label>
+          className={styles[`formLabel${side}`]}
+        >contact form</label>
         <input
           type={'checkbox'}
           id={'checkbox'}

@@ -26,6 +26,10 @@
   background-position: center;
   background-size: 100%;
   background-attachment: fixed;
+
+  @media screen and (max-width: 780px) {
+    background-size: cover;
+  }
 }
 
 .banner {
@@ -52,7 +56,7 @@
 .model {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   list-style: none;
   margin: 4em 0 0em 3em;
@@ -64,15 +68,33 @@
 
   animation: grow ease 1s;
 
+  
+
   img {
     border: var(--brown) inset 10px;
     border-radius: 10px;
     box-shadow: black 5px 5px 8px;
-    width: 60vw;
-
+    width: 40vw;
     
 
+    @media screen and (max-width: 414px) {
+      width: 70vw;
+    }
+
   }
+
+  @media screen and (max-width: 780px) {
+    margin-right: 4em;
+  }
+
+  @media screen and (max-width: 414px) {
+   margin-right: 12em;
+   width: 90vw;
+   
+     
+   }
+
+  
 }
 
 .modelPagePic {
@@ -85,6 +107,14 @@
   text-shadow: black 1px 1px 1px;
   margin: 0 0 1.5em -2em;
   font-size: 2.5em;
+
+  @media screen and (max-width: 780px) {
+    margin: 0 0 1.5em -1em;
+  }
+
+  @media screen and (max-width: 414px) {
+    margin: 0 0 1em 0;
+  }
 }
 
 .link {
@@ -94,6 +124,10 @@
 .pitch {
   font-family: 'roboto';
   margin: 1em 0 0 0;
+  text-decoration: none;
+  color: var(--brown);
+  font-size: x-large;
+  text-align: center;
 }
 
 .button {

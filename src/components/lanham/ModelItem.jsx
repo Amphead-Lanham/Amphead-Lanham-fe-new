@@ -30,14 +30,14 @@ const ModelItem = ({ name, photoUrl, quickPitch }) => {
             className={styles.modelName}>
             {name}
           </h1>
+          <img
+            src={photoUrl}
+            alt={name}
+            className={inView ? styles.modelPagePic : null}
+            ref={ref}
+          />
+          <h3 className={styles.pitch} >{quickPitch}</h3>
         </Link>
-        <img
-          src={photoUrl}
-          alt={name}
-          className={inView ? styles.modelPagePic : null}
-          ref={ref}
-        />
-        <h3 className={styles.pitch} >{quickPitch}</h3>
       </div>
     </div>
    

@@ -14,7 +14,7 @@
   --menu-speed: 0.75s;
 }
 
-.formLabel {
+.formLabelamphead {
   position: relative;
   font-size: larger;
   cursor: pointer;
@@ -23,11 +23,23 @@
   animation: colorFade  ease infinite 4s;
 }
 
+.formLabellanham {
+  font-family: 'roboto';
+  color: var(--white);
+  cursor: pointer;
+  transition: 2s ease;
+  margin: 0 1em 0 1em;
+}
+
+.formLabellanham:hover {
+  color: var(--light-green);
+}
 
 .popUp {
   position: relative;
-  
   z-index: 2;
+  
+
 }
 
 .popUp .toggle {
@@ -89,7 +101,7 @@
   background: var(--medium-green-alpha);
   border: solid var(--light-green) 2px;
   border-radius: 20px;
-  box-shadow: black 2px 2px 5px;
+  box-shadow: inset black 2px 2px 5px 1px;
   width: 50vw;
   height: 50vh;
   display: flex;

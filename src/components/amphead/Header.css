@@ -163,7 +163,7 @@
 .mobileMenu .menu > div {
   background: var(--medium-green-alpha);
   border: var(--light-green) solid 2px;
-  box-shadow: black 2px 2px 5px;
+  box-shadow: inset black 2px 2px 5px 1px;
   border-radius: 40px;
   width: 75vw;
   height: 75vh;

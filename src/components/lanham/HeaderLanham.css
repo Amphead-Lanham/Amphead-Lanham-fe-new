@@ -24,6 +24,9 @@
   position: relative;
   z-index: 2;
 
+  @media screen and (max-width: 414px) {
+    height: 50px;
+  }
 }
 
 .desktopMenu {
@@ -40,6 +43,8 @@
   left: 0px;
   
   animation: fadeIn ease 7s;
+
+
   
 }
 
@@ -50,9 +55,9 @@
   font-family: 'roboto';
   transition: 2s ease;
   cursor: pointer;
-
+  
   @media screen and (max-width: 780px) {
-    display: none;
+    visibility: hidden;
   }
   
 }
@@ -61,9 +66,20 @@
   color: var(--light-green);
 }
 
+.lanhamPop {
+  @media screen and (max-width: 780px) {
+    display: block;
+  }
+}
+
 .mobileMenu {
   @media screen and (min-width: 780px) {
     display: none;
+  }
+
+  @media screen and (max-width: 780px) {
+    border: solid var(--white) 2px;
+    display: block;
   }
 }
 
@@ -97,8 +113,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: black solid 1px;
-  border-top: black solid 1px;
+  background: var(--dark-green);
+
+  @media screen and (max-width: 780px) {
+    border: solid var(--white) 1px;
+    border-radius: 2px;
+  }
 }
 
 .mobileMenu .hamburger > div {
@@ -172,9 +192,11 @@
 
 .mobileMenu .menu > div {
   background: var(--medium-green-alpha);
-  border-radius: 60%;
-  width: 200vw;
-  height: 200vh;
+  border: var(--light-green) solid 2px;
+  box-shadow: inset black 2px 2px 5px 1px;
+  border-radius: 40px;
+  width: 75vw;
+  height: 75vh;
   display: flex;
   align-items: center;
   justify-content: center;
