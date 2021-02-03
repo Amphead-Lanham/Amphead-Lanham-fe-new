@@ -20,7 +20,7 @@
   align-items: center;
   justify-content: space-around;
   background-color: var(--white);
-  padding: 3vh 4vw 3vh 4vw;
+  padding: 3vh 7vw 3vh 4vw;
   margin-bottom: 10.5vh;
   border-bottom: solid var(--dark-green) 7px;
   border-top: solid var(--dark-green) 7px;
@@ -43,7 +43,7 @@
 
 .featureList {
   animation: featureFade ease 3s;
-  list-style-type: circle;  
+  list-style-type: none;  
 
   @media screen and (max-width: 780px) {
     max-width: 50vw;
@@ -58,15 +58,22 @@
 }
 
 .feature {
+  display: flex;
   position: relative;
   color: var(--brown);
   font-family: 'roboto';
+  padding-left: 1rem;
+  text-indent: 0.4rem;
   
   @media screen and (max-width: 414px) {
     margin:  2em 1em 0 0;
     
   }
  
+}
+
+.feature::before {
+  content: '★ ';
 }
 
 .promise {

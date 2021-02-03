@@ -43,13 +43,13 @@ const ContactForm = ({ side }) => {
         className={styles.checkbox}
       ></input>
       <form
-        id={'contact-from'}
+        id={`contact-from${side}`}
         className={styles.contactForm}
         onSubmit={handleSubmit}
         method={'POST'}>
         <input
           type={'text'}
-          id={'name'}
+          id={`name${side}`}
           name={'name'}
           value={name}
           placeholder={'name required'}
@@ -58,7 +58,7 @@ const ContactForm = ({ side }) => {
         />
         <input
           type={'text'}
-          id={'email'}
+          id={`email${side}`}
           name={'email'}
           value={email}
           placeholder={'email required'}
@@ -66,7 +66,7 @@ const ContactForm = ({ side }) => {
           onChange={handleChange}
         />
         <textarea
-          id={'message'}
+          id={`message${side}`}
           name={'message'}
           value={message}
           placeholder={'message required'}

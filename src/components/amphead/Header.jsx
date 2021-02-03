@@ -23,7 +23,7 @@ const Header = () => {
           to={'/detail/modification'}
           className={styles.hItem}>modification</Link>
         <Link
-          to={'/gallery'}
+          to={'/gallery/amphead'}
           className={styles.hItem}>gallery</Link>
         <Link
           to={'/lanham'}
@@ -81,7 +81,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Link
-                    to={'/gallery'}
+                    to={'/gallery/amphead'}
                     className={styles.link}
                     style={{ textDecoration:'none' }}>
                        gallery
