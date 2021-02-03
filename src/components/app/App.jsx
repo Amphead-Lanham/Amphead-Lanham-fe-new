@@ -18,6 +18,7 @@ import Models from '../lanham/Models';
 import ContactForm from '../contact/ContactForm';
 import ModelDetail from '../lanham/ModelDetail';
 import GalleryB from '../gallery/GalleryB';
+import GalleryDetail from '../gallery/GalleryDetail';
 
 
 export default function App() {
@@ -42,6 +43,10 @@ export default function App() {
             <Route
               exact path="/gallery/:side"
               component={GalleryB}
+            />
+            <Route
+              exact path="/gallery/detail:imageUrl"
+              component={GalleryDetail}
             />
             {/* <Route
               exact path="/contact/Lanham"

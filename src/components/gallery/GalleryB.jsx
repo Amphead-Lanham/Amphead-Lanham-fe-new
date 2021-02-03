@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { figures } from '../../data/gallery-pictures';
 import styles from './GalleryB.css';
 
@@ -12,9 +12,16 @@ const GalleryB = () => {
   const galleryPics = figures.filter(figure => (
     figure.side === side) || (figure.side === 'both'));
 
-  const galleryElements = galleryPics.map(figure => (
+  const galleryElements = galleryPics.map((figure, index) => (
     <li key={figure.imageUrl} >
-      <img src={figure.imageUrl} alt={figure.name}/>
+      <Link
+        to={`/gallery/detail/${figure.imageUrl}`}  >
+        <img
+          src={figure.imageUrl}
+          alt={figure.name}
+          className={styles.galleryImage}
+        />
+      </Link>
       <h3>{figure.caption}</h3>
     </li>
   ));

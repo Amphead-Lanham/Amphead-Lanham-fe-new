@@ -51,7 +51,7 @@
   }
 
 
-  ul > li > img {
+  .galleryImage {
     max-width: 35vw;
     max-height: 40vh;
     border: solid var(--white) 2px;

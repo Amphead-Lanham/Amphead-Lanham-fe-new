@@ -33,6 +33,21 @@ export default function reducer(state = initialState, action) {
         ...state,
         announcement: action.payload
       };
+    case SET_IMAGE:
+      return {
+        ...state,
+        image: action.payload
+      };
+    case SET_IMAGES:
+      return {
+        ...state,
+        images: action.payload
+      };
+    case APPEND_IMAGE:
+      return {
+        ...state,
+        image: action.payload
+      };
     default:
       return state;
 
