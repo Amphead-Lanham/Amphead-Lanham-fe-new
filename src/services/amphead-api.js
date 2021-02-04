@@ -93,6 +93,7 @@ export const getImages = async() => {
 export const getImageById = async(id) => {
   const res = await fetch(`${imageUrl}/${id}`);
   const json = await res.json();
+  
   if(!res.ok) throw 'error, not retrieved';
 
   return {

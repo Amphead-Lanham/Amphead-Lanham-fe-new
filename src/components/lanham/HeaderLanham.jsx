@@ -19,7 +19,7 @@ const Header = () => {
         >about
         </div>
         <Link
-          to={'/detail/modification'}
+          to={'/gallery/lanham'}
           className={styles.hItem}
         >gallery
         </Link>
@@ -58,7 +58,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Link
-                    to={'/detail/modification'}
+                    to={'/gallery/lanham'}
                     className={styles.link}
                     style={{ textDecoration:'none' }}>
                        gallery

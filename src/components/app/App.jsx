@@ -45,15 +45,9 @@ export default function App() {
               component={GalleryB}
             />
             <Route
-              exact path="/gallery/detail:imageUrl"
+              exact path="/gallery/detail/:id"
               component={GalleryDetail}
             />
-            {/* <Route
-              exact path="/contact/Lanham"
-              render={(props) => (
-                <ContactForm {...props} side={'lanham'} />
-              )}
-            /> */}
             <Route
               exact path="/lanham"
               component={Lanham}

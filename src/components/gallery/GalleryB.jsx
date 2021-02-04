@@ -22,7 +22,7 @@ const GalleryB = () => {
     image.side === side) || (image.side === 'both')).map((image) => (
     <li key={image.imageUrl} >
       <Link
-        to={`/gallery/detail/${image.imageUrl}`}  >
+        to={`/gallery/detail/${image.id}`}  >
         <img
           src={image.imageUrl}
           alt={image.name}

@@ -4,12 +4,17 @@ import {
   SET_LOADING,
   APPEND_ANNOUNCEMENT,
 } from '../actions/announcementActions';
-import { APPEND_IMAGE, SET_IMAGE, SET_IMAGES } from '../actions/imageActions';
+import {
+  APPEND_IMAGE,
+  SET_IMAGE,
+  SET_IMAGES } from '../actions/imageActions';
 
 const initialState = {
   loading: true,
   announcements: [],
-  announcement: {}
+  announcement: {},
+  images: [],
+  image: {}
 };
 
 export default function reducer(state = initialState, action) {
