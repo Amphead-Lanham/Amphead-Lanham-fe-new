@@ -4,6 +4,7 @@ import {
   SET_LOADING,
   APPEND_ANNOUNCEMENT,
 } from '../actions/announcementActions';
+import { APPEND_IMAGE, SET_IMAGE, SET_IMAGES } from '../actions/imageActions';
 
 const initialState = {
   loading: true,

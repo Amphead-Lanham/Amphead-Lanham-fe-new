@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
+import { fetchImages } from '../../actions/imageActions';
 import { figures } from '../../data/gallery-pictures';
 import styles from './Gallery.css';
 
 const Gallery = () => {
+  const dispatch = useDispatch();
   const { side } = useParams();
+
+  useEffect(() => {
+    dispatch(fetchImages());
+    
+  }, []);
 
   const galleryPics = figures.filter(figure => (
     figure.side === side) || (figure.side === 'both'));

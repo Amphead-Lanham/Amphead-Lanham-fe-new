@@ -84,7 +84,7 @@ export const sendMessage = async(message) => {
 export const getImages = async() => {
   const res = await fetch(imageUrl);
   const json = await res.json();
-
+  
   if(!res.ok) throw 'error, not retrieved';
   
   return json;
