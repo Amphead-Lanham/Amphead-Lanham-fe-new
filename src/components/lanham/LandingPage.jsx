@@ -35,11 +35,14 @@ const LandingPage = () => {
             <h1 className={styles.headerB} >Hand Built in Portland, OR.</h1>
           </div>
         </div>
+        { announcements.filter(announcement => (
+          announcement.side === 'lanham')) &&
         <div className={styles.announcementBox}>
           <ul className={styles.announcementList}>
             {announcementElements}
           </ul>
         </div>
+        }
       </div>
     </div>
   );

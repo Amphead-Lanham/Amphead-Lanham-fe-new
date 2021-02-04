@@ -25,25 +25,48 @@
 }
 
 .galleryBoxamphead, .galleryBoxlanham, .galleryBoxboth {
+  position: relative;
+  
 
+  div {
+    display: flex;
+    align-items: center;
+    height: 7vh;
+    background: inherit;
+    border-bottom: solid var(--white) 2px;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+
+    .link {
+    text-decoration: none;
+    font-family: 'roboto';
+    color: var(--white);
+    margin-left: 2em;
+    }
+  }
   
   ul {
-    position: relative;
+    padding-top: 4em;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     list-style: none;
+    z-index: 0;
 
     
     li {
-     position: relative;
+     
      display: flex;
      flex-direction: column;
      align-items: center;
      justify-content: center;
      margin: 2vh 2vw 2vh 2vw;
+     z-index: 0;
+
+     animation: grow .75s;
    }
   }
 
@@ -72,6 +95,7 @@
 
   div {
     position: relative;
+    justify-content: center;
     display: inherit;
     background-color: var(--white-alpha);
     border: solid var(--white) 2px;
@@ -80,6 +104,7 @@
     max-height: 90vh;
     max-width: 90vw;
     padding: 4em;
+    animation: grow ease .5s;
 
     .X {
       font-family: 'roboto';
@@ -89,9 +114,11 @@
       position: absolute;
       left: 1em;
       top: 1em;
+      cursor: pointer;
     }
 
     img {
+      position: relative;
       border: inherit;
       box-shadow: var(--brown) 2px 2px 4px 4px;
       border-radius: 10px;
@@ -113,4 +140,10 @@
 
 .both {
   background: var(--dark-green);
+}
+
+
+@keyframes grow {
+  from {transform: scale(0);}
+  to {transform: scale(1);}
 }

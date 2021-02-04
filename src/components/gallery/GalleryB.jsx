@@ -37,6 +37,12 @@ const GalleryB = () => {
 
   return (
     <div className={styles[`galleryBox${side}`]} >
+      <div><Link
+        to={side === 'amphead' ? '/' : '/lanham'}
+        className={styles.link}
+      >Home
+      </Link>
+      </div>
       <ul>
         {galleryElements}
       </ul>
