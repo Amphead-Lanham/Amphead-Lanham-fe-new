@@ -15,12 +15,17 @@ const UpdateAnnouncement = () => {
 
   useEffect(() => {
     dispatch(fetchAnnouncement(id));
-    
   }, []);
 
-  const [side, setSide] = useState('');
-  const [title, setTitle] = useState('');
-  const [body, setBody] = useState('');
+  useEffect(() => {
+    setSide(announcement.side);
+    setTitle(announcement.title);
+    setBody(announcement.body);
+  }, [announcement]);
+
+  const [side, setSide] = useState(announcement.side);
+  const [title, setTitle] = useState(announcement.title);
+  const [body, setBody] = useState(announcement.body);
 
 
   const handleChange = ({ target }) => {

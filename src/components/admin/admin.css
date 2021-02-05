@@ -77,7 +77,7 @@
       border-radius: 4px;
       height: 50px;
     }
-
+    
     .formEl {
       margin: 10px 0 10px 5px;
       box-shadow: var(--DarkGreen)  3px 3px;
@@ -89,6 +89,7 @@
     
     .formLabel {
       margin-left: 20px;
+      font-family: 'roboto';
     }
 
 }
@@ -163,4 +164,46 @@
     cursor: pointer;
   }
 
+}
+
+.imageBox {
+
+  ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  }
+
+  li {
+    list-style: none;
+    max-width: 20vw;
+    margin: 20px;
+  }
+
+  img {
+    max-width: 12em;
+    max-height: 12em;
+  }
+
+  h1 {
+    max-width: 20vw;
+    font-family: 'roboto';
+    color: var(--white);
+  }
+
+  
+}
+
+.createImageBox {
+  
+  form {
+  display: flex;
+  }
+
+  h2 {
+    font-family: 'Goldman';
+    color: var(--white);
+    text-shadow: var(--dark-green) 3px 3px;
+    margin-bottom: 10px;
+  }
 }

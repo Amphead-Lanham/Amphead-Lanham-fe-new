@@ -7,7 +7,7 @@ import {
 import { ParallaxProvider } from 'react-scroll-parallax';
 import AuthProvider from '../auth/AuthProvider';
 import PrivateRoute from '../auth/PrivateRoute';
-// import Signup from '../auth/signup';
+import Signup from '../auth/signup';
 import Login from '../auth/Login';
 import Amphead from '../amphead/Amphead';
 import Lanham from '../lanham/Lanham';
@@ -60,11 +60,11 @@ export default function App() {
               exact path="/lanham/model/:model"
               component={ModelDetail}
             />
-            {/* disabled 'signup' route for security
+
             <Route
               exact path="/signup"
               component={Signup}
-            /> */}
+            />
             <Route
               exact path="/login"
               component={Login}
