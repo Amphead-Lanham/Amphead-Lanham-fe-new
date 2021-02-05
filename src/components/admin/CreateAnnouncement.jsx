@@ -1,15 +1,21 @@
-import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
-import { useHistory, Link } from 'react-router-dom';
-import { createAnnouncement } from '../../actions/announcementActions';
+import React, { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
+import {
+  createAnnouncement,
+  fetchAnnouncements }
+  from '../../actions/announcementActions';
+import { selectAnnouncement } from '../../selectors/ampheadSelectors';
 import styles from './admin.css';
+import AnnouncementList from './AnnouncementList';
 
 const CreateAnnouncement = () => {
   const [side, setSide] = useState('');
   const [title, setTitle] = useState('');
   const [body, setBody] = useState('');
   const dispatch = useDispatch();
-  const history = useHistory();
+  const announcement = useSelector(selectAnnouncement);
+  
 
 
   const handleSubmit = e => {
@@ -22,8 +28,17 @@ const CreateAnnouncement = () => {
     setSide('');
     setTitle('');
     setBody('');
-    history.push('/admin');
+    
   };
+  
+  useEffect(() => {
+    (dispatch(fetchAnnouncements()));
+
+  }, []);
+
+  useEffect(() => {
+    (dispatch(fetchAnnouncements()));
+  }, [announcement]);
 
   const handleChange = ({ target }) => {
     if(target.name === 'side') setSide(target.value);
@@ -65,13 +80,8 @@ const CreateAnnouncement = () => {
         <button className={styles.formButton}>submit</button>
       </form>
       <div className={styles.buttonBox}>
-        <Link to={'/'}>
-          <button className={styles.formButton}>Amphead home</button>
-        </Link>
-        <Link to={'/lanham'}>
-          <button className={styles.formButton}>Lanham home</button>
-        </Link>
       </div>
+      <AnnouncementList />
     </div>
   );
 };

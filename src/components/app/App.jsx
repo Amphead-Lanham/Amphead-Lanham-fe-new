@@ -7,7 +7,7 @@ import {
 import { ParallaxProvider } from 'react-scroll-parallax';
 import AuthProvider from '../auth/AuthProvider';
 import PrivateRoute from '../auth/PrivateRoute';
-// import Signup from '../auth/signup';
+import Signup from '../auth/signup';
 import Login from '../auth/Login';
 import Amphead from '../amphead/Amphead';
 import Lanham from '../lanham/Lanham';
@@ -17,6 +17,8 @@ import DetailPage from '../amphead/DetailPage';
 import Models from '../lanham/Models';
 import ContactForm from '../contact/ContactForm';
 import ModelDetail from '../lanham/ModelDetail';
+import GalleryB from '../gallery/GalleryB';
+import GalleryDetail from '../gallery/GalleryDetail';
 
 
 export default function App() {
@@ -38,12 +40,14 @@ export default function App() {
               exact path="/contact/:side"
               component={ContactForm}
             />
-            {/* <Route
-              exact path="/contact/Lanham"
-              render={(props) => (
-                <ContactForm {...props} side={'lanham'} />
-              )}
-            /> */}
+            <Route
+              exact path="/gallery/:side"
+              component={GalleryB}
+            />
+            <Route
+              exact path="/gallery/detail/:id"
+              component={GalleryDetail}
+            />
             <Route
               exact path="/lanham"
               component={Lanham}
@@ -56,11 +60,11 @@ export default function App() {
               exact path="/lanham/model/:model"
               component={ModelDetail}
             />
-            {/* disabled 'signup' route for security
+
             <Route
               exact path="/signup"
               component={Signup}
-            /> */}
+            />
             <Route
               exact path="/login"
               component={Login}

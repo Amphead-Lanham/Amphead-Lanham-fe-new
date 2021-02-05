@@ -12,15 +12,22 @@ import styles from './admin.css';
 const AnnouncementList = () => {
   const announcements = useSelector(selectAnnouncements);
   const dispatch = useDispatch();
+  
 
   useEffect(() => {
     dispatch(fetchAnnouncements());
   }, []);
 
-  const handleDelete = ({ target }) => {
-    dispatch(removeAnnouncement(target.value));
+  useEffect(() => {
     dispatch(fetchAnnouncements());
-    
+  }, [announcements]);
+
+  const handleDelete = ({ target }) => {
+    confirm(
+      'are you sure yoou wish to delete this announcement?') ?
+      dispatch(removeAnnouncement(target.value))
+      : console.log('deletion cancelled');
+  
   };
 
   const announcementElements = announcements.map(announcement => (

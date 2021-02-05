@@ -7,7 +7,6 @@ import {
 } from '../services/amphead-api';
 
 export const SET_ANNOUNCEMENTS = 'SET_ANNOUNCEMENTS';
-
 export const setAnnouncements = announcements => ({
   type: SET_ANNOUNCEMENTS,
   payload: announcements
@@ -56,7 +55,8 @@ export const removeAnnouncement = id => dispatch => {
         type: DELETE_ANNOUNCEMENT,
         payload: announcement.id
       });
-    });
+    })
+    .finally(() => dispatch(setLoading(false)));
 };
 
 export const createAnnouncement = announcement => dispatch => {
@@ -64,13 +64,15 @@ export const createAnnouncement = announcement => dispatch => {
     .then(createdAnnouncement => {
       dispatch(appendAnnouncement(createdAnnouncement));
     
-    });
+    })
+    .finally(() => dispatch(setLoading(false)));
 };
 
 export const changeAnnouncement = (id, announcement) => dispatch => {
   updateAnnouncement(id, announcement)
     .then(updatedAnnouncement => {
       dispatch(appendAnnouncement(updatedAnnouncement));
-    });
+    })
+    .finally(() => dispatch(setLoading(false)));
     
 };

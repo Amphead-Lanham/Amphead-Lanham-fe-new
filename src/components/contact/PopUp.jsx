@@ -14,8 +14,7 @@ const PopUp = ({ side }) => {
         <input
           type={'checkbox'}
           id={'checkbox'}
-          className={styles.toggle}
-        ></input>        
+          className={styles.toggle}></input>        
         <div className={styles.contain}><div></div></div>
         <div className={styles.form}>
           <div>

@@ -4,6 +4,7 @@ import { selectAnnouncements } from '../../selectors/ampheadSelectors';
 import { fetchAnnouncements } from '../../actions/announcementActions';
 import lanhamLogoGreen from '../../../public/assets/lanham-logo-green.png';
 import styles from './LandingPage.css';
+import { fetchImages } from '../../actions/imageActions';
 
 
 
@@ -13,7 +14,7 @@ const LandingPage = () => {
   
   useEffect(() => {
     dispatch(fetchAnnouncements());
-   
+    dispatch(fetchImages());
   }, []);
 
   const announcementElements = announcements.filter(announcement => (
@@ -34,11 +35,14 @@ const LandingPage = () => {
             <h1 className={styles.headerB} >Hand Built in Portland, OR.</h1>
           </div>
         </div>
+        { announcements.filter(announcement => (
+          announcement.side === 'lanham')) &&
         <div className={styles.announcementBox}>
           <ul className={styles.announcementList}>
             {announcementElements}
           </ul>
         </div>
+        }
       </div>
     </div>
   );

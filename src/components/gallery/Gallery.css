@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --medium-green: rgb(0, 100, 102);
+  --medium-green-alpha: rgba(0, 100, 102, 0.85);
+  --white: rgb(238, 241, 239);
+  --white-alpha: rgba(238, 241, 239, 0.70);
+  --dark-green: rgb(2, 60, 61);
+  --light-green: rgb(2, 147, 150);
+  --brown: #38322d;
+}
+
+.galleryBox {
+  background-color: var(--brown);
+  position: relative;
+}
+
+
+.galleryList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.galleryItem {
+  opacity: .99;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin: 2vh 2vw 2vh 2vw;
+  max-width: 25vw;
+  position: relative;
+  z-index: 0;
+
+}
+
+.galleryPic {
+  z-index: 0;
+  max-width: 25vw;
+  max-height: 30vh;
+  transition: ease .5s;
+ 
+  
+}
+
+
+.insideDiv {
+  display: flex;
+  flex-direction: column-reverse;
+  
+
+}
+
+
+.xBox {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+}
+
+.bigPicture {
+  max-height: 60vh;
+  max-width: 60vw;
+}
+
+
+.galleryItem .galleryCheck {
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.galleryItem .container {
+  transform: translateZ(1px);
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.galleryItem .galleryCheck:checked ~ .bigPicBox {
+  visibility: visible;
+  
+}
+
+.galleryItem .galleryCheck:checked ~ .bigPicBox > div {
+  transform: scale(1);
+  transition-duration: 0.75s;
+  
+  
+}
+
+.galleryItem .galleryCheck:checked ~ .bigPicBox > div > img {
+  position: static;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+.galleryItem .bigPicBox {
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.galleryItem .bigPicBox > div {
+  background-color: var(--white-alpha);
+  border: solid var(--white) 2px;
+  width: 65vw;
+  height: 65vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: all 0.4s ease;
+  
+}
