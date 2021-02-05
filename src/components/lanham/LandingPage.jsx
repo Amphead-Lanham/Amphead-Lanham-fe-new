@@ -4,8 +4,6 @@ import { selectAnnouncements } from '../../selectors/ampheadSelectors';
 import { fetchAnnouncements } from '../../actions/announcementActions';
 import lanhamLogoGreen from '../../../public/assets/lanham-logo-green.png';
 import styles from './LandingPage.css';
-import { fetchImages } from '../../actions/imageActions';
-
 
 
 const LandingPage = () => {
@@ -14,7 +12,6 @@ const LandingPage = () => {
   
   useEffect(() => {
     dispatch(fetchAnnouncements());
-    dispatch(fetchImages());
   }, []);
 
   const announcementElements = announcements.filter(announcement => (
