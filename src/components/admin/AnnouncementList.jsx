@@ -14,9 +14,9 @@ const AnnouncementList = () => {
   const dispatch = useDispatch();
   
 
-  useEffect(() => {
-    dispatch(fetchAnnouncements());
-  }, []);
+  // useEffect(() => {
+  //   dispatch(fetchAnnouncements());
+  // }, []);
 
   useEffect(() => {
     dispatch(fetchAnnouncements());

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory, useParams } from 'react-router-dom';
-import { fetchImage } from '../../actions/imageActions';
+import { fetchImage, setLoading } from '../../actions/imageActions';
 import { selectImage, selectLoading } from '../../selectors/ampheadSelectors';
 import styles from './GalleryB.css';
 
@@ -12,12 +12,16 @@ const GalleryDetail = () => {
   const loading = useSelector(selectLoading);
   const image = useSelector(selectImage);
   const history = useHistory();
-  
+
   useEffect(() => {
+    dispatch(setLoading(true));
     dispatch(fetchImage(id));
   }, []);
 
-  if(loading) return (<h1>...Loading</h1>);
+  if(loading) return (
+    <div className={styles[`loading${image.side}`]}>
+      <h1>...Loading</h1>
+    </div>);
 
   return (
     <div className={styles[image.side]} >

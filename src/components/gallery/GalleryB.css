@@ -105,6 +105,7 @@
     max-width: 90vw;
     padding: 4em;
     animation: grow ease .5s;
+    
 
     .X {
       font-family: 'roboto';
@@ -130,16 +131,22 @@
 
 }
 
-.lanham {
+.lanham, .loadinglanham {
   background: var(--brown);
+  height: 100vh;
+  width: 100vw;
 }
 
-.amphead {
+.amphead, .loadingamphead {
   background: var(--medium-green);
+  height: 100vh;
+  width: 100vw;
 }
 
-.both {
+.both, .loadingboth {
   background: var(--dark-green);
+  height: 100vh;
+  width: 100vw;
 }
 
 
