@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useHistory, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import {
   createAnnouncement,
   fetchAnnouncements }
@@ -15,7 +15,7 @@ const CreateAnnouncement = () => {
   const [body, setBody] = useState('');
   const dispatch = useDispatch();
   const announcement = useSelector(selectAnnouncement);
-  const history = useHistory();
+  
 
 
   const handleSubmit = e => {

@@ -200,7 +200,32 @@
   display: flex;
   }
 
+  label {
+    margin-left: 20px;
+      font-family: 'roboto';
+  }
+
+  input, select {
+    margin: 10px 0 10px 5px;
+    box-shadow: var(--DarkGreen)  3px 3px;
+    background-color: lightgray;
+    border: var(--DarkGreen)  solid 2px;
+    border-radius: 4px;
+    height: 25px;
+  }
+
+  button {
+    margin: 10px 0 10px 20px;
+    box-shadow: var(--DarkGreen)  3px 3px;
+    background-color: lightgray;
+    border: var(--DarkGreen) solid 2px;
+    border-radius: 4px;
+    height: 25px;
+    cursor: pointer;
+  }
+
   h2 {
+    margin: 10px 20px 20px 20px;
     font-family: 'Goldman';
     color: var(--white);
     text-shadow: var(--dark-green) 3px 3px;

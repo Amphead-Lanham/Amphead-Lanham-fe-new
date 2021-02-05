@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { createImage } from '../../actions/imageActions';
 import styles from './admin.css';
+import ImageList from './ImageList';
 
 const CreateImage = () => {
   const [name, setName] = useState('');
@@ -29,7 +30,7 @@ const CreateImage = () => {
   const handleChange = ({ target }) => {
     if(target.name === 'name') setName(target.value);
     if(target.name === 'imageUrl') setImageUrl(target.value);
-    if(target.name === 'caption') setCaption(imageUrl);
+    if(target.name === 'caption') setCaption(target.value);
     if(target.name === 'side') setSide(target.value);
   };
   return (
@@ -46,7 +47,7 @@ const CreateImage = () => {
         <label htmlFor={'i-image'}>Image URL</label>
         <input
           id={'i-image'}
-          name={'image'}
+          name={'imageUrl'}
           value={imageUrl}
           onChange={handleChange}
         />
@@ -67,9 +68,11 @@ const CreateImage = () => {
           <option value={''}>Pick one</option>
           <option value={'amphead'}>Amphead</option>
           <option value={'lanham'}>Lanham</option>
+          <option value={'both'}>Both</option>
         </select>
+        <button>submit</button>
       </form>
-      
+      <ImageList />
     </div>
   );
 };

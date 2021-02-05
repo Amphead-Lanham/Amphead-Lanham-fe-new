@@ -12,7 +12,7 @@ import styles from './admin.css';
 const AnnouncementList = () => {
   const announcements = useSelector(selectAnnouncements);
   const dispatch = useDispatch();
-  const history = useHistory();
+  
 
   useEffect(() => {
     dispatch(fetchAnnouncements());
@@ -23,9 +23,11 @@ const AnnouncementList = () => {
   }, [announcements]);
 
   const handleDelete = ({ target }) => {
-    dispatch(removeAnnouncement(target.value));
-    dispatch(fetchAnnouncements());
-    history.replaceState();
+    confirm(
+      'are you sure yoou wish to delete this announcement?') ?
+      dispatch(removeAnnouncement(target.value))
+      : console.log('deletion cancelled');
+  
   };
 
   const announcementElements = announcements.map(announcement => (
