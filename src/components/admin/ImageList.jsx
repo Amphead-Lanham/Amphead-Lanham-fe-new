@@ -16,12 +16,11 @@ const ImageList = () => {
   });
 
   const handleDelete = ({ target }) => {
-    if(confirm('are you sure you wish to delete this image?')) {
-      dispatch(removeImage(target.value));
-    } else {
-      console.log('deletion cancelled');
-    }
+    confirm('are you sure you wish to delete this image?') ?
+      dispatch(removeImage(target.value))
+      : console.log('deletion cancelled');
   };
+  
 
   const imageElements = images.map(image => (
     <li key={image.id}>
@@ -39,9 +38,9 @@ const ImageList = () => {
       <ul>
         {imageElements}
       </ul>
-      
     </div>
   );
 };
+      
 
 export default ImageList;

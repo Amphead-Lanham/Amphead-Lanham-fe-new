@@ -42,6 +42,7 @@
   background-color: var(--MediumGreen);
   background-size: cover;
   padding: 20px;
+  padding-top: 10vh;
 
   h2 {
     font-family: 'Goldman', cursive;
@@ -53,7 +54,6 @@
 }
 
 .createForm {
-  
     display: flex;
     flex-direction: row;
    
@@ -115,6 +115,29 @@
   background-color: var(--MediumGreen);
   background-size: cover;
   min-height: 100vh;
+  position: relative;
+  
+
+  .adminHeader {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2em;
+    position: fixed;
+    background-color: inherit;
+    width: 100vw;
+    border-bottom: solid var(--white) 2px;
+    z-index: 1;
+  }
+
+  button {
+    width: 100px;
+    margin: 15px;
+    box-shadow: var(--DarkGreen)  3px 3px;
+    border: var(--DarkGreen)  solid 2px;
+    background-color: lightgray;
+    border-radius: 4px;
+    cursor: pointer;
+  }
 }
 
 .updateBox {
@@ -175,6 +198,15 @@
   }
 
   li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    background:  var(--light-green);
+    box-shadow: var(--DarkGreen) 3px 3px;
+    border: var(--DarkGreen) solid 2px;
+    border-radius: 5px;
     list-style: none;
     max-width: 20vw;
     margin: 20px;
@@ -189,6 +221,13 @@
     max-width: 20vw;
     font-family: 'roboto';
     color: var(--white);
+    font-size: 1.5em;
+    margin: 1em 0 1em 0;
+  }
+
+  h3 {
+    margin: 1em 0 1em 0;
+    text-align: center;
   }
 
   
@@ -198,6 +237,7 @@
   
   form {
   display: flex;
+  margin-left: 20px;
   }
 
   label {

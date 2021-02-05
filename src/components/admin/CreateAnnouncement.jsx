@@ -80,12 +80,6 @@ const CreateAnnouncement = () => {
         <button className={styles.formButton}>submit</button>
       </form>
       <div className={styles.buttonBox}>
-        <Link to={'/'}>
-          <button className={styles.formButton}>Amphead home</button>
-        </Link>
-        <Link to={'/lanham'}>
-          <button className={styles.formButton}>Lanham home</button>
-        </Link>
       </div>
       <AnnouncementList />
     </div>
