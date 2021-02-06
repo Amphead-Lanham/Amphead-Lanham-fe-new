@@ -32,7 +32,7 @@ const GalleryB = () => {
       <h3>{image.caption}</h3>
     </li>
   ))
-    : <h1>...Loading</h1>;
+    : <div className={styles[`loading${side}`]}><h1>...Loading</h1></div>;
    
 
   return (
