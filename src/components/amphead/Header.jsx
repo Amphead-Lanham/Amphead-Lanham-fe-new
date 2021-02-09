@@ -23,6 +23,9 @@ const Header = () => {
           to={'/detail/modification'}
           className={styles.hItem}>modification</Link>
         <Link
+          to={'/detail/gen-info'}
+          className={styles.hItem}>general info</Link>
+        <Link
           to={'/gallery/amphead'}
           className={styles.hItem}>gallery</Link>
         <Link

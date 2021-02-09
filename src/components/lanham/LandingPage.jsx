@@ -2,7 +2,8 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { selectAnnouncements } from '../../selectors/ampheadSelectors';
 import { fetchAnnouncements } from '../../actions/announcementActions';
-import lanhamLogoGreen from '../../../public/assets/lanham-logo-green.png';
+import lanhamLogoGreen from
+  '../../../public/assets/lanham-logo-white-highlight.png';
 import styles from './LandingPage.css';
 
 
@@ -25,22 +26,26 @@ const LandingPage = () => {
   return (
     <div className={styles.landingBox} >
       <div className={styles.topBox}>
-        <div className={styles.logoBox}>
-          <img src={lanhamLogoGreen} className={styles.logoGreen} />
-          <div className={styles.headerBox} >
-            <h1 className={styles.headerA} >Custom Guitar Amps</h1>
-            <h1 className={styles.headerB} >Hand Built in Portland, OR.</h1>
+        <div className={styles.topBoxNext}>
+          <div className={styles.logoBox}>
+            <img src={lanhamLogoGreen} className={styles.logoGreen} />
+            <div className={styles.headerBox} >
+              <h1 className={styles.headerA} >Custom Guitar Amps</h1>
+              <h1 className={styles.headerB} >Hand Built in Portland, OR.</h1>
+            </div>
+          </div>
+          <div className={styles.infoBox} >
+            <p>Let's talk amps! Use the contact form or call 503 231-4035</p>
           </div>
         </div>
-        { announcements.filter(announcement => (
-          announcement.side === 'lanham')) &&
         <div className={styles.announcementBox}>
           <ul className={styles.announcementList}>
             {announcementElements}
           </ul>
         </div>
-        }
+     
       </div>
+      
     </div>
   );
 };
