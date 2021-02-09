@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { selectAnnouncements } from '../../selectors/ampheadSelectors';
 import { fetchAnnouncements } from '../../actions/announcementActions';
-import lanhamLogoGreen from
+import lanhamLogo from
   '../../../public/assets/lanham-logo-white-highlight.png';
 import styles from './LandingPage.css';
 
@@ -28,7 +28,7 @@ const LandingPage = () => {
       <div className={styles.topBox}>
         <div className={styles.topBoxNext}>
           <div className={styles.logoBox}>
-            <img src={lanhamLogoGreen} className={styles.logoGreen} />
+            <img src={lanhamLogo} className={styles.logo} />
             <div className={styles.headerBox} >
               <h1 className={styles.headerA} >Custom Guitar Amps</h1>
               <h1 className={styles.headerB} >Hand Built in Portland, OR.</h1>

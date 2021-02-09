@@ -32,7 +32,7 @@
 
   @media screen and (max-width: 414px) {
     flex-direction: column;
-    height: 60vh;
+    height: 70vh;
     justify-content: space-around;
   }
 

@@ -4,7 +4,7 @@ import { sendMessage } from '../../services/amphead-api';
 import styles from './ContactForm.css';
 import PropTypes from 'prop-types';
 
-const ContactForm = ({ side }) => {
+const ContactForm = ({ side, formId }) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -39,17 +39,17 @@ const ContactForm = ({ side }) => {
       <label htmlFor={'checkbox'} className={styles.Xbox}>X</label>
       <input
         type={'checkbox'}
-        id={'checkbox'}
+        id={`checkbox${formId}`}
         className={styles.checkbox}
       ></input>
       <form
-        id={`contact-form${side}`}
+        id={`contact-form${side}${formId}`}
         className={styles.contactForm}
         onSubmit={handleSubmit}
         method={'POST'}>
         <input
           type={'text'}
-          id={`name${side}`}
+          id={`name${side}${formId}`}
           name={'name'}
           value={name}
           placeholder={'name required'}
@@ -58,7 +58,7 @@ const ContactForm = ({ side }) => {
         />
         <input
           type={'text'}
-          id={`email${side}`}
+          id={`email${side}${formId}`}
           name={'email'}
           value={email}
           placeholder={'email required'}
@@ -66,7 +66,7 @@ const ContactForm = ({ side }) => {
           onChange={handleChange}
         />
         <textarea
-          id={`message${side}`}
+          id={`message${side}${formId}`}
           name={'message'}
           value={message}
           placeholder={'message required'}
@@ -81,7 +81,8 @@ const ContactForm = ({ side }) => {
 };
 
 ContactForm.proptypes = {
-  side: PropTypes.string.isRequired
+  side: PropTypes.string.isRequired,
+  formId: PropTypes.string.isRequired
 };
 
 export default ContactForm;

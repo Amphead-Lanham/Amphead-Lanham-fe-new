@@ -84,6 +84,14 @@ const Header = () => {
                 </li>
                 <li>
                   <Link
+                    to={'/detail/gen-info'}
+                    className={styles.link}
+                    style={{ textDecoration:'none' }}
+                  >general info
+                  </Link>
+                </li>
+                <li>
+                  <Link
                     to={'/gallery/amphead'}
                     className={styles.link}
                     style={{ textDecoration:'none' }}>
