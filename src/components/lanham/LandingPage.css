@@ -34,8 +34,8 @@
   animation: shrink ease 1.5s;
 
   @media screen and (max-width: 414px) {
-    margin-left: -1.5em;
-    max-width: 80vw;
+    margin-left: .5em;
+    max-width: 85vw;
   }
   
 }
@@ -107,6 +107,7 @@
 
   @media screen and (max-width: 414px) {
     margin: 2em 0 0 0;
+    font-size: .85em;
   }
 
   p {
@@ -171,7 +172,7 @@
   animation: fadeIn ease 4s;
 
   @media screen and (max-width: 414px) {
-    font-size: 1.25em;
+    font-size: 1.5em;
     margin-top: 20px;
     margin-left: 0;
     text-align: center;
