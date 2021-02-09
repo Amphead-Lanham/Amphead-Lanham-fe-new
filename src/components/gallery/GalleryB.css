@@ -149,6 +149,18 @@
   width: 100vw;
 }
 
+.loadingamphead, .loadinglanham, .loadingboth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25vh;
+
+  h1 {
+    font-family: 'Goldman';
+    color: var(--white);
+  }
+}
+
 
 @keyframes grow {
   from {transform: scale(0);}

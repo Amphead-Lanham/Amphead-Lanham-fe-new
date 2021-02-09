@@ -55,7 +55,9 @@
   background-repeat: no-repeat;
   background-size: 95%;
  
-  
+  @media screen and (max-width: 414px) {
+    background-size: cover;
+  }
   
   transform: translateZ(1px) scale(1.07);
 }
@@ -72,6 +74,10 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 95%;
+
+  @media screen and (max-width: 414px) {
+    background-size: cover;
+  }
   
   transform: translateZ(1px) scale(1.07);
 }

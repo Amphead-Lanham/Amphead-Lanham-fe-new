@@ -43,7 +43,7 @@ const ContactForm = ({ side }) => {
         className={styles.checkbox}
       ></input>
       <form
-        id={`contact-from${side}`}
+        id={`contact-form${side}`}
         className={styles.contactForm}
         onSubmit={handleSubmit}
         method={'POST'}>

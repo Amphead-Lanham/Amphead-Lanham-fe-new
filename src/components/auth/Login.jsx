@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { useLogin } from '../../context/AuthContext';
 import styles from './auth.css';
@@ -14,6 +14,10 @@ const Login = () => {
     await login(email, password);
     history.push('/admin');
   };
+
+  useEffect(() => {
+    history.push('/admin');
+  }, [login]);
 
   return (
     <div className={styles.bigBox}>

@@ -11,7 +11,7 @@
   --light-green: rgb(2, 147, 150);
 }
 
-.service, .guitar, .overhaul, .modification, .restoration {
+.service, .guitar, .overhaul, .modification, .restoration, .gen-info {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -116,6 +116,12 @@
   background-image: url('https://i.imgur.com/jlqzh5B.jpg');
   
 }
+
+.gen-info {
+  background-image: url('https://i.imgur.com/BqiMcmJ.jpg');
+}
+
+
 
 @keyframes fadeIn {
   0% {opacity: 0}

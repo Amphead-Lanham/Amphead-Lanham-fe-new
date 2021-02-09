@@ -36,8 +36,8 @@ export const models = [
     quickPitch: 'The JLT45 is a 1950\'s tweed type circuit and is the ultimate blues rock amp',
     description: 'Based on Leo Fender\'s 5F6-A Bassman model. The JLT45 uses the GZ34 tube rectifier and KT66 output tubes. These are the tubes that Jim Marshall used to create the world changing sounds of the earliest Marshall heads.',
     features: ['different models can have as many or as few of these as you want', 'maybe we can list some features unique, or pertinent to each model like so', 'another feature', 'and another', 'well you get the picture'],
-    photoUrl: '/assets/JLT45-cropped.jpeg',
-    displayPhoto: 'https://i.imgur.com/uAXh0xl.jpg',
-    otherPhotos: []
+    photoUrl: 'https://i.imgur.com/xZdp27C.jpg',
+    displayPhoto: 'https://i.imgur.com/xZdp27C.jpg',
+    otherPhotos: ['https://i.imgur.com/uAXh0xl.jpg']
   }
 ];
