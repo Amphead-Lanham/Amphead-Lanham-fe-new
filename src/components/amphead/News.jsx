@@ -36,7 +36,10 @@ const News = () => {
             Monday through Friday 10 AM till 6 PM and Saturday 10 AM till 2 PM</h3>
         <div className={styles.formLine}>
           <h3>Please use the</h3>
-          <PopUp side={'amphead'}/>
+          <PopUp
+            side={'amphead'}
+            formId={'amphead'}
+          />
         </div>
         <h3>or call 503 231-4035 to talk about scheduling work. </h3>
       </div>

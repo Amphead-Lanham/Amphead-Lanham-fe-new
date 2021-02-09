@@ -25,7 +25,10 @@ const Header = () => {
         </Link>
         <div
           className={styles.hItem}>
-          <PopUp side={'lanham'} />
+          <PopUp
+            side={'lanham'}
+            formId={'lanham'}
+          />
         </div>
         <Link
           to={'/'}
@@ -68,6 +71,7 @@ const Header = () => {
                   <div  className={styles.lanhamPop} >
                     <PopUp
                       side={'lanham'}
+                      formId={'lanham-mobile'}
                       className={styles.lanhamPop}
                     />
                   </div>
