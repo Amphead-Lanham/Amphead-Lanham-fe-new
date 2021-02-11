@@ -35,7 +35,11 @@ const LandingPage = () => {
             </div>
           </div>
           <div className={styles.infoBox} >
-            <p>Let's talk amps! Use the contact form or call 503 231-4035</p>
+            <p>
+              {'Let\'s talk amps! Use the contact form or call'}
+              <br/>
+              <a href={'tel:5032314035'}>{'503 231-4035'}</a>
+            </p>
           </div>
         </div>
         <div className={styles.announcementBox}>

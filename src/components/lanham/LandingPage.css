@@ -104,14 +104,19 @@
   background: var(--medium-green);
   border: var(--light-green) solid 2px;
   border-radius: 5px;
-
+  
   @media screen and (max-width: 414px) {
     margin: 2em 0 0 0;
     font-size: .85em;
   }
-
+  
   p {
     font-size: 1.5em;
+
+    a {
+      text-decoration: none;
+      color:  var(--white);
+    }
 
   }
   
