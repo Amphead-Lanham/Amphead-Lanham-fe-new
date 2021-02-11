@@ -80,7 +80,7 @@ const ContactForm = ({ side, formId }) => {
   );
 };
 
-ContactForm.proptypes = {
+ContactForm.propTypes = {
   side: PropTypes.string.isRequired,
   formId: PropTypes.string.isRequired
 };
