@@ -44,13 +44,14 @@
 .serviceMenu {
   position: absolute;
   top: 5px;
-  left: 55vw;
+  left: 45rem;
   display: flex;
   flex-direction: column;
   overflow: visible;
   background-color: var(--medium-green-alpha);
   border: solid var(--light-green) 1px;
   border-radius: 5px;
+  z-index: inherit;
   animation: fadeIn .5s ease-in-out;
  
   .hItem {
