@@ -16,6 +16,7 @@ const Header = () => {
   return (
     <div className={styles.headerBox} >
       <div className={styles.desktopMenu}>
+        
         <div className={visible 
           ? styles.serviceMenu
           : styles.hidden}>
@@ -38,6 +39,7 @@ const Header = () => {
             to={'/detail/modification'}
             className={styles.hItem}>modification</Link>
         </div>
+        
         <div  onClick={handleVisible}
           className={!visible ? styles.hItem : styles.hidden}
         >services</div>
@@ -50,6 +52,9 @@ const Header = () => {
         <a
           href={'https://www.instagram.com/jim_amphead/'}
           className={styles.hItem}>Instagram</a>
+        <a
+          href={'https://www.facebook.com/ampheadpdx'}
+          className={styles.hItem}>Facebook</a>
         <Link
           to={'/lanham'}
           className={styles.hItem}>LANHAM AMPS</Link>
