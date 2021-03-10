@@ -24,6 +24,9 @@ const DetailPage = () => {
   return (
     <div className={styles.bigBox}>
       <div className={styles[name]}>
+        <div className={styles.detailHeader}>
+          <Link to={'/'} className={styles.homeLink} >home</Link>
+        </div>
         <div className={styles.textBox}>
           <h1 className={styles.headline}>{section.header}</h1>
           <p className={styles.info}>{section.info}</p>
@@ -38,9 +41,6 @@ const DetailPage = () => {
           </ul>
           }
         </div>
-        <Link to={'/'}>
-          <button className={styles.button}>home</button>
-        </Link>
       </div>
     </div>
   );

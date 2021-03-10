@@ -1,5 +1,6 @@
 :root {
   --medium-green: rgba(0,100,102, 0.85);
+  --medium-green-alpha: rgba(0, 100, 102, 0.85);
   --white: rgb(238, 241, 239);
   --light-green: rgb(2, 147, 150);
   --menu-speed: 0.75s;
@@ -10,7 +11,7 @@
 }
 
 .headerBox {
-  animation: fadeIn ease 5s;
+  animation: fadeIn ease-in 5s;
   height: 50px;
   min-width: 100vw;
   background-color: var(--medium-green);
@@ -36,12 +37,34 @@
   
 }
 
+.hidden {
+  visibility: hidden;
+}
+
+.serviceMenu {
+  position: absolute;
+  top: 5px;
+  left: 55vw;
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+  background-color: var(--medium-green-alpha);
+  border: solid var(--light-green) 1px;
+  border-radius: 5px;
+  animation: fadeIn .5s ease-in-out;
+ 
+  .hItem {
+    margin: 10px;
+  }
+
+}
+
 .hItem {
   margin: 15px;
   color: var(--white);
   text-decoration: none;
   font-family: 'roboto';
-  transition: 2s ease;
+ 
   cursor: pointer;
 
   @media screen and (max-width: 780px) {

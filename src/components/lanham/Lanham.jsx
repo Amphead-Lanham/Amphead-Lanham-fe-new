@@ -15,17 +15,23 @@ const Lanham = () => {
   });
 
   return (
-    <div className={styles.lanhamBox} >
-      <div className={styles.bigBox} >
-        <Header className={styles.header} />
-        <LandingPage className={styles.landingPage} />
+    <div className={styles.fart} >
+      <div className={styles.header}>
+        <Header  />
       </div>
-      <div className={styles.secondBox}>
-        <ModelsSplashElement className={styles.modelSplash} />
-        <FeaturesSection className={styles.features} />
-      </div>
-      <div className={styles.thirdBox} id={'about-section'}>
-        <AboutSection />
+      <div className={styles.lanhamBox} >
+        
+        
+        <div className={styles.bigBox} >
+          <LandingPage className={styles.landingPage} />
+        </div>
+        <div className={styles.secondBox}>
+          <ModelsSplashElement className={styles.modelSplash} />
+          <FeaturesSection className={styles.features} />
+        </div>
+        <div className={styles.thirdBox} id={'about-section'}>
+          <AboutSection />
+        </div>
       </div>
     </div>
   );

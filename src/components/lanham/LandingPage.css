@@ -52,7 +52,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: var(--medium-green) solid 7px;
   border-bottom: var(--medium-green) solid 7px;
   padding: 40px 0 20px 0;
   min-height: 50vh;

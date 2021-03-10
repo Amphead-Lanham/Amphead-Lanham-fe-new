@@ -20,8 +20,9 @@
   justify-content: center;
   align-items: center;
   background-color: var(--dark-green);
+  border-bottom: solid var(--medium-green) 7px;
   padding-top: 30px;
-  position: relative;
+  position: fixed;
   z-index: 2;
 
   @media screen and (max-width: 414px) {

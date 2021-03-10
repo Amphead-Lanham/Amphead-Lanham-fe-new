@@ -8,6 +8,7 @@ const ContactForm = ({ side, formId }) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [messageSent, setMessageSent] = useState(false);
   const history = useHistory();
   const flag = `this message was sent from the ${side} contact form.`;
 
@@ -22,7 +23,8 @@ const ContactForm = ({ side, formId }) => {
     setName('');
     setEmail('');
     setMessage('');
-  
+    setMessageSent(true);
+
     (side === 'amphead')
       ? history.push('/')
       : history.push('/lanham');
@@ -42,6 +44,14 @@ const ContactForm = ({ side, formId }) => {
         id={`checkbox${formId}`}
         className={styles.checkbox}
       ></input>
+      {messageSent &&
+      <div className={styles.returnMessage}>
+        <h1>Thank you!</h1>
+        <h2>
+          your message has been sent. We usually respond within one day M-F.
+        </h2>
+      </div>
+      }
       <form
         id={`contact-form${side}${formId}`}
         className={styles.contactForm}

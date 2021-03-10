@@ -76,3 +76,4 @@ export const changeAnnouncement = (id, announcement) => dispatch => {
     .finally(() => dispatch(setLoading(false)));
     
 };
+
