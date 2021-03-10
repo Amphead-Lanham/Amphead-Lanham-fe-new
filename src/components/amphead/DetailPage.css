@@ -19,13 +19,15 @@
   min-width: 100vw;
   max-width: 100vw;
   min-height: 100vh;
-  padding-top: 50px;
+  
 
 }
 
 .textBox {
   padding: 20px;
   background-color: var(--medium-green-alpha);
+  border-top: solid var(--light-green) 1px;
+  border-bottom: solid var(--light-green) 1px;
   min-width: 100vw;
   max-width: 100vw;
   animation: fadeIn 5s ease;
@@ -42,27 +44,32 @@
 .info, .list {
   color: var(--white);
   font-family: 'roboto';
+  font-size: 1.25em;
 }
 
-.button {
-  margin: 20px;
-  min-width: 100px;
+.detailHeader {
+  display: flex;
+  justify-content: flex-end;
+  min-width: 100vw;
   min-height: 30px;
-  border-radius: 5px;
-  border: solid var(--light-green) 1px;
+  border-top: solid var(--light-green) 1px;
+  border-bottom: solid var(--light-green) 1px;
   color: var(--white);
   background-color: var(--medium-green);
   box-shadow: var(--dark-green) 2px 2px;
   cursor: pointer;
+  margin-bottom: 50px;
   animation: fadeIn 5s ease;
   transition: 2s ease;
-}
 
-.button:hover {
-  background-color: var(--light-green);
-  border: solid var(--medium-green) 1px;
-  min-width: 125px;
-  min-height: 45px;
+  .homeLink {
+    text-decoration: none;
+    font-family: 'roboto';
+    color: var(--white);
+    font-size: 1.25em;
+    margin: 10px 30px 10px 10px;
+    
+  }
 }
 
 .figureBox {

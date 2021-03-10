@@ -13,7 +13,7 @@ const ImageList = () => {
 
   useEffect(() => {
     dispatch(fetchImages());
-  });
+  }, []);
 
   const handleDelete = ({ target }) => {
     confirm('are you sure you wish to delete this image?') ?

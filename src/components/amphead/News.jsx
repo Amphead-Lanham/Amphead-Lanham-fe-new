@@ -30,7 +30,7 @@ const News = () => {
       </div>
       <div className={styles.infoBox}>
         <h1 className={styles.headline}>
-        Providing repair, maintenance and customization for electric guitars and amplifiers and custom built tube amps for Pacific Northwest players since 1996. 
+        Providing repair, maintenance and customization for electric guitars and amplifiers and custom built tube amps since 1996. 
         </h1>
         <h3>The shop hours are by appointment.
             Monday through Friday 10 AM till 6 PM and Saturday 10 AM till 2 PM</h3>
