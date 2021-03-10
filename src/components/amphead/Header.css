@@ -10,7 +10,7 @@
 }
 
 .headerBox {
-  animation: fadeIn ease 5s;
+  animation: fadeIn ease-in 5s;
   height: 50px;
   min-width: 100vw;
   background-color: var(--medium-green);
@@ -36,12 +36,26 @@
   
 }
 
+.hidden {
+  visibility: hidden;
+}
+
+.serviceMenu {
+  position: absolute;
+  top: 0;
+  left: 55vw;
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+  animation: fadeIn .5s ease-in-out;
+}
+
 .hItem {
   margin: 15px;
   color: var(--white);
   text-decoration: none;
   font-family: 'roboto';
-  transition: 2s ease;
+ 
   cursor: pointer;
 
   @media screen and (max-width: 780px) {
