@@ -1,7 +1,8 @@
 import React from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { sections } from '../../data/details.js';
 import styles from './DetailPage.css';
+import Header from './Header.jsx';
 
 const DetailPage = () => {
   const { name } = useParams();
@@ -24,9 +25,7 @@ const DetailPage = () => {
   return (
     <div className={styles.bigBox}>
       <div className={styles[name]}>
-        <div className={styles.detailHeader}>
-          <Link to={'/'} className={styles.homeLink} >home</Link>
-        </div>
+        <Header isHome={false} />
         <div className={styles.textBox}>
           <h1 className={styles.headline}>{section.header}</h1>
           <p className={styles.info}>{section.info}</p>

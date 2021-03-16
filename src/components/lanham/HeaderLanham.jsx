@@ -2,22 +2,35 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PopUp from '../contact/PopUp';
 import styles from './HeaderLanham.css';
+import PropTypes from 'prop-types';
 
-const Header = () => {
+const HeaderLanham = ({ forHome }) => {
   return (
     
-    <div className={styles.headerBox} >
+    <div className={forHome ? styles.headerBox 
+      : styles.headerNonHome} >
       <div className={styles.desktopMenu}>
-        <Link
-          to={'/lanham/models'}
+        {forHome &&
+        <>
+          <Link
+            to={'/lanham/models'}
+            className={styles.hItem}
+          >models
+          </Link>
+          <div
+            onClick={() => window.location.replace('/lanham#about-section')}
+            className={styles.hItem}
+          >about
+          </div>
+        </>
+        }
+        {!forHome &&
+        <Link 
+          to={'/lanham'}
           className={styles.hItem}
-        >models
+        >Home
         </Link>
-        <div
-          onClick={() => window.location.replace('/lanham#about-section')}
-          className={styles.hItem}
-        >about
-        </div>
+        }
         <Link
           to={'/gallery/lanham'}
           className={styles.hItem}
@@ -92,9 +105,10 @@ const Header = () => {
       
     </div>
   );
-      
-    
-  
 };
 
-export default Header;
+HeaderLanham.propTypes = {
+  forHome: PropTypes.bool
+};
+
+export default HeaderLanham;

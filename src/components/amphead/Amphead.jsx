@@ -17,7 +17,7 @@ const Amphead = () => {
   return (
     <>
       
-      <Header className={styles.headerBox}/>
+      <Header isHome={true} className={styles.headerBox}/>
      
       <div className={styles.outerBox}>
         <div className={styles.newsBox}>

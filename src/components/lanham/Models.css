@@ -39,6 +39,7 @@
   align-items: flex-start;
   padding: 1em 0 1em 5em;
   background-color: var(--brown);
+  margin-top: 7em;
 
   h1, h3 {
     color: var(--white);

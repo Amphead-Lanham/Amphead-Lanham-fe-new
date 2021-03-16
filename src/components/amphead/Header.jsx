@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Header.css';
+import PropTypes from 'prop-types';
 
-const Header = () => {
+const Header = ({ isHome }) => {
   const [visible, setVisible] = useState(false);
 
   const handleVisible = () => {
@@ -39,22 +40,31 @@ const Header = () => {
             to={'/detail/modification'}
             className={styles.hItem}>modification</Link>
         </div>
-        
         <div  onClick={handleVisible}
           className={!visible ? styles.hItem : styles.hidden}
         >services</div>
         <Link
           to={'/detail/gen-info'}
           className={styles.hItem}>general info</Link>
-        <Link
-          to={'/gallery/amphead'}
-          className={styles.hItem}>gallery</Link>
-        <a
-          href={'https://www.instagram.com/jim_amphead/'}
-          className={styles.hItem}>Instagram</a>
-        <a
-          href={'https://www.facebook.com/ampheadpdx'}
-          className={styles.hItem}>Facebook</a>
+        { isHome &&
+        <>
+          <Link
+            to={'/gallery/amphead'}
+            className={styles.hItem}>gallery</Link>
+          <a
+            href={'https://www.instagram.com/jim_amphead/'}
+            className={styles.hItem}>Instagram</a>
+          <a
+            href={'https://www.facebook.com/ampheadpdx'}
+            className={styles.hItem}>Facebook</a>
+        </>
+        }
+        {!isHome &&
+        <Link 
+          to={'/'}
+          className={styles.hItem}
+        >home</Link>
+        }
         <Link
           to={'/lanham'}
           className={styles.hItem}>LANHAM AMPS</Link>
@@ -141,6 +151,10 @@ const Header = () => {
       
     </div>
   );
+};
+
+Header.propTypes = {
+  isHome: PropTypes.bool
 };
 
 export default Header;

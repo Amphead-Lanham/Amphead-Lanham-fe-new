@@ -2,12 +2,17 @@ import React, { useLayoutEffect } from 'react';
 import styles from './ModelDetail.css';
 import { Link, useParams } from 'react-router-dom';
 import { models } from '../../data/models';
+import HeaderLanham from './HeaderLanham';
 
 const ModelDetail = () => {
   
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
   });
+
+  const handleClick = () => {
+    window.scrollTo(0, 0);
+  };
 
   const { model } = useParams();
   const namedModel = models.find(amp => (amp.name === model));
@@ -30,6 +35,7 @@ const ModelDetail = () => {
 
   return (
     <div className={styles[namedModel.modelStyleCode]}>
+      <HeaderLanham forHome={false} />
       <h1>{namedModel.name}</h1>
       <div className={styles.figBox}>
         <img
@@ -45,9 +51,9 @@ const ModelDetail = () => {
         {pictures}
       </ul>
       <div className={styles.buttonBox}>
-        <Link to={'/lanham'} className={styles.link}>
-          <button>Lanham Home</button>
-        </Link>
+        <div to={'/lanham'} className={styles.link}>
+          <button onClick={handleClick} >Back to Top</button>
+        </div>
         <Link to={'/lanham/models'} className={styles.link}>
           <button>Models Home</button>
         </Link>
