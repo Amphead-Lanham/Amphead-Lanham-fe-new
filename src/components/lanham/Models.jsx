@@ -5,6 +5,7 @@ import { useInView } from 'react-intersection-observer';
 import ModelItem from './ModelItem';
 import styles from './Models.css';
 import { Link } from 'react-router-dom';
+import HeaderLanham from './HeaderLanham';
 
 const Models = () => {
 
@@ -16,6 +17,10 @@ const Models = () => {
     triggerOnce: true,
     threshold: .5,
   });
+
+  const handleClick = () => {
+    window.scrollTo(0, 0);
+  };
 
   const modelElements = models.map(model => (
     <li className={styles.model}
@@ -30,6 +35,7 @@ const Models = () => {
   
   return (
     <div className={styles.modelPage}>
+      <HeaderLanham forHome={false}/>
       <div className={styles.banner}>
         <h1>All of our Amps are Custom Built</h1>
         <h3>Select a model, then chose function, voicing and finish options to create a unique instrument for your style and sound.</h3>
@@ -44,11 +50,11 @@ const Models = () => {
           {modelElements}
         </ul>
       </div>
-      <Link to={'/lanham'}>
-        <button className={styles.button}>
-          Home
-        </button>
-      </Link>
+      <button 
+        onClick={handleClick}
+        className={styles.button}>
+          back to top
+      </button>
     </div>
   );
 };

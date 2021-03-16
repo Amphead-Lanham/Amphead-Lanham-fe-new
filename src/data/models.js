@@ -5,37 +5,37 @@ export const models = [
     modelStyleCode: 'dragonSlayer',
     quickPitch: 'The Dragonslayer is a super versatile amp based on an exceptional sounding 1973 Plexi Marshall.',
     description: 'It has two gain controls voiced bright and dark to shape the tone and the distortion character before the cathode follower tone stack. The Dragonslayer utilizes a post phase inverter master volume. It creates warm tube overdrive and fluid sustain and at any volume and punch and girth when loud.',
-    features: ['maybe we can list some features unique, or pertinent to each model like so', 'another feature', 'and another', 'well you get the picture'],
-    photoUrl: '/assets/dragonslayer-cropped.jpeg',
+    features: ['50 watts EL34', 'Classic and modern switchable preamp topologies', 'Post phase inverter master volume', 'Active buffered effects loop option', 'External bias contacts', 'Large and small head shell options', 'Finish, Tolex and hardware options'],
+    photoUrl: 'https://i.imgur.com/c0NoSUo.jpg',
     displayPhoto: 'https://i.imgur.com/xtGPSL3.jpg',
-    otherPhotos: ['https://i.imgur.com/HFENmzO.jpg', 'https://i.imgur.com/OD3OFyC.jpg']
+    otherPhotos: ['https://i.imgur.com/HFENmzO.jpg', 'https://i.imgur.com/OD3OFyC.jpg', '/assets/dragonslayer-cropped.jpeg']
   },
   {
     name: 'Phoenix',
     modelStyleCode: 'phoenix',
-    quickPitch: 'Reborn from fire, the Phoenix rises to soaring heights of rock and roll salvation.',
+    quickPitch: 'The most aggressive of the Lanham line.',
     description: 'The Phoenix came about as the result of voicing hundreds of iconic Marshall 2204 amplifiers for diverse musicians for over 20 years. The Phoenix creates this classic voice of rock with an open, throaty bark. The Phoenix takes this Holy Grail of rock amp circuits and is upgraded with a lead voicing for increased gain with a warmer tone and a clean, dual master volume boost. Both update fetures are footswitchable.',
-    features: ['your choice of large or small head cabinet and custom finishing', ' 5 year "no questions" warranty', 'Handwired turret board construction', 'Highest quality USA wound audio transformers', 'Welded steel chassis', 'Sozo, F&T and NOS mustard capacitors', '3x 12AX7 Preamp and 2x EL34 Power Tubes', 'High & Low gain inputs', '3-band EQ and output section Presence controls', 'Gain boost voicing switch that is also footswitchable', 'Solo/Rythym facility with 2 footswitchable master volumes'],
-    photoUrl: 'https://i.imgur.com/E8Rncnu.jpg',
+    features: ['50 watts EL34', 'Gain voicing and clean boost with footswitch', 'Fast, tight response with note definition and detail', 'Active buffered effects loop option', 'External bias contacts', 'High & Low gain inputs', '3-band EQ and output section Presence controls', 'Gain boost voicing switch that is also footswitchable', 'Solo/Rythym facility with 2 footswitchable master volumes', 'Large and small head shell option', 'Finish, Tolex amd hardware options'],
+    photoUrl: 'https://i.imgur.com/P5jdLFh.jpg',
     displayPhoto: 'https://i.imgur.com/TrILlAD.jpg',
-    otherPhotos: ['https://i.imgur.com/0x2S8O5.jpg', '/assets/Phoenix.png']
+    otherPhotos: ['https://i.imgur.com/0x2S8O5.jpg', '/assets/Phoenix.png', 'https://i.imgur.com/E8Rncnu.jpg']
   },
   {
     name: 'Pacific Reverb',
     modelStyleCode: 'pacificReverb',
     quickPitch: 'Bell-bottoms and bikinis. Is that Freedom rock? Turn it up!',
-    description: '',
-    features: ['maybe we can list some features unique, or pertinent to each model like so', 'another feature', 'and another', 'well you get the picture'],
-    photoUrl: '/assets/pacific-reverb-cropped.jpeg',
+    description: 'More than an updated Princeton.',
+    features: ['18 watts 6L6 or 12 watts 6V6', 'The TMB tone stack sweeps from classic Fender blackface to assertive, in your face rock tones.', 'Unique output level control for smooth tube breakup at lower volume', 'Updated power supply and phase inverter for better gigging headroom', 'Bias modulation tremolo', 'Tube reverb', 'Celestion Vintage 30 or Cannabis Rex speaker options', 'Tolex,grill and hardware options'],
+    photoUrl: 'https://i.imgur.com/l8zPdIh.jpg',
     displayPhoto: 'https://i.imgur.com/AkDAXso.jpg',
-    otherPhotos: []
+    otherPhotos: ['/assets/pacific-reverb-cropped.jpeg']
   },
   {
     name: 'JLT45',
     modelStyleCode: 'JLT45',
     quickPitch: 'The JLT45 is a 1950\'s tweed type circuit and is the ultimate blues rock amp',
     description: 'Based on Leo Fender\'s 5F6-A Bassman model. The JLT45 uses the GZ34 tube rectifier and KT66 output tubes. These are the tubes that Jim Marshall used to create the world changing sounds of the earliest Marshall heads.',
-    features: ['different models can have as many or as few of these as you want', 'maybe we can list some features unique, or pertinent to each model like so', 'another feature', 'and another', 'well you get the picture'],
+    features: ['45 watts KT66 ', 'Tube rectifier 5AR4', 'Optional master volume', 'External bias contacts', 'Large and small head shell options', 'Finish, Tolex and hardware options '],
     photoUrl: 'https://i.imgur.com/xZdp27C.jpg',
     displayPhoto: 'https://i.imgur.com/xZdp27C.jpg',
     otherPhotos: ['https://i.imgur.com/uAXh0xl.jpg']

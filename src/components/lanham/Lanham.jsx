@@ -1,5 +1,5 @@
 import React, { useLayoutEffect } from 'react';
-import Header from './HeaderLanham';
+import HeaderLanham from './HeaderLanham';
 import LandingPage from './LandingPage';
 import FeaturesSection from './FeaturesSection';
 import ModelsSplashElement from './ModelsSplashElement';
@@ -17,7 +17,7 @@ const Lanham = () => {
   return (
     <div className={styles.fart} >
       <div className={styles.header}>
-        <Header  />
+        <HeaderLanham  forHome={true}/>
       </div>
       <div className={styles.lanhamBox} >
         

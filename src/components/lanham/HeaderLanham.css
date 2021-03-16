@@ -13,7 +13,7 @@
   box-sizing: border-box;
 }
 
-.headerBox {
+.headerBox, .headerNonHome {
   height: 100px;
   width: 100vw;
   display: flex;
@@ -28,6 +28,12 @@
   @media screen and (max-width: 414px) {
     height: 50px;
   }
+}
+
+.headerNonHome {
+  height: 50px;
+  padding-top: 0;
+  top: 0;
 }
 
 .desktopMenu {
