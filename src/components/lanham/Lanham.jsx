@@ -7,7 +7,6 @@ import AboutSection from './AboutSection';
 import styles from './Lanham.css';
 
 
-
 const Lanham = () => {
 
   useLayoutEffect(() => {

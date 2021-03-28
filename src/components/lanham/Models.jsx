@@ -38,7 +38,7 @@ const Models = () => {
       <HeaderLanham forHome={false}/>
       <div className={styles.banner}>
         <h1>All of our Amps are Custom Built</h1>
-        <h3>Select a model, then chose function, voicing and finish options to create a unique instrument for your style and sound.</h3>
+        <h3>Select a model, then chose function, voicing and finish options to create a unique instrument for your style and sound. Click any model below for details.</h3>
       </div>
       <div>
         <ul className={inView ? styles.list : null}

@@ -45,18 +45,19 @@ const Header = ({ isHome }) => {
         >services</div>
         <Link
           to={'/detail/gen-info'}
-          className={styles.hItem}>general info</Link>
+          className={!visible ? styles.hItem : styles.hidden}>
+            general info</Link>
         { isHome &&
         <>
           <Link
             to={'/gallery/amphead'}
-            className={styles.hItem}>gallery</Link>
+            className={!visible ? styles.hItem : styles.hidden}>gallery</Link>
           <a
             href={'https://www.instagram.com/jim_amphead/'}
-            className={styles.hItem}>Instagram</a>
+            className={!visible ? styles.hItem : styles.hidden}>Instagram</a>
           <a
             href={'https://www.facebook.com/ampheadpdx'}
-            className={styles.hItem}>Facebook</a>
+            className={!visible ? styles.hItem : styles.hidden}>Facebook</a>
         </>
         }
         {!isHome &&
@@ -67,7 +68,7 @@ const Header = ({ isHome }) => {
         }
         <Link
           to={'/lanham'}
-          className={styles.hItem}>LANHAM AMPS</Link>
+          className={!visible ? styles.hItem : styles.hidden}>LANHAM AMPS</Link>
       </div>
       <div className={styles.mobileMenu}>
         <input
