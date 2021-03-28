@@ -81,6 +81,13 @@ const Header = ({ isHome }) => {
             <div>
               <ul>
                 <li>
+                  <Link to={'/'}
+                    className={styles.link}
+                    style={{ textDecoration:'none' }}>
+                    home
+                  </Link>
+                </li>
+                <li>
                   <Link
                     to={'/detail/service'}
                     className={styles.link}

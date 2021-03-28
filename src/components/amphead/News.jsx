@@ -42,6 +42,7 @@ const News = () => {
           />
         </div>
         <h3>or call 503 231-4035 to talk about scheduling work. </h3>
+        <h3>click any section below for more details.</h3>
       </div>
       <ul className={styles.announcementBox} >
         {announcementElements}

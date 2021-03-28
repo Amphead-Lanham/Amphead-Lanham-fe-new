@@ -55,7 +55,13 @@ const HeaderLanham = ({ forHome }) => {
           <div>
             <div>
               <ul>
-              
+                <li>
+                  <Link to={'/lanham'}
+                    className={styles.link}
+                    style={{ textDecoration:'none' }}>
+                    home
+                  </Link>
+                </li>
                 <li>
                   <Link
                     to={'/lanham/models'}

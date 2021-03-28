@@ -3,30 +3,32 @@ import { Parallax } from 'react-scroll-parallax';
 import styles from './BetweenBar.css';
 import ampheadLogo from '../../../public/assets/amphead-parallax.png';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
-const BetweenBar = ({ section }) => {
+const BetweenBar = ({ section, route }) => {
   return (
-
     <div className={styles.root}>
-      <Parallax className={styles.section}  x={[140, 60]} tagOuter="figure"
-        offsetYMax={50}
-        offsetYMin={-50}
+      <Link to={`/detail/${route}`}>
+        <Parallax className={styles.section}  x={[140, 60]} tagOuter="figure"
+          offsetYMax={50}
+          offsetYMin={-50}
         // offsetXMax={40}
         // offsetXMin={-20}
-      >
-        <h1 className={styles.barCategory}>{section}</h1>
-      </Parallax>
+        >
+          <h1 className={styles.barCategory}>{section}</h1>
+        </Parallax>
       
-      <Parallax className={styles.logo}  x={[-90, 8]} tagOuter="figure"
-        offsetYMax={50}
-        offsetYMin={-90}
+        <Parallax className={styles.logo}  x={[-90, 8]} tagOuter="figure"
+          offsetYMax={50}
+          offsetYMin={-90}
         // offsetXMax={-40}
         // offsetXMin={20}
-      >
-        <img src={ampheadLogo} alt="ok" />
+        >
+          <img src={ampheadLogo} alt="ok" />
        
-      </Parallax>
+        </Parallax>
       
+      </Link>
     </div>
   );
   
@@ -34,7 +36,8 @@ const BetweenBar = ({ section }) => {
 };
 
 BetweenBar.propTypes = {
-  section: PropTypes.string.isRequired
+  section: PropTypes.string.isRequired,
+  route: PropTypes.string.isRequired
 };
 
 export default BetweenBar;
