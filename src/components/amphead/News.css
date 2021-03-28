@@ -61,7 +61,8 @@
       .headline {
         font-family: 'Goldman', cursive;
         color: black;
-        text-shadow: 1px 1px black;
+        text-shadow: 1px 1px var(--light-green);
+        
         @media screen and (max-width: 412px) {
           font-size: larger;
         }

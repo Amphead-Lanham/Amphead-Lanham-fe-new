@@ -24,27 +24,51 @@ const Amphead = () => {
           <News />
         </div>
         <div className={styles.serviceBox}>
-          <BetweenBar section={'Amp Repair & Maintenance'} />
-          <TabletBar section={'Repair & Maintenance'} />
-          <PhoneBar section={'Repair & Maintenance'} />
+          <BetweenBar 
+            section={'Amp Repair & Maintenance'}
+            route={'service'} />
+          <TabletBar 
+            section={'Repair & Maintenance'}
+            route={'service'} />
+          <PhoneBar 
+            section={'Repair & Maintenance'} 
+            route={'service'}/>
           <Section sectionName={'service'} />
         </div>
         <div className={styles.guitarService}>
-          <BetweenBar section={'Guitar Service'} />
-          <TabletBar  section={'Guitar Service'} />
-          <PhoneBar section={'Guitar Service'} />
+          <BetweenBar 
+            section={'Guitar Service'} 
+            route={'guitar'}/>
+          <TabletBar  
+            section={'Guitar Service'} 
+            route={'guitar'}/>
+          <PhoneBar 
+            section={'Guitar Service'}
+            route={'guitar'} />
           <Section sectionName={'guitar'} />
         </div>
         <div className={styles.tubeOverhaul}>
-          <BetweenBar section={'Tube Amp Overhaul'} />
-          <TabletBar section={'Tube Amp Overhaul'} />
-          <PhoneBar section={'Tube Amp Overhaul'} />
+          <BetweenBar 
+            section={'Tube Amp Overhaul'} 
+            route={'overhaul'}/>
+          <TabletBar 
+            section={'Tube Amp Overhaul'} 
+            route={'overhaul'}/>
+          <PhoneBar 
+            section={'Tube Amp Overhaul'} 
+            route={'overhaul'}/>
           <Section sectionName={'overhaul'} />
         </div>
         <div className={styles.restoration}>
-          <BetweenBar section={'Tube Amp Restoration'} />
-          <TabletBar section={'Tube Amp Restoration'} />
-          <PhoneBar section={'Tube Amp Restoration'} />
+          <BetweenBar 
+            section={'Tube Amp Restoration'} 
+            route={'restoration'}/>
+          <TabletBar 
+            section={'Tube Amp Restoration'} 
+            route={'overhaul'}/>
+          <PhoneBar 
+            section={'Tube Amp Restoration'} 
+            route={'overhaul'}/>
           <Section sectionName={'restoration'} />
         </div>
       </div>
