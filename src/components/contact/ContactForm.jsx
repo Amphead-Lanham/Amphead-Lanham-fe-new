@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 
 const ContactForm = ({ side, formId }) => {
   const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
+  const [senderEmail, setSenderEmail] = useState('');
   const [message, setMessage] = useState('');
   const [messageSent, setMessageSent] = useState(false);
   const history = useHistory();
@@ -16,12 +16,12 @@ const ContactForm = ({ side, formId }) => {
     e.preventDefault();
     sendMessage({
       name,
-      email,
+      senderEmail,
       message,
       flag
     });
     setName('');
-    setEmail('');
+    setSenderEmail('');
     setMessage('');
     setMessageSent(true);
 
@@ -32,7 +32,7 @@ const ContactForm = ({ side, formId }) => {
 
   const handleChange = ({ target }) => {
     if(target.name === 'name') setName(target.value);
-    if(target.name === 'email') setEmail(target.value);
+    if(target.name === 'email') setSenderEmail(target.value);
     if(target.name === 'message') setMessage(target.value);
   };
 
@@ -70,7 +70,7 @@ const ContactForm = ({ side, formId }) => {
           type={'text'}
           id={`email${side}${formId}`}
           name={'email'}
-          value={email}
+          value={senderEmail}
           placeholder={'email required'}
           className={styles.contactEl}
           onChange={handleChange}
