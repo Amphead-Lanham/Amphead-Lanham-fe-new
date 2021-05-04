@@ -32,8 +32,8 @@ const CreateAnnouncement = () => {
   
   useEffect(() => {
     (dispatch(fetchAnnouncements()));
-
   }, []);
+
 
   useEffect(() => {
     (dispatch(fetchAnnouncements()));

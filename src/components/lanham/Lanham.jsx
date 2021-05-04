@@ -14,7 +14,7 @@ const Lanham = () => {
   });
 
   return (
-    <div className={styles.fart} >
+    <div className={styles.outer} >
       <div className={styles.header}>
         <HeaderLanham  forHome={true}/>
       </div>

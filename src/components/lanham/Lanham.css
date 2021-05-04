@@ -30,17 +30,6 @@
   z-index: 1;
   padding-top: 8em;
   margin-bottom: 6vh;
-  /*background-image: url('https://stagecraftgear.com/wp-content/uploads/2015/10/mojotone-black-and-tan-grill-cloth-6302020.jpg');*/
- /* background-image: url('../../../public/assets/lanhamLineUp-cropped.jpeg');
-  height: 100%;
-  position: relative;
-  padding-top: 50px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-  transform: translateZ(1px) scale(1.1);*/
   
 }
 
@@ -83,6 +72,6 @@
   transform: translateZ(1px) scale(1.07);
 }
 
-.fart {
+.outer {
   overflow: hidden;
 }
