@@ -26,19 +26,29 @@ const Header = ({ isHome }) => {
             className={styles.hItem}>X</div>
           <Link
             to={'/detail/service'}
-            className={styles.hItem}>amp repair</Link>
+            className={styles.hItem}
+            onClick={() => setVisible(false)}
+          >amp repair</Link>
           <Link
             to={'/detail/guitar'}
-            className={styles.hItem}>guitar service</Link>
+            className={styles.hItem}
+            onClick={() => setVisible(false)}
+          >guitar service</Link>
           <Link
             to={'/detail/overhaul'}
-            className={styles.hItem} >overhaul</Link>
+            className={styles.hItem}
+            onClick={() => setVisible(false)}
+          >overhaul</Link>
           <Link
             to={'/detail/restoration'}
-            className={styles.hItem}>restoration</Link>
+            className={styles.hItem}
+            onClick={() => setVisible(false)}
+          >restoration</Link>
           <Link
             to={'/detail/modification'}
-            className={styles.hItem}>modification</Link>
+            className={styles.hItem}
+            onClick={() => setVisible(false)}
+          >modification</Link>
         </div>
         <div  onClick={handleVisible}
           className={!visible ? styles.hItem : styles.hidden}
