@@ -4,7 +4,6 @@ import { models } from '../../data/models';
 import { useInView } from 'react-intersection-observer';
 import ModelItem from './ModelItem';
 import styles from './Models.css';
-import { Link } from 'react-router-dom';
 import HeaderLanham from './HeaderLanham';
 
 const Models = () => {
