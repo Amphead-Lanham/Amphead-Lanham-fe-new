@@ -17,11 +17,12 @@ const HeaderLanham = ({ forHome }) => {
             className={styles.hItem}
           >models
           </Link>
-          <div
-            onClick={() => window.location.replace('/lanham#about-section')}
+          <a
+            // onClick={() => window.location.replace('#about-section')}
+            href={'#about-section'}
             className={styles.hItem}
           >about
-          </div>
+          </a>
         </>
         }
         {!forHome &&

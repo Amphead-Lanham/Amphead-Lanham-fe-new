@@ -2,9 +2,9 @@ import React, { useLayoutEffect } from 'react';
 import HeaderLanham from './HeaderLanham';
 import LandingPage from './LandingPage';
 import FeaturesSection from './FeaturesSection';
-import ModelsSplashElement from './ModelsSplashElement';
 import AboutSection from './AboutSection';
 import styles from './Lanham.css';
+import Models from './Models';
 
 
 const Lanham = () => {
@@ -19,13 +19,13 @@ const Lanham = () => {
         <HeaderLanham  forHome={true}/>
       </div>
       <div className={styles.lanhamBox} >
-        
-        
         <div className={styles.bigBox} >
           <LandingPage className={styles.landingPage} />
         </div>
         <div className={styles.secondBox}>
-          <ModelsSplashElement className={styles.modelSplash} />
+          <div className={styles.modelsMainPage} >
+            <Models />
+          </div>
           <FeaturesSection className={styles.features} />
         </div>
         <div className={styles.thirdBox} id={'about-section'}>

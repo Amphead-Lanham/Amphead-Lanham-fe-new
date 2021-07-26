@@ -4,7 +4,7 @@ import { models } from '../../data/models.js';
 import { useInterval } from '../../hooks/hooks.js';
 import styles from './ModelsSplashElement.css';
 
-const modelsSplashElement = () => {
+const ModelsSplashElement = () => {
   const [modelIndex, setModelIndex] = useState(0);
   const displayModel = models[modelIndex];
 
@@ -43,4 +43,4 @@ const modelsSplashElement = () => {
   );
 };
 
-export default modelsSplashElement;
+export default ModelsSplashElement;

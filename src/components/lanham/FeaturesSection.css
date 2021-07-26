@@ -21,7 +21,7 @@
   justify-content: space-around;
   background-color: var(--white);
   padding: 3vh 7vw 3vh 2vw;
-  margin-bottom: 10.5vh;
+  margin-bottom: 23vh;
   border-bottom: solid var(--dark-green) 7px;
   border-top: solid var(--dark-green) 7px;
   height: 30vh;
@@ -39,6 +39,16 @@
     align-items: center;
     height: 100%;
   }
+}
+
+.placeHolderBox {
+  background-color: var(--white);
+  padding: 3vh 7vw 3vh 2vw;
+  margin-bottom: 22vh;
+  border-bottom: solid var(--dark-green) 7px;
+  border-top: solid var(--dark-green) 7px;
+  height: 30vh;
+  width: 100vw;
 }
 
 .featureList {

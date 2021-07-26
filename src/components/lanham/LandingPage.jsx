@@ -4,6 +4,7 @@ import { selectAnnouncements } from '../../selectors/ampheadSelectors';
 import { fetchAnnouncements } from '../../actions/announcementActions';
 import lanhamLogo from
   '../../../public/assets/lanham-logo-white-highlight.png';
+import ModelsSplashElement from './ModelsSplashElement';
 import styles from './LandingPage.css';
 
 
@@ -35,11 +36,7 @@ const LandingPage = () => {
             </div>
           </div>
           <div className={styles.infoBox} >
-            <p>
-              {'Let\'s talk amps! Use the contact form or call'}
-              <br/>
-              <a href={'tel:5032314035'}>{'503 231-4035'}</a>
-            </p>
+            <ModelsSplashElement />
           </div>
         </div>
         <div className={styles.announcementBox}>
