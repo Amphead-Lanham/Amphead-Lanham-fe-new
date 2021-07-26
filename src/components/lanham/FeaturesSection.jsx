@@ -18,7 +18,7 @@ const FeaturesSection = () => {
 
   return (
     <div
-      className={inView ? styles.featureBox : null}
+      className={inView ? styles.featureBox : styles.placeHolderBox}
       ref={ref}
       style={{
         transition: 'ease-in',

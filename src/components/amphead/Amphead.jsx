@@ -19,7 +19,10 @@ const Amphead = () => {
       
       <Header isHome={true} className={styles.headerBox}/>
      
-      <div className={styles.outerBox}>
+      <div 
+        className={styles.outerBox} 
+        data-testId={'ampheadComponent'}
+      >
         <div className={styles.newsBox}>
           <News />
         </div>

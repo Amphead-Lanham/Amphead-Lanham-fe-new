@@ -10,7 +10,10 @@ const PopUp = ({ side, formId }) => {
         <label
           htmlFor={'checkbox'}
           className={styles[`formLabel${side}`]}
-        >contact form</label>
+        >{side === 'amphead' 
+            ? 'contact form'
+            : 'contact / ordering'}
+        </label>
         <input
           type={'checkbox'}
           id={'checkbox'}

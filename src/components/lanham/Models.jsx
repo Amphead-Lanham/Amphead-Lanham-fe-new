@@ -17,10 +17,7 @@ const Models = () => {
     threshold: .5,
   });
 
-  const handleClick = () => {
-    window.scrollTo(0, 0);
-  };
-
+  
   const modelElements = models.map(model => (
     <li className={styles.model}
       key={model.name}
@@ -37,10 +34,13 @@ const Models = () => {
       <HeaderLanham forHome={false}/>
       <div className={styles.banner}>
         <h1>All of our Amps are Custom Built</h1>
-        <h3>Select a model, then chose function, voicing and finish options to create a unique instrument for your style and sound. Click any model below for details.</h3>
+        <h3>Select a model, then choose function, voicing and finish options to create a unique instrument for your style and sound.</h3>
       </div>
+      <h2 className={styles.clickReminder}>
+        Click any model below for details.
+      </h2>
       <div>
-        <ul className={inView ? styles.list : null}
+        <ul className={styles.list}
           ref={ref}
           style={{
             transition: 'ease-in',
@@ -49,11 +49,6 @@ const Models = () => {
           {modelElements}
         </ul>
       </div>
-      <button 
-        onClick={handleClick}
-        className={styles.button}>
-          back to top
-      </button>
     </div>
   );
 };
