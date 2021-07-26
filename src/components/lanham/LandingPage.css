@@ -97,7 +97,7 @@
   width: 10em;
   margin: 0 -3.75rem 0 0;
   animation: fadeIn 3s ease;
-  
+
   @media screen and (max-width: 414px) {
     margin: 2em 0 0 0;
     font-size: .85em;
@@ -121,7 +121,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 30px 30px 30px 30px;
+  margin: 120px 30px 10px 30px;
   width: 30vw;
   color: var(--white);
   font-family: 'roboto';

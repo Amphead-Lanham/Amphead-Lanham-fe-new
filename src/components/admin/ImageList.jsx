@@ -26,11 +26,17 @@ const ImageList = () => {
     <li key={image.id}>
       <img src={image.imageUrl} alt={image.name}/>
       <h1>{image.name}</h1>
-      <h3>{image.caption}</h3>
-      <Link to={`/admin/update/${image.id}`}>
-        <button>update</button>
-      </Link>
-      <button value={image.id} onClick={handleDelete}>delete</button>
+      <h3>{image.caption 
+        ? `caption: ${image.caption}`  
+        : null}
+      </h3>
+      <h4>{`gallery: ${image.side}`}</h4>
+      <nav>
+        <Link to={`/admin/update/${image.id}`}>
+          <button>update</button>
+        </Link>
+        <button value={image.id} onClick={handleDelete}>delete</button>
+      </nav>
     </li>
   ));
   return (
