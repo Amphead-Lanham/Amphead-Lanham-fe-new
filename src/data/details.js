@@ -13,7 +13,7 @@ export const sections = [
     name: 'guitar',
     header: 'Guitar Service',
     photo: 'https://i.imgur.com/mgtsDvm.jpg',
-    blurb:'Amphead has always provided quality guitar service. Set up, wiring and repair.',
+    blurb:'Amphead provides quality electric guitar service. Repair, custom electronics and set up.',
     info: 'Ampead has always provided quality guitar service. Set up, wiring and repair. Amphead stocks new tuning machines, knobs, replacement bridges and bridge parts, strap pegs and strap locks, and all the best quality electronic parts; controls, jacks, switches and capacitors.',
     listInfo: [],
     figures: []
@@ -39,32 +39,32 @@ export const sections = [
   {
     name: 'restoration',
     header: 'Tube Amp Restoration',
-    photo: '/assets/fender-shelf-2.jpeg',
+    photo: 'https://i.imgur.com/qHBtT9o.jpg',
     blurb: 'This \'59 Fender Bassman is an example of a restoration project completed at Amphead in July of \'06. Click for details and pictures of the process.',
     info: '* This 1959 Fender Bassman has seen more action than most of us around today.\n* Since the amp had been previously recovered it was a good candidate for a full restoration.',
     listInfo: [],
     figures: [{
-      imageUrl: 'https://www.amphead.org/sites/default/files/styles/large/public/IMG_1247_0.jpg?itok=CF1dRdNg',
+      imageUrl: 'https://i.imgur.com/TIwpbhZ.jpg',
       figCaption: 'The tweed look tolex and grill where very worn.'
     },
     {
-      imageUrl: 'https://www.amphead.org/sites/default/files/IMG_0578.jpg',
+      imageUrl: 'https://i.imgur.com/lPupTeO.jpg',
       figCaption: 'The chassis was rusty and had broken welds.'
     },
     {
-      imageUrl: 'https://www.amphead.org/sites/default/files/IMG_0576.jpg',
+      imageUrl: 'https://i.imgur.com/Mh4Dkt2.jpg',
       figCaption: 'The back pannels had been replaced with plywood.'
     },
     {
-      imageUrl: 'https://www.amphead.org/sites/default/files/IMG_1262.jpg',
+      imageUrl: 'https://i.imgur.com/xBSZBAB.jpg',
       figCaption: 'The welds repaired and rust removed preserving the original printing.'
     },
     {
-      imageUrl: 'https://www.amphead.org/sites/default/files/IMG_1252.jpg',
+      imageUrl: 'https://i.imgur.com/wtjWtcM.jpg',
       figCaption: 'New back pannels, logo and hardware.'
     },
     {
-      imageUrl: 'https://www.amphead.org/sites/default/files/IMG_1247.jpg',
+      imageUrl: 'https://i.imgur.com/qHBtT9o.jpg',
       figCaption: 'The amp came out nice and the owner, Rich Layton, was happy.'
     }]
   },
@@ -78,6 +78,4 @@ export const sections = [
     figures: [],
 
   }
-
-
 ];

@@ -5,8 +5,9 @@ import { useInView } from 'react-intersection-observer';
 import ModelItem from './ModelItem';
 import styles from './Models.css';
 import HeaderLanham from './HeaderLanham';
+import PropTypes from 'prop-types';
 
-const Models = () => {
+const Models = ({ forMainPage }) => {
 
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
@@ -30,7 +31,7 @@ const Models = () => {
   
   
   return (
-    <div className={styles.modelPage}>
+    <div className={!forMainPage ? styles.modelPage : styles.modelPageHome}>
       <HeaderLanham forHome={false}/>
       <div className={styles.banner}>
         <h1>All of our Amps are Custom Built</h1>
@@ -51,6 +52,10 @@ const Models = () => {
       </div>
     </div>
   );
+};
+
+Models.propTypes = {
+  forMainPage: PropTypes.boolean
 };
 
 export default Models;

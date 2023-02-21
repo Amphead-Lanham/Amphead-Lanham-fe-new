@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   z-index: 0;
+  overflow-x: clip;
 }
 
 
@@ -23,9 +24,6 @@
 
 }
 
-
-
-
 .serviceBox {
   background-image: url('../../../public/assets/marshall.jpeg');
 }
@@ -39,7 +37,8 @@
 }
 
 .restoration {
-  background-image: url('../../../public/assets/Fender-shelf.jpeg');
+  background-image: url('https://i.imgur.com/UB9LLa0.jpg');
+  background-position-y: 15%;
 }
 
 .modification {

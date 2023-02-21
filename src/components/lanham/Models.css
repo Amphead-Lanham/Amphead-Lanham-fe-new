@@ -12,10 +12,12 @@
   --light-green-alpha: rgba(2, 147, 150, 80);
   --brown: rgb(56, 50, 45);
   --brown-alpha: rgba(56, 50, 45, 80);
-  
+  --platinum: #E5E4E2;
+  --anti-flash-white: #EAEBED;
 }
 
-.modelPage {
+.modelPage,
+.modelPageHome {
   min-width: 100vw;
   max-width: 100vw;
   min-height: 500vh;
@@ -30,6 +32,10 @@
   @media screen and (max-width: 780px) {
     background-size: cover;
   }
+}
+
+.modelPageHome {
+  background-image: none;
 }
 
 .banner {
