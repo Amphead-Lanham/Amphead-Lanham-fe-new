@@ -16,7 +16,7 @@
 
 .lanhamBox {
   position: relative;
-  background-color: var(--brown);
+  background-color: black;
   max-width: 100vw;
   
   
@@ -36,7 +36,8 @@
 
 .secondBox {
   z-index: 0;
-  background-image: url('../../../public/assets/lanhamLineUp-cropped.jpeg');
+  /* background-image: url('../../../public/assets/lanhamLineUp-cropped.jpeg'); */
+  background: var(--platinum);
   height: 100%;
   max-width: 100vw;
   position: relative;

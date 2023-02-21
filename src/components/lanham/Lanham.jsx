@@ -24,7 +24,7 @@ const Lanham = () => {
         </div>
         <div className={styles.secondBox}>
           <div className={styles.modelsMainPage} >
-            <Models />
+            <Models forMainPage />
           </div>
           <FeaturesSection className={styles.features} />
         </div>

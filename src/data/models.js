@@ -15,7 +15,7 @@ export const models = [
     modelStyleCode: 'phoenix',
     quickPitch: 'The most aggressive of the Lanham line.',
     description: 'The Phoenix came about as the result of voicing hundreds of iconic Marshall 2204 amplifiers for diverse musicians for over 20 years. The Phoenix creates this classic voice of rock with an open, throaty bark. The Phoenix takes this Holy Grail of rock amp circuits and is upgraded with a lead voicing for increased gain with a warmer tone and a clean, dual master volume boost. Both update features are footswitchable.',
-    features: ['50 watts EL34', 'Gain voicing and clean boost with footswitch', 'Fast, tight response with note definition and detail', 'Active buffered effects loop option', 'External bias contacts', 'High & Low gain inputs', '3-band EQ and output section Presence controls', 'Gain boost voicing switch that is also footswitchable', 'Solo/Rythym facility with 2 footswitchable master volumes', 'Large and small head shell option', 'Finish, Tolex amd hardware options'],
+    features: ['65 watts KT88', 'Gain voicing and clean boost with footswitch', 'Fast, tight response with note definition and detail', 'Active buffered effects loop option', 'External bias contacts', 'High & Low gain inputs', '3-band EQ and output section Presence controls', 'Gain boost voicing switch that is also footswitchable', 'Solo/Rythym facility with 2 footswitchable master volumes', 'Large and small head shell option', 'Finish, Tolex amd hardware options'],
     photoUrl: 'https://i.imgur.com/P5jdLFh.jpg',
     displayPhoto: 'https://i.imgur.com/TrILlAD.jpg',
     otherPhotos: ['https://i.imgur.com/0x2S8O5.jpg', '/assets/Phoenix.png', 'https://i.imgur.com/E8Rncnu.jpg']
@@ -25,7 +25,7 @@ export const models = [
     modelStyleCode: 'pacificReverb',
     quickPitch: 'THE grab and go tone monster.',
     description: 'The Pacific Reverb is the evolution of the Fender Blackface classic that is the standard bearer of Nashville session players.',
-    features: ['18 watts 6L6 or 12 watts 6V6', 'The TMB tone stack sweeps from classic Fender blackface to assertive, in your face rock tones.', 'Unique output level control for smooth tube breakup at lower volume', 'Updated power supply and phase inverter for better gigging headroom', 'All tube spring reverb', 'Celestion Vintage 30 or Eminence Cannabis Rex speaker options', 'Tolex, grill and hardware options'],
+    features: ['18 watts 6L6 or 12 watts 6V6', 'The TMB tone stack sweeps from classic Fender Black Panel to assertive, in your face rock tones.', 'Unique output level control for smooth tube breakup at lower volume', 'Updated power supply and phase inverter for better gigging headroom', 'All tube spring reverb', 'Celestion or Eminence speaker options', 'Tolex, grill and hardware options'],
     photoUrl: 'https://i.imgur.com/l8zPdIh.jpg',
     displayPhoto: 'https://i.imgur.com/AkDAXso.jpg',
     otherPhotos: ['/assets/pacific-reverb-cropped.jpeg']

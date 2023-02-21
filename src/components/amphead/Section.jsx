@@ -16,6 +16,9 @@ const Section = ({ sectionName }) => {
           src={section.photo} alt={section.name}/>
         <div className={styles.infoBox}>
           <h2>{section.blurb}</h2>
+          <p className={styles.clickNotice}>
+            click for more info about {section.name}
+          </p>
         </div>
       </Link>
     </div>

@@ -39,24 +39,33 @@
 }
 
 .hidden {
+  position: absolute;
   visibility: hidden;
+}
+
+.servicesBox {
+  position: relative;
+  max-height: fit-content;
+  overflow-x: visible;
 }
 
 .serviceMenu {
   position: absolute;
-  top: 10px;
-  left: 45rem;
+  top: 35px;
+  min-width: fit-content;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   overflow: visible;
   background-color: var(--medium-green-alpha);
   border: solid var(--light-green) 1px;
   border-radius: 5px;
-  z-index: inherit;
+  z-index: 1000;
   animation: fadeIn .5s ease-in-out;
  
   .hItem {
     margin: 10px;
+    white-space: nowrap;
   }
 
 }
@@ -79,6 +88,8 @@
   color: var(--light-green);
 }
 
+
+/* mobile menu styles*/
 .mobileMenu {
   position: fixed;
   top: 0;
@@ -214,8 +225,6 @@
   padding: 1rem;
   
 }
-
-
 
 .mobileMenu .menu > div > div > ul > li > Link {
   color: var(--white);

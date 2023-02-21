@@ -30,10 +30,12 @@ const News = () => {
       </div>
       <div className={styles.infoBox}>
         <h1 className={styles.headline}>
-        Providing repair, maintenance and customization for electric guitars and amplifiers and custom built tube amps since 1996. 
+        Providing repair, maintenance and customization for electric guitars and amplifiers since 1996. 
         </h1>
-        <h3>The shop hours are by appointment.
-            Monday through Friday 10 AM till 6 PM and Saturday 10 AM till 2 PM</h3>
+        <h3>The shop hours are by appointment.</h3>
+        <h3>Monday, Tuesday, Thursday, Friday 10 AM till 6 PM </h3>
+        <h3>Saturday 10 AM till 2 PM</h3>
+        <h3>we are closed Wednesday and Sunday</h3>
         <div className={styles.formLine}>
           <h3>Please use the</h3>
           <PopUp
@@ -42,7 +44,6 @@ const News = () => {
           />
         </div>
         <h3>or call 503 231-4035 to talk about scheduling work. </h3>
-        <h3>click any section below for more details.</h3>
       </div>
       <ul className={styles.announcementBox} >
         {announcementElements}
