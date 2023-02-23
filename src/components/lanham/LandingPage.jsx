@@ -2,9 +2,8 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { selectAnnouncements } from '../../selectors/ampheadSelectors';
 import { fetchAnnouncements } from '../../actions/announcementActions';
-import lanhamLogo from
-  '../../../public/assets/lanham-logo-white-highlight.png';
-import ModelsSplashElement from './ModelsSplashElement';
+import lanhamLogo from '../../../public/assets/lanham-logo-white-highlight.png';
+// import ModelsSplashElement from './ModelsSplashElement';
 import styles from './LandingPage.css';
 
 
@@ -35,9 +34,9 @@ const LandingPage = () => {
               <h1 className={styles.headerB} >Hand Built in Portland, OR.</h1>
             </div>
           </div>
-          <div className={styles.infoBox} >
+          {/* <div className={styles.infoBox} >
             <ModelsSplashElement />
-          </div>
+          </div> */}
         </div>
         <div className={styles.announcementBox}>
           <ul className={styles.announcementList}>

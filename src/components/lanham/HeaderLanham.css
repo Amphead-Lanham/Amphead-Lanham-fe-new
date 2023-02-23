@@ -14,17 +14,18 @@
 }
 
 .headerBox, .headerNonHome {
-  height: 100px;
+  height: calc(100px + var(--scroll-y));
+  max-height: 100px;
   width: 100vw;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   background-color: var(--dark-green);
   border-bottom: solid var(--medium-green) 7px;
-  padding-top: 30px;
+  padding-top: 15px; 
   position: fixed;
   z-index: 2;
-
+  transition: height .3s ease;
   @media screen and (max-width: 414px) {
     height: 50px;
   }

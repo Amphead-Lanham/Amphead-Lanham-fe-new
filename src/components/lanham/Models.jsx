@@ -55,7 +55,7 @@ const Models = ({ forMainPage }) => {
 };
 
 Models.propTypes = {
-  forMainPage: PropTypes.boolean
+  forMainPage: PropTypes.bool
 };
 
 export default Models;
