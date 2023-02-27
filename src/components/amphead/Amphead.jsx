@@ -15,7 +15,7 @@ const Amphead = () => {
   });
   
   return (
-    <>
+    <div className={styles.ampheadOuter}>
       
       <Header isHome={true} className={styles.headerBox}/>
      
@@ -75,7 +75,7 @@ const Amphead = () => {
           <Section sectionName={'restoration'} />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

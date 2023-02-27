@@ -14,5 +14,33 @@
 <body>
   <div id="root"></div>
 </body>
+<script>
+  let initialScrollY = window.scrollY
+  let scrollYfactor = 0
 
+  document.body.style.setProperty('--scroll-y', `${(scrollYfactor * .25)}px`)
+  document.body.style.setProperty('--header-pad-adj', `${(scrollYfactor * .1)}`)
+
+  window.addEventListener('scroll', () => {
+    const newScrollY = window.scrollY
+    const diff = newScrollY - initialScrollY
+    if(initialScrollY < newScrollY) {
+      if(scrollYfactor >= -200 && scrollYfactor <= 200) {
+        scrollYfactor -= diff
+      }
+    } else if(initialScrollY > newScrollY) {
+      if(scrollYfactor <= 200 && scrollYfactor >= -200) {
+        scrollYfactor = scrollYfactor - diff
+      }
+    }
+
+    if(scrollYfactor > 200) scrollYfactor = 200
+    if(scrollYfactor < -200) scrollYfactor = -200
+
+    document.body.style.setProperty('--scroll-y', `${(scrollYfactor * .25)}px`)
+    document.body.style.setProperty('--header-pad-adj', `${(scrollYfactor * .1)}px`)
+    
+    initialScrollY = window.scrollY
+  })
+</script>
 </html>

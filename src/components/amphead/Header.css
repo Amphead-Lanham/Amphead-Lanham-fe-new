@@ -12,12 +12,14 @@
 
 .headerBox {
   animation: fadeIn ease-in 5s;
-  height: 50px;
-  min-width: 100vw;
+  height: 53px;
+  max-width: 100%;
   background-color: var(--medium-green);
   position: fixed;
+  top: -3px;
+  padding-top: 3px;
   z-index: 2;
-  border: solid black 1px;
+  overflow-x: clip;
   
 }
 
@@ -30,10 +32,6 @@
   justify-content: flex-end;
   height: 50px;
   min-width: 100vw;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: -10px;
   padding-right: 1em;
   padding-bottom: 1em;
 }
