@@ -32,7 +32,9 @@ const Models = ({ forMainPage }) => {
   
   return (
     <div className={!forMainPage ? styles.modelPage : styles.modelPageHome}>
-      <HeaderLanham forHome={false}/>
+      {!forMainPage &&
+        <HeaderLanham forHome={false}/>
+      }
       <div className={styles.banner}>
         <h1>All of our Amps are Custom Built</h1>
         <h3>Select a model, then choose function, voicing and finish options to create a unique instrument for your style and sound.</h3>

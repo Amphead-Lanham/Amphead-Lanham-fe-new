@@ -1,0 +1,97 @@
+.carouselOuter {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 60vh;
+  padding: 0;
+  background-color: black;
+}
+
+.slide {
+  position: absolute;
+  opacity: 1;
+  top: 0;
+  width: 100vw;
+  min-height: 60vw;
+  transition: left 1.5s linear;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: black;
+  z-index: 1;
+
+  h1,
+  h3 {
+    color: var(--light-green);
+    background-color: none;
+    text-align: center;
+    padding: 50px;
+  }
+
+  
+}
+
+.slideInfo {
+  /* position: relative; */
+  max-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageWrapper {
+  position: absolute;
+  top: 5vh;
+  right: 7%;
+  height: 60vh;
+}
+
+.slidePic {
+  position: relative;
+  height: 50vh;
+  width: fit-content;
+  object-fit: contain;
+}
+
+.psuedoPsuedo {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+}
+
+.slide.current {
+  animation: slideIn 1.5s ease;
+  left: 0;
+  z-index: 2;
+}
+
+/* .slide.next {
+  visibility: hidden;
+} */
+
+.slide.last {
+  animation: slideOut 3s ease;
+  left: -100vw;
+  opacity: 0;
+}
+
+.slide.offScreen {
+  visibility: hidden;
+}
+
+@keyframes slideOut {
+  0% {left: 0; opacity: 1;}
+  100% {left: -100vw; opacity: .7;}
+}
+
+@keyframes slideIn {
+  0% {left: 100vw; opacity: 0;}
+  50% {opacity: 1;}
+  100% {left: 0}
+} 

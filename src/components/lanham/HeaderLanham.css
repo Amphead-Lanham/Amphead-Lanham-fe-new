@@ -22,7 +22,7 @@
   align-items: flex-end;
   background-color: var(--dark-green);
   border-bottom: solid var(--medium-green) 7px;
-  padding-top: 15px; 
+  padding-top: 15px;
   position: fixed;
   z-index: 2;
   transition: height .3s ease;

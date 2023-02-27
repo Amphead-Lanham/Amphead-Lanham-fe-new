@@ -4,6 +4,7 @@ import LandingPage from './LandingPage';
 import FeaturesSection from './FeaturesSection';
 import AboutSection from './AboutSection';
 import styles from './Lanham.css';
+import Carousel from './Carousel';
 import Models from './Models';
 
 
@@ -21,6 +22,9 @@ const Lanham = () => {
       <div className={styles.lanhamBox} >
         <div className={styles.bigBox} >
           <LandingPage className={styles.landingPage} />
+        </div>
+        <div className={styles.carouselBox}>
+          <Carousel />
         </div>
         <div className={styles.secondBox}>
           <div className={styles.modelsMainPage} >
