@@ -11,12 +11,13 @@
   --light-green: rgb(2, 147, 150);
   --light-green-alpha: rgba(2, 147, 150, 80);
   --brown: #38322d;
-  
+  --jet: #323940;
+  --matte-black: #23232b;
 }
 
 .lanhamBox {
   position: relative;
-  /* background-color: black; */
+  background-color: var(--matte-black);
   max-width: 100vw;
   
   
@@ -35,23 +36,24 @@
   position: relative;
   display: flex;
   align-items: center;
-  /* border: solid blue 1px; */
-  height: 60vh;
+  margin-bottom: 200px;
+  height: fit-content;
   padding: 0;
+  background-color: var(--matte-black);
 }
 
 .secondBox {
   z-index: 0;
   /* background-image: url('../../../public/assets/lanhamLineUp-cropped.jpeg'); */
-  background: var(--platinum);
+  background-color: var(--matte-black);
   height: 100%;
   max-width: 100vw;
   position: relative;
-  padding-top: .2vh;
-  background-attachment: fixed;
+/*   padding-top: .2vh; */
+  /* background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: 95%;
+  background-repeat: no-repeat; */
+  /* background-size: 95%; */
  
   @media screen and (max-width: 414px) {
     background-size: cover;
@@ -71,7 +73,8 @@
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 95%;
+  /* background-size: 95%; */
+  background-size: 100%;  
  
 
   @media screen and (max-width: 414px) {

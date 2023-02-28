@@ -1,12 +1,13 @@
 .aboutBox {
   margin-top: 30vh;
   margin-bottom: 30vh;
-  background-color: var(--brown);
+  background-color: var(--matte-black);
   color: var(--white);
   padding: 2vh 3vw 2vh 3vw;
   border-top: solid var(--white) 5px;
   border-bottom: solid var(--white) 5px;
   scroll-snap-align: center;
+  
   p {
     margin: 25px;
     font-family: 'roboto';
