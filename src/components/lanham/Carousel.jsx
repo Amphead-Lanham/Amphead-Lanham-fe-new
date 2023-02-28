@@ -11,7 +11,6 @@ export default function carousel() {
     models.forEach((model, i) => {
       const position = () => {
         if(i === 0) return 'current';
-        // if(i == 1) return 'next';
         if(i === models.length - 1) return 'last';
         else return 'offScreen';
       };
@@ -22,7 +21,6 @@ export default function carousel() {
 
   useEffect(() => {
     resetSlidePositions();
-    console.log('models => ', models);
   }, []);
 
   const getNextIndex = (arr, i) => {
@@ -33,13 +31,12 @@ export default function carousel() {
   useInterval(() => {
     const newPositions = {};
     const currentOrder = Object.values(slidePositions);
-    console.log('positions => ', slidePositions);
     currentOrder.forEach((pos, i) => {
       const nextIndex = getNextIndex(currentOrder, i);
       newPositions[nextIndex] = pos;
     });
     setSlidePositions(newPositions);
-  }, 3000);
+  }, 8000);
 
   const slides = models.map((model, i) => (
     <div 

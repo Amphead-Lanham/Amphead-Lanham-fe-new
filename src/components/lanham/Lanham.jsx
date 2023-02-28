@@ -5,7 +5,7 @@ import FeaturesSection from './FeaturesSection';
 import AboutSection from './AboutSection';
 import styles from './Lanham.css';
 import Carousel from './Carousel';
-import Models from './Models';
+// import Models from './Models';
 
 
 const Lanham = () => {
@@ -28,7 +28,7 @@ const Lanham = () => {
         </div>
         <div className={styles.secondBox}>
           <div className={styles.modelsMainPage} >
-            <Models forMainPage />
+            {/* <Models forMainPage /> */}
           </div>
           <FeaturesSection className={styles.features} />
         </div>

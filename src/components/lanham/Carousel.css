@@ -12,7 +12,8 @@
   opacity: 1;
   top: 0;
   width: 100vw;
-  min-height: 60vw;
+  min-height: 60vh;
+  overflow-y: hidden;
   transition: left 1.5s linear;
   display: flex;
   flex-direction: row;
@@ -20,12 +21,21 @@
   background-color: black;
   z-index: 1;
 
-  h1,
-  h3 {
-    color: var(--light-green);
+  h1 {
+    font-family: 'Goldman';
+    font-size: 2em;
+    color: var(--white);
+    text-shadow: var(--light-green) 2px 2px 2px;
     background-color: none;
     text-align: center;
-    padding: 50px;
+    padding: 20px;
+  }
+
+  h3 {
+    font-family: 'roboto';
+    font-size: 1em;
+    color: var(--white);
+    text-align: center;
   }
 
   
@@ -38,18 +48,21 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-left: 5%;
+  z-index: 3;
 }
 
 .imageWrapper {
   position: absolute;
-  top: 5vh;
-  right: 7%;
+  top: 0;
+  right: 5%;
   height: 60vh;
+  padding: 0;
 }
 
 .slidePic {
   position: relative;
-  height: 50vh;
+  height: 60vh;
   width: fit-content;
   object-fit: contain;
 }
@@ -62,7 +75,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,.8) 40%, rgba(0,0,0,0) 100%);
 }
 
 .slide.current {
