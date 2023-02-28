@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import styles from './carousel.css';
+import styles from './Carousel.css';
 import { models } from '../../data/models.js';
 import { useInterval } from '../../hooks/hooks';
 
