@@ -20,8 +20,8 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  background-color: var(--dark-green);
-  border-bottom: solid var(--medium-green) 2px;
+  background-color: var(--dark-slate);
+  border-bottom: solid var(--zomp) 2px;
   padding-top: 15px;
   position: fixed;
   z-index: 2;

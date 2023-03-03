@@ -62,6 +62,9 @@ export default function carousel() {
           <div className={styles.psuedoPsuedo}></div>
         </div>
       </div>
+      <div className={styles.arrowWrapper}>
+        
+      </div>
     </div>
   ));
 

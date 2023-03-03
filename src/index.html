@@ -19,7 +19,6 @@
   let scrollYfactor = 0
 
   document.body.style.setProperty('--scroll-y', `${(scrollYfactor * .25)}px`)
-  document.body.style.setProperty('--header-pad-adj', `${(scrollYfactor * .1)}`)
 
   window.addEventListener('scroll', () => {
     const newScrollY = window.scrollY
@@ -38,7 +37,6 @@
     if(scrollYfactor < -200) scrollYfactor = -200
 
     document.body.style.setProperty('--scroll-y', `${(scrollYfactor * .25)}px`)
-    document.body.style.setProperty('--header-pad-adj', `${(scrollYfactor * .1)}px`)
     
     initialScrollY = window.scrollY
   })

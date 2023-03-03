@@ -10,10 +10,14 @@
   --dark-green: rgb(2, 60, 61);
   --light-green: rgb(2, 147, 150);
   --brown: #38322d;
+  --dark-slate: #2C4340;
+  --matte-black: #23232b;
+  --redwood: #B23A48;
+  --zomp: #36947F;
 }
 
 .galleryBox {
-  background-color: var(--brown);
+  background-color: var(--matte-black);
   position: relative;
 }
 

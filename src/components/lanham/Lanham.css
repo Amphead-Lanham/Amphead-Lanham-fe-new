@@ -8,11 +8,15 @@
   --white: rgb(238, 241, 239);
   --white-alpha: rgba(238, 241, 239, 0.70);
   --dark-green: rgb(2, 60, 61);
+  --brunswick-green: #2F5E55;
   --light-green: rgb(2, 147, 150);
   --light-green-alpha: rgba(2, 147, 150, 80);
   --brown: #38322d;
   --jet: #323940;
+  --dark-slate: #2C4340;
   --matte-black: #23232b;
+  --redwood: #B23A48;
+  --zomp: #36947F;
 }
 
 .lanhamBox {
@@ -40,6 +44,7 @@
   height: fit-content;
   padding: 0;
   background-color: var(--matte-black);
+  border-bottom: solid var(--zomp) 2px;
 }
 
 .secondBox {
@@ -71,7 +76,8 @@
   padding-top: 1vh;
   padding-bottom: 40vh;
   background-attachment: fixed;
-  background-position: center;
+  /* background-position: center; */
+  /* background-position-y: calc(0px + var(--scroll-y-small)); */
   background-repeat: no-repeat;
   /* background-size: 95%; */
   background-size: 100%;  

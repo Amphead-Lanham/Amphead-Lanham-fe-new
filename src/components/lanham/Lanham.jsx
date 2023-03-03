@@ -1,4 +1,4 @@
-import React, { useLayoutEffect } from 'react';
+import React, { useLayoutEffect, useRef } from 'react';
 import HeaderLanham from './HeaderLanham';
 import LandingPage from './LandingPage';
 import FeaturesSection from './FeaturesSection';
@@ -9,6 +9,7 @@ import Carousel from './Carousel';
 
 
 const Lanham = () => {
+  const aboutRef = useRef(null);
 
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
@@ -32,7 +33,7 @@ const Lanham = () => {
           </div>
           <FeaturesSection className={styles.features} />
         </div>
-        <div className={styles.thirdBox} id={'about-section'}>
+        <div ref={aboutRef} className={styles.thirdBox} id={'about-section'}>
           <AboutSection />
         </div>
       </div>
