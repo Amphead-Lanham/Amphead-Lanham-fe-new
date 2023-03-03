@@ -8,6 +8,10 @@
   --light-green: rgb(2, 147, 150);
   --white: rgb(238, 241, 239);
   --white-alpha-b: rgba(238, 241, 239, 0.90);
+  --dark-slate: #2C4340;
+  --matte-black: #23232b;
+  --redwood: #B23A48;
+  --zomp: #36947F;
 }
 
 .bigBox {

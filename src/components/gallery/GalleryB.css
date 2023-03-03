@@ -17,7 +17,7 @@
 }
 
 .galleryBoxlanham {
-  background: var(--brown);
+  background: var(--matte-black);
 }
 
 .galleryBoxboth {
@@ -81,7 +81,7 @@
   .galleryImage {
     max-width: 35vw;
     max-height: 40vh;
-    border: solid var(--white) 2px;
+    border: solid var(--white) 1px;
     border-radius: 5px;
     box-shadow: black 3px 3px 4px 5px;
   }
