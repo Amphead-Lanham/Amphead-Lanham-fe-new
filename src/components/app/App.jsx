@@ -20,70 +20,79 @@ import ModelDetail from '../lanham/ModelDetail';
 import GalleryB from '../gallery/GalleryB';
 import GalleryDetail from '../gallery/GalleryDetail';
 import styles from './App.css';
+import { ThemeProvider } from '@mui/material/styles';
+// import { CacheProvider } from '@emotion/react';
+import theme from '../../config/theme';
+// import createEmotionCache from '../../config/createEmotionCache';
 
+// const clientSideCache = createEmotionCache();
 
 export default function App() {
   return (
-    <AuthProvider>
-      <ParallaxProvider> 
-        <div className={styles.view}>  
-          <Router>
-            <Switch>
+    // <CacheProvider value={emotionCache}> 
+    <ThemeProvider theme={theme}>
+      <AuthProvider>
+        <ParallaxProvider> 
+          <div className={styles.view}>  
+            <Router>
+              <Switch>
                     
-              <Route 
-                exact path="/" 
-                component={Amphead}
-              />
-              <Route
-                exact path="/detail/:name"
-                component={DetailPage}
-              />
-              <Route
-                exact path="/contact/:side"
-                component={ContactForm}
-              />
-              <Route
-                exact path="/gallery/:side"
-                component={GalleryB}
-              />
-              <Route
-                exact path="/gallery/detail/:id"
-                component={GalleryDetail}
-              />
-              <Route
-                exact path="/lanham"
-                component={Lanham}
-              />
-              <Route
-                exact path="/lanham/models"
-                component={Models}
-              />
-              <Route
-                exact path="/lanham/model/:model"
-                component={ModelDetail}
-              />
+                <Route 
+                  exact path="/" 
+                  component={Amphead}
+                />
+                <Route
+                  exact path="/detail/:name"
+                  component={DetailPage}
+                />
+                <Route
+                  exact path="/contact/:side"
+                  component={ContactForm}
+                />
+                <Route
+                  exact path="/gallery/:side"
+                  component={GalleryB}
+                />
+                <Route
+                  exact path="/gallery/detail/:id"
+                  component={GalleryDetail}
+                />
+                <Route
+                  exact path="/lanham"
+                  component={Lanham}
+                />
+                <Route
+                  exact path="/lanham/models"
+                  component={Models}
+                />
+                <Route
+                  exact path="/lanham/model/:model"
+                  component={ModelDetail}
+                />
 
-              <Route
-                exact path="/signup"
-                component={Signup}
-              />
-              <Route
-                exact path="/login"
-                component={Login}
-              />
-              <PrivateRoute  
-                exact path="/admin" 
-                component={AdminPage}
-              />
-              <PrivateRoute
-                exact path="/admin/update/:id"
-                component={UpdateAnnouncement}
-              />
-            </Switch>
+                <Route
+                  exact path="/signup"
+                  component={Signup}
+                />
+                <Route
+                  exact path="/login"
+                  component={Login}
+                />
+                <PrivateRoute  
+                  exact path="/admin" 
+                  component={AdminPage}
+                />
+                <PrivateRoute
+                  exact path="/admin/update/:id"
+                  component={UpdateAnnouncement}
+                />
+              </Switch>
                     
-          </Router>
-        </div>
-      </ParallaxProvider>
-    </AuthProvider>
+            </Router>
+          </div>
+        </ParallaxProvider>
+      </AuthProvider>
+    </ThemeProvider>
+    // </CacheProvider>
   );
 }
