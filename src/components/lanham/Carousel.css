@@ -3,9 +3,10 @@
   display: flex;
   flex-direction: row;
   height: 60vh;
+  min-width: 100vw;
+  max-width: 100vw;
   padding: 0;
   background-color: black;
-
 }
 
 .slide {
@@ -85,9 +86,11 @@
   z-index: 2;
 }
 
-/* .slide.next {
-  visibility: hidden;
-} */
+.slide.currentBackward {
+  animation: backslideIn 1.5s ease;
+  left: 0;
+  z-index: 2;
+}
 
 .slide.last {
   animation: slideOut 3s ease;
@@ -95,8 +98,26 @@
   opacity: 0;
 }
 
+.slide.lastBackward {
+  animation: backslideOut 3s ease;
+  left: -100vw;
+  opacity: 0;
+}
+
 .slide.offScreen {
+  display: none;
   visibility: hidden;
+}
+
+.arrowButton {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  z-index: 10;
+}
+.arrowButton.forward {
+  left: unset;
+  right: 35px
 }
 
 @keyframes slideOut {
@@ -109,3 +130,14 @@
   50% {opacity: 1;}
   100% {left: 0}
 } 
+
+@keyframes backslideOut {
+  0% {left: 0; opacity: 1}
+  100% {left: 100vw; opacity: .7;}
+}
+
+@keyframes backslideIn {
+  0% {left: -100vw; opacity: 0;}
+  50% {opacity: 1;}
+  100% {left: 0;}
+}

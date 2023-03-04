@@ -12,20 +12,20 @@ const FeaturesSection = () => {
   const { ref, inView } = useInView({
     // triggerOnce: true,
     threshold: .3,
-    onChange: () => {
-      const scroller = () => {
-        const yAxis = aboutRef.current.offsetTop;
-        console.log('here?  ', yAxis);
-      };
-      if(inView) {
-        console.log('HELLO?');
-        window.addEventListener('scroll', scroller, { passive: true });
-      } 
-      if(!inView) {
-        console.log('bye bye');
-        window.removeEventListener('scroll', scroller, false);
-      }
-    }
+    // onChange: () => {
+    //   const scroller = () => {
+    //     const yAxis = aboutRef.current.offsetTop;
+    //     console.log('here?  ', yAxis);
+    //   };
+    //   if(inView) {
+    //     console.log('HELLO?');
+    //     window.addEventListener('scroll', scroller, { passive: true });
+    //   } 
+    //   if(!inView) {
+    //     console.log('bye bye');
+    //     window.removeEventListener('scroll', scroller, false);
+    //   }
+    // }
   });
 
   const featuresItems = features.map((item, index) => (
