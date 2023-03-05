@@ -32,32 +32,42 @@ export default function carousel() {
     if(i == last && forward) return 0;
     if(i == 0 && !forward) return last;
     else return forward ? i + 1 : i - 1;
+    
   };
 
   const advanceSlide = (forward) => {
     const newPositions = {};
+    let flipIt = false;
     let currentOrder = Object.values(slidePositions);
     if(!forward) {
       const backwardClasses = {
-        current: 'currentBackward',
-        last: 'lastBackward'
+        current: 'lastBackward',
+        last: 'currentBackward'
       };
-      currentOrder = currentOrder.map(i => (
-        backwardClasses[i] || i 
-      ));
-    } else if(currentOrder.find(i => i === 'currentBackward')) {
+      currentOrder = currentOrder.map(i => {
+        if(backwardClasses[i]) flipIt = true;
+        return backwardClasses[i] || i; 
+      });
+    } else {
       const forwardClasses = {
-        currentBackward: 'current',
-        lastBackward: 'last'
+        currentBackward: 'last',
+        lastBackward: 'current'
       };
-      currentOrder = currentOrder.map(i => (
-        forwardClasses[i] || i
-      ));
+      currentOrder = currentOrder.map(i => {
+        if(forwardClasses[i]) flipIt = true;
+        return forwardClasses[i] || i;
+      });
     }
-    currentOrder.forEach((pos, i) => {
-      const nextIndex = getNextIndex(currentOrder, i, forward);
-      newPositions[nextIndex] = pos;
-    });
+    if(!flipIt) {
+      currentOrder.forEach((pos, i) => {
+        const nextIndex = getNextIndex(currentOrder, i, forward);
+        newPositions[nextIndex] = pos;
+      });
+    } else {
+      currentOrder.forEach((pos, i) => {
+        newPositions[i] = pos;
+      });
+    }
     setSlidePositions(newPositions);
   };
 
@@ -103,48 +113,26 @@ export default function carousel() {
   ));
 
   return (
-    <>
-      <div className={styles.carouselOuter}>
-        {slides}
-        <div className={`${styles.arrowButton}`}>
-          <IconButton 
-            color="secondary" 
-            size="large"
-            onClick={() => handleSlideAdvance(false)}  
-          >
-            <ArrowBackIosNewIcon color="info" />
-          </IconButton>
-        </div>
-        <div className={`${styles.arrowButton} ${styles.forward}`}>
-          <IconButton 
-            color="secondary"
-            size="large"
-            onClick={() => handleSlideAdvance(true)}  
-          >
-            <ArrowForwardIosIcon color="info" />
-          </IconButton>
-        </div>
+    <div className={styles.carouselOuter}>
+      {slides}
+      <div className={`${styles.arrowButton}`}>
+        <IconButton 
+          color="secondary" 
+          size="large"
+          onClick={() => handleSlideAdvance(false)}  
+        >
+          <ArrowBackIosNewIcon color="info" />
+        </IconButton>
       </div>
-      {/* <div className={styles.carouselOuter}>
-        <div className={`
-          ${styles.slide} 
-          ${styles.current}
-        `}>
-          <div className={styles.slideInfo}>
-            <h1>
-              {models[0].name}
-            </h1>
-            <h3>{models[0].quickPitch}</h3>
-          </div>
-          <div className={styles.imageWrapper}>
-            <div style={{ position: 'relative' }}>
-              <img className={styles.slidePic} src={models[0].photoUrl} />
-              <div className={styles.psuedoPsuedo}></div>
-            </div>
-          </div>
-          
-        </div>
-      </div> */}
-    </>
+      <div className={`${styles.arrowButton} ${styles.forward}`}>
+        <IconButton 
+          color="secondary"
+          size="large"
+          onClick={() => handleSlideAdvance(true)}  
+        >
+          <ArrowForwardIosIcon color="info" />
+        </IconButton>
+      </div>
+    </div>
   );
 }
