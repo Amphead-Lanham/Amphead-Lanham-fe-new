@@ -70,7 +70,7 @@
 .feature {
   display: flex;
   position: relative;
-  color: var(--brown);
+  color: var(--matte-black);
   font-family: 'roboto';
   padding-left: 1rem;
   text-indent: 0.4rem;
@@ -98,7 +98,7 @@
   z-index: 0;
   font-family: 'Goldman';
   font-size: 2.5em;
-  color: var(--brown);
+  color: var(--matte-black);
   z-index: 1;
   max-width: 35vw;
   animation: featureFade ease 2s;

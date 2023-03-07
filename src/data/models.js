@@ -8,6 +8,7 @@ export const models = [
     features: ['50 watts EL34', 'Classic and modern switchable preamp topologies', 'Post phase inverter master volume', 'Active buffered effects loop option', 'External bias contacts', 'Large and small head shell options', 'Finish, Tolex and hardware options'],
     photoUrl: 'https://i.imgur.com/c0NoSUo.jpg',
     displayPhoto: 'https://i.imgur.com/xtGPSL3.jpg',
+    buttonPhoto: 'https://i.imgur.com/TIrSjNj.jpg',
     otherPhotos: ['https://i.imgur.com/HFENmzO.jpg', 'https://i.imgur.com/OD3OFyC.jpg', '/assets/dragonslayer-cropped.jpeg']
   },
   {
@@ -18,6 +19,7 @@ export const models = [
     features: ['65 watts KT88', 'Gain voicing and clean boost with footswitch', 'Fast, tight response with note definition and detail', 'Active buffered effects loop option', 'External bias contacts', 'High & Low gain inputs', '3-band EQ and output section Presence controls', 'Gain boost voicing switch that is also footswitchable', 'Solo/Rythym facility with 2 footswitchable master volumes', 'Large and small head shell option', 'Finish, Tolex amd hardware options'],
     photoUrl: 'https://i.imgur.com/P5jdLFh.jpg',
     displayPhoto: 'https://i.imgur.com/TrILlAD.jpg',
+    buttonPhoto: 'https://i.imgur.com/nuuMSuE.jpg',
     otherPhotos: ['https://i.imgur.com/0x2S8O5.jpg', '/assets/Phoenix.png', 'https://i.imgur.com/E8Rncnu.jpg']
   },
   {
@@ -28,6 +30,7 @@ export const models = [
     features: ['18 watts 6L6 or 12 watts 6V6', 'The TMB tone stack sweeps from classic Fender Black Panel to assertive, in your face rock tones.', 'Unique output level control for smooth tube breakup at lower volume', 'Updated power supply and phase inverter for better gigging headroom', 'All tube spring reverb', 'Celestion or Eminence speaker options', 'Tolex, grill and hardware options'],
     photoUrl: 'https://i.imgur.com/l8zPdIh.jpg',
     displayPhoto: 'https://i.imgur.com/AkDAXso.jpg',
+    buttonPhoto: 'https://i.imgur.com/fsXr8As.jpg',
     otherPhotos: ['/assets/pacific-reverb-cropped.jpeg']
   },
   {
@@ -38,6 +41,7 @@ export const models = [
     features: ['45 watts KT66 ', 'Tube rectifier 5AR4', 'Optional master volume', 'External bias contacts', 'Large and small head shell options', 'Finish, Tolex and hardware options '],
     photoUrl: 'https://i.imgur.com/xZdp27C.jpg',
     displayPhoto: 'https://i.imgur.com/xZdp27C.jpg',
+    buttonPhoto: 'https://i.imgur.com/UwF30MQ.jpg',
     otherPhotos: ['https://i.imgur.com/uAXh0xl.jpg']
   }
 ];
