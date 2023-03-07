@@ -14,7 +14,15 @@ const theme = createTheme({
     error: {
       main: '#B23A48'
     }
-  }
+  },
+  breakpoints: {
+    xs: 0,
+    mb: 350,
+    sm: 600,
+    md: 960,
+    lg: 1280,
+    xl: 1920,
+  },
 });
 
 export default theme;

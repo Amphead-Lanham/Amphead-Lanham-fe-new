@@ -40,11 +40,15 @@
   position: relative;
   display: flex;
   align-items: center;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   height: fit-content;
   padding: 0;
   background-color: var(--matte-black);
   border-bottom: solid var(--zomp) 2px;
+}
+
+.imageLinksBox {
+  padding-bottom: 5rem;
 }
 
 .secondBox {
