@@ -122,7 +122,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 120px 30px 10px 30px;
+  margin: 10px 0px -20px;
   width: 30vw;
   color: var(--white);
   font-family: 'roboto';
@@ -132,8 +132,8 @@
   text-align: center;
   
   li {
-    background-color: var(--medium-green-alpha);
-    border: var(--light-green) solid 2px;
+    background-color: var(--dark-green);
+    border: var(--zomp) solid 2px;
     border-radius: 7px;
     margin: 20px;
     width: inherit;
