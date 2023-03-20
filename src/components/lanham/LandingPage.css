@@ -132,7 +132,7 @@
   text-align: center;
   
   li {
-    background-color: var(--dark-green);
+    background-color: var(--dark-slate);
     border: var(--zomp) solid 2px;
     border-radius: 7px;
     margin: 20px;
