@@ -21,15 +21,10 @@ import GalleryB from '../gallery/GalleryB';
 import GalleryDetail from '../gallery/GalleryDetail';
 import styles from './App.css';
 import { ThemeProvider } from '@mui/material/styles';
-// import { CacheProvider } from '@emotion/react';
 import theme from '../../config/theme';
-// import createEmotionCache from '../../config/createEmotionCache';
-
-// const clientSideCache = createEmotionCache();
 
 export default function App() {
   return (
-    // <CacheProvider value={emotionCache}> 
     <ThemeProvider theme={theme}>
       <AuthProvider>
         <ParallaxProvider> 
@@ -93,6 +88,5 @@ export default function App() {
         </ParallaxProvider>
       </AuthProvider>
     </ThemeProvider>
-    // </CacheProvider>
   );
 }
