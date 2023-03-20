@@ -4,7 +4,6 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import ButtonBase from '@mui/material/ButtonBase';
 import Typography from '@mui/material/Typography';
-import { Link } from 'react-router-dom';
 
 const ImageButton = styled(ButtonBase)(({ theme }) => ({
   position: 'relative',
@@ -22,7 +21,8 @@ const ImageButton = styled(ButtonBase)(({ theme }) => ({
       opacity: 0,
     },
     '& .MuiTypography-root': {
-      border: '4px solid currentColor'
+      border: '4px solid currentColor',
+      borderRadius: '10px'
     }
   }
 }));
@@ -78,7 +78,8 @@ export default function ImageLinkCard({ model }) {
         width: '30%',
         display: 'flex',
         alignItems: 'center',
-        margin: '20px 5% 40px 5%'
+        margin: '20px 5% 40px 5%',
+        borderRadius: '10px',
       }}
     > 
       <ImageButton 

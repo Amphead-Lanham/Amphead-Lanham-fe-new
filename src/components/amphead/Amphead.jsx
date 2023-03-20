@@ -6,6 +6,7 @@ import Header from './Header';
 import TabletBar from '../between-bars/TabletBar';
 import PhoneBar from '../between-bars/PhoneBar';
 import Section from './Section';
+import Notification from './Notification';
 
 
 const Amphead = () => {
@@ -21,7 +22,7 @@ const Amphead = () => {
      
       <div 
         className={styles.outerBox} 
-        data-testId={'ampheadComponent'}
+        data-testid={'ampheadComponent'}
       >
         <div className={styles.newsBox}>
           <News />
@@ -75,6 +76,7 @@ const Amphead = () => {
           <Section sectionName={'restoration'} />
         </div>
       </div>
+      <Notification />
     </div>
   );
 };

@@ -36,12 +36,13 @@
   h1 {
     font-family: 'Goldman';
     color: var(--white);
-    text-shadow: var(--brown) 3px 3px 2px;
-    margin-top: 2em;
+    text-shadow: var(--matte-black) 3px 3px 2px;
+    margin: 2em 0 1.25em 0;
+    font-size: 3em;
   }
 
   h3 {
-    background-color: var(--brown);
+    background-color: var(--matte-black);
     font-family: 'roboto';
     color: var(--white);
   }
@@ -64,12 +65,13 @@
   }
   
   h3 {
-    border: var(--white) solid 4px;
+    border: var(--white) solid 2px;
     border-radius: 4px;
     box-shadow: black 3px 3px 4px;
     padding: 1em;
     text-align: center;
     margin: 1em;
+    padding: 30px;
 
     @media screen and (max-width: 414px) {
       width: 80vw;
@@ -78,7 +80,7 @@
 
   img {
     margin: 1em;
-    border: var(--white) solid 4px;
+    border: var(--white) solid 2px;
     border-radius: 8px;
     box-shadow: black 3px 3px 4px;
 
@@ -90,15 +92,16 @@
 }
 
 .listBox {
-  border: var(--white) solid 4px;
+  border: var(--white) solid 2px;
   border-radius: 4px;
   box-shadow: black 3px 3px 4px;
   padding: 1em 1em 1em 2em;
   margin: 1em;
-  background-color: var(--brown);
+  background-color: var(--matte-black);
   font-family: 'roboto';
+  font-size: 1.15em;
   color: var(--white);
-  
+  padding: 40px;
 
 }
 
@@ -117,10 +120,10 @@
 
   img {
     margin: 2em;
-    border: var(--white) solid 4px;
+    border: var(--white) solid 2px;
     border-radius: 8px;
     box-shadow: black 3px 3px 4px;
-    background-color: var(--brown);
+    background-color: var(--matte-black);
 
     @media screen and (max-width: 414px) {
       width: 80vw;
@@ -140,19 +143,19 @@
   }
 
   button {
-    background: var(--brown);
+    background: var(--matte-black);
     color: var(--white);
     font-family: 'roboto';
-    border: solid var(--white) 2px;
+    border: solid var(--white) 1px;
     border-radius: 4px;
-    padding: 4px;
+    padding: 12px;
     cursor: pointer;
     box-shadow: black 3px 3px 4px;
-    transition: ease 1s;
+    transition: ease .5s;
   }
 
   button:hover {
-    transform: scale(1.25);
+    transform: scale(1.05);
   }
 }
 

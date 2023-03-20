@@ -13,6 +13,12 @@ const theme = createTheme({
     },
     error: {
       main: '#B23A48'
+    },
+    matteBlack: {
+      main: '#23232b'
+    },
+    zomp: {
+      main: '#36947F'
     }
   },
   breakpoints: {
