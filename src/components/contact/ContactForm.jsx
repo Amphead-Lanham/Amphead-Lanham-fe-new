@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 import { sendMessage } from '../../services/amphead-api';
 import styles from './ContactForm.css';
 import PropTypes from 'prop-types';
+import { TextField, Button } from '@mui/material';
+import { notify } from '../../actions/notificationActions';
 
 const ContactForm = ({ side, formId }) => {
   const [name, setName] = useState('');
@@ -10,24 +13,43 @@ const ContactForm = ({ side, formId }) => {
   const [message, setMessage] = useState('');
   const [messageSent, setMessageSent] = useState(false);
   const history = useHistory();
+  const dispatch = useDispatch();
   const flag = `this message was sent from the ${side} contact form.`;
+
+  const checkAllFields = () => {
+    if(name.length 
+      && senderEmail.length 
+      && message.length) {
+      return true;
+    } else {
+      return false;
+    }
+  };
 
   const handleSubmit = e => {
     e.preventDefault();
-    sendMessage({
-      name,
-      senderEmail,
-      message,
-      flag
-    });
-    setName('');
-    setSenderEmail('');
-    setMessage('');
-    setMessageSent(true);
-
-    (side === 'amphead')
-      ? history.push('/')
-      : history.push('/lanham');
+    if(checkAllFields()) {
+      sendMessage({
+        name,
+        senderEmail,
+        message,
+        flag
+      });
+      setName('');
+      setSenderEmail('');
+      setMessage('');
+      setMessageSent(true);
+  
+      (side === 'amphead')
+        ? history.push('/')
+        : history.push('/lanham');
+    } else {
+      dispatch(notify({
+        type: 'warning',
+        message: 'Please fill out all form fields'
+      })
+      );
+    }
   };
 
   const handleChange = ({ target }) => {
@@ -57,7 +79,7 @@ const ContactForm = ({ side, formId }) => {
         className={styles.contactForm}
         onSubmit={handleSubmit}
         method={'POST'}>
-        <input
+        {/* <input
           type={'text'}
           id={`name${side}${formId}`}
           name={'name'}
@@ -65,8 +87,20 @@ const ContactForm = ({ side, formId }) => {
           placeholder={'name required'}
           className={styles.contactEl}
           onChange={handleChange}
-        />
-        <input
+        /> */}
+        <div className={styles.inputWrapper}>
+          <TextField
+            fullWidth
+            id={`name${side}${formId}`}
+            name={'name'}
+            value={name}
+            label="your name"
+            variant="filled"
+            color="zomp"
+            onChange={handleChange}
+          />
+        </div>
+        {/* <input
           type={'text'}
           id={`email${side}${formId}`}
           name={'email'}
@@ -74,16 +108,51 @@ const ContactForm = ({ side, formId }) => {
           placeholder={'email required'}
           className={styles.contactEl}
           onChange={handleChange}
-        />
-        <textarea
+        /> */}
+        <div className={styles.inputWrapper}>
+          <TextField
+            fullWidth
+            id={`email${side}${formId}`}
+            name={'email'}
+            value={senderEmail}
+            label="your email"
+            variant="filled"
+            color="zomp"
+            onChange={handleChange}
+          />
+        </div>
+        <div className={styles.inputWrapper}>
+          <TextField
+            fullWidth
+            multiline
+            id={`message${side}${formId}`}
+            name={'message'}
+            value={message}
+            label="a brief message"
+            variant="filled"
+            color="zomp"
+            onChange={handleChange}
+            rows={4}
+          />
+        </div>
+        {/* <textarea
           id={`message${side}${formId}`}
           name={'message'}
           value={message}
           placeholder={'message required'}
           className={styles.messageEl}
           onChange={handleChange}
-        />
-        <button className={styles.contactButton} >submit</button>
+        /> */}
+        <div className={styles.buttonWrapper}>
+          <Button
+            variant={'contained'}
+            color={'secondary'}
+            onClick={handleSubmit}
+          >
+          Submit
+          </Button>
+        </div>
+        {/* <button className={styles.contactButton} >submit</button> */}
       </form>
       
     </div>

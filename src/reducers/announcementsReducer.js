@@ -7,14 +7,21 @@ import {
 import {
   APPEND_IMAGE,
   SET_IMAGE,
-  SET_IMAGES } from '../actions/imageActions';
+  SET_IMAGES 
+} from '../actions/imageActions';
+import { 
+  SET_NOTIFICATION, 
+  SET_SHOW_NOTIFICATION 
+} from '../actions/notificationActions';
 
 const initialState = {
   loading: true,
   announcements: [],
   announcement: {},
   images: [],
-  image: {}
+  image: {},
+  notification: null,
+  showNotification: false
 };
 
 export default function reducer(state = initialState, action) {
@@ -53,6 +60,16 @@ export default function reducer(state = initialState, action) {
       return {
         ...state,
         image: action.payload
+      };
+    case SET_NOTIFICATION:
+      return {
+        ...state,
+        notification: action.payload
+      };
+    case SET_SHOW_NOTIFICATION:
+      return {
+        ...state,
+        showNotification: action.payload
       };
     default:
       return state;

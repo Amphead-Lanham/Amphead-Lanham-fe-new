@@ -1,11 +1,10 @@
 /* eslint-disable max-len */
 import React, { useLayoutEffect } from 'react';
-import { models } from '../../data/models';
-import { useInView } from 'react-intersection-observer';
-import ModelItem from './ModelItem';
+// import { useInView } from 'react-intersection-observer';
 import styles from './Models.css';
 import HeaderLanham from './HeaderLanham';
 import PropTypes from 'prop-types';
+import ImageLinkDisplay from './ImageLinkDisplay';
 
 const Models = ({ forMainPage }) => {
 
@@ -13,21 +12,19 @@ const Models = ({ forMainPage }) => {
     window.scrollTo(0, 0);
   });
 
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-    threshold: .5,
-  });
+  // const [ref, inView] = useInView({
+  //   triggerOnce: true,
+  //   threshold: .5,
+  // });
 
   
-  const modelElements = models.map(model => (
-    <li className={styles.model}
-      key={model.name}
-    >
-      <ModelItem {...model} />
-    </li>
-  )
-  
-  );
+  // const modelElements = models.map(model => (
+  //   <li className={styles.model}
+  //     key={model.name}
+  //   >
+  //     <ModelItem {...model} />
+  //   </li>
+  // ));
   
   
   return (
@@ -39,7 +36,10 @@ const Models = ({ forMainPage }) => {
         <h1>All of our Amps are Custom Built</h1>
         <h3>Select a model, then choose function, voicing and finish options to create a unique instrument for your style and sound.</h3>
       </div>
-      <h2 className={styles.clickReminder}>
+      <div className={styles.modelsBox}>
+        <ImageLinkDisplay />
+      </div>
+      {/* <h2 className={styles.clickReminder}>
         Click any model below for details.
       </h2>
       <div>
@@ -51,7 +51,7 @@ const Models = ({ forMainPage }) => {
           }}>
           {modelElements}
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 };
