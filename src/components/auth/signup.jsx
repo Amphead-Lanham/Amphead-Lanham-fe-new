@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import { useSignup } from '../../context/AuthContext';
+import { useSignup, useCurrentUser } from '../../context/AuthContext';
 import styles from './auth.css';
 
 const signup = () => {
@@ -8,12 +8,18 @@ const signup = () => {
   const [password, setPassword] = useState('');
   const signup = useSignup();
   const history = useHistory();
+  const user = useCurrentUser();
 
   const handleSubmit = async(e) => {
     e.preventDefault();
     await signup(email, password);
-    history.push('./admin');
   };
+  
+  useEffect(() => {
+    if(user) {
+      history.push('./admin');
+    }
+  }, [user]);
 
   return (
     <div className={styles.bigBox}>

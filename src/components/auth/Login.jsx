@@ -1,6 +1,6 @@
-import React, {  useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import { useLogin } from '../../context/AuthContext';
+import { useCurrentUser, useLogin } from '../../context/AuthContext';
 import styles from './auth.css';
 
 const Login = () => {
@@ -8,14 +8,20 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const login = useLogin();
   const history = useHistory();
+  const user = useCurrentUser();
 
   const handleSubmit = async(e) => {
     e.preventDefault();
     await login(email, password);
-    history.push('/admin');
   };
+    
+  useEffect(() => {
+    console.log('USER => ', user);
+    if(user) {
+      history.push('/admin');
+    }
+  }, [user]);
 
-  
   return (
     <div className={styles.bigBox}>
       <form onSubmit={handleSubmit} className={styles.form}>

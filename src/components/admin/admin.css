@@ -27,6 +27,11 @@
   list-style: none;
   margin: 20px;
 
+  .announcementTitle {
+    font-size: 1.25em;
+    margin-top: 15px;
+  }
+
   button {
     width: 75px;
     margin-bottom: 10px;
