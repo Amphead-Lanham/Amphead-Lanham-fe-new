@@ -29,7 +29,7 @@ const AnnouncementList = () => {
   const announcementElements = announcements.map(announcement => (
     <li key={announcement.id} className={styles.listItem}>
       <p>{announcement.side} announcement</p>
-      <p>{announcement.title}</p>
+      <p className={styles.announcementTitle}>{announcement.title}</p>
       <p>{announcement.body}</p>
       <Link to={`/admin/update/${announcement.id}`}>
         <button>update</button>

@@ -9,7 +9,7 @@ export const models = [
     photoUrl: 'https://i.imgur.com/c0NoSUo.jpg',
     displayPhoto: 'https://i.imgur.com/xtGPSL3.jpg',
     buttonPhoto: 'https://i.imgur.com/TIrSjNj.jpg',
-    otherPhotos: ['https://i.imgur.com/HFENmzO.jpg', 'https://i.imgur.com/OD3OFyC.jpg', '/assets/dragonslayer-cropped.jpeg']
+    otherPhotos: ['https://i.imgur.com/HFENmzO.jpg', 'https://i.imgur.com/OD3OFyC.jpg', '/assets/dragonslayer-cropped.jpeg', 'https://i.imgur.com/13CTCSc.jpg', 'https://i.imgur.com/wF4dFDX.jpg', 'https://i.imgur.com/sm5GgWg.jpg', 'https://i.imgur.com/Ihu6y6n.jpg', 'https://i.imgur.com/wq08cRE.jpg']
   },
   {
     name: 'Phoenix',
@@ -20,7 +20,7 @@ export const models = [
     photoUrl: 'https://i.imgur.com/P5jdLFh.jpg',
     displayPhoto: 'https://i.imgur.com/TrILlAD.jpg',
     buttonPhoto: 'https://i.imgur.com/nuuMSuE.jpg',
-    otherPhotos: ['https://i.imgur.com/0x2S8O5.jpg', '/assets/Phoenix.png', 'https://i.imgur.com/E8Rncnu.jpg']
+    otherPhotos: ['https://i.imgur.com/0x2S8O5.jpg', '/assets/Phoenix.png', 'https://i.imgur.com/E8Rncnu.jpg', 'https://i.imgur.com/o7fBDwk.jpg']
   },
   {
     name: 'Pacific Reverb',
@@ -31,7 +31,7 @@ export const models = [
     photoUrl: 'https://i.imgur.com/l8zPdIh.jpg',
     displayPhoto: 'https://i.imgur.com/AkDAXso.jpg',
     buttonPhoto: 'https://i.imgur.com/fsXr8As.jpg',
-    otherPhotos: ['/assets/pacific-reverb-cropped.jpeg']
+    otherPhotos: ['/assets/pacific-reverb-cropped.jpeg', 'https://i.imgur.com/Lchpu1H.jpg', 'https://i.imgur.com/dIrQMuV.jpg']
   },
   {
     name: 'JLT45',
