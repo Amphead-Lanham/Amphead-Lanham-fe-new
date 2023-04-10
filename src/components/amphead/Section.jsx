@@ -10,7 +10,10 @@ const Section = ({ sectionName }) => {
   
   return (
     <div className={styles.bigBox}>
-      <Link className={styles.sectionLink} to={`/detail/${section.name}`}>
+      <Link 
+        className={styles.sectionLink} 
+        to={`/detail/${section.name}?return_to=${section.name}`}
+      >
         <img
           className={styles.sectionPic}
           src={section.photo} alt={section.name}/>

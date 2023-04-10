@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   z-index: 0;
+  scroll-behavior: smooth;
 }
 
 .ampheadOuter {
