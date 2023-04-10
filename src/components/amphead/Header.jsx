@@ -1,10 +1,23 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Link, useHistory } from 'react-router-dom';
 import styles from './Header.css';
 import PropTypes from 'prop-types';
 
 const Header = ({ isHome }) => {
   const [visible, setVisible] = useState(false);
+  const [homeRoute, setHomeRoute] = useState('/');
+  const history = useHistory();
+
+  const search = history.location.search;
+
+  useEffect(() => {
+    if(search) {
+      const params = new URLSearchParams(search);
+      const returnTo = params.get('return_to');
+      setHomeRoute(`/#${returnTo}`);
+      console.log('here it is => ', returnTo);
+    }
+  }, []);
 
   const handleVisible = () => {
     setVisible(true);
@@ -19,7 +32,7 @@ const Header = ({ isHome }) => {
       <div className={styles.desktopMenu}>
         {!isHome &&
           <Link 
-            to={'/'}
+            to={homeRoute}
             className={styles.hItem}
           >home</Link>
         }

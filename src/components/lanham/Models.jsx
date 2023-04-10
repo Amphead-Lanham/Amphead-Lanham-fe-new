@@ -37,7 +37,9 @@ const Models = ({ forMainPage }) => {
         <h3>Select a model, then choose function, voicing and finish options to create a unique instrument for your style and sound.</h3>
       </div>
       <div className={styles.modelsBox}>
-        <ImageLinkDisplay />
+        <div className={styles.modelsBoxInner}>
+          <ImageLinkDisplay />
+        </div>
       </div>
       {/* <h2 className={styles.clickReminder}>
         Click any model below for details.
