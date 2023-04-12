@@ -19,6 +19,9 @@ const theme = createTheme({
     },
     zomp: {
       main: '#36947F'
+    },
+    success: {
+      main: '#36947F'
     }
   },
   breakpoints: {

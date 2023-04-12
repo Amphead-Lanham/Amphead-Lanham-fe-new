@@ -1,5 +1,4 @@
 /* eslint-disable no-throw-literal */
-// const url = 'http://localhost:7890/api/v1/announcements';
 const url = process.env.API_URL;
 const emailUrl = process.env.EMAIL_API_URL;
 const imageUrl = process.env.IMAGE_API_URL;

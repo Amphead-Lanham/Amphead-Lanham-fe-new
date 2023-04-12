@@ -32,7 +32,6 @@ export default function carousel() {
     if(i == last && forward) return 0;
     if(i == 0 && !forward) return last;
     else return forward ? i + 1 : i - 1;
-    
   };
 
   const advanceSlide = (forward) => {

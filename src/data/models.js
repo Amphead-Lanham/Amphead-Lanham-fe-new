@@ -7,9 +7,9 @@ export const models = [
     description: 'It has two gain controls voiced bright and dark to shape the tone and the distortion character before the cathode follower tone stack. The Dragonslayer utilizes a post phase inverter master volume. It creates warm tube overdrive and fluid sustain and at any volume and punch and girth when loud.',
     features: ['50 watts EL34', 'Classic and modern switchable preamp topologies', 'Post phase inverter master volume', 'Active buffered effects loop option', 'External bias contacts', 'Large and small head shell options', 'Finish, Tolex and hardware options'],
     photoUrl: 'https://i.imgur.com/c0NoSUo.jpg',
-    displayPhoto: 'https://i.imgur.com/xtGPSL3.jpg',
+    displayPhoto: 'https://i.imgur.com/wF4dFDX.jpg',
     buttonPhoto: 'https://i.imgur.com/TIrSjNj.jpg',
-    otherPhotos: ['https://i.imgur.com/HFENmzO.jpg', 'https://i.imgur.com/OD3OFyC.jpg', '/assets/dragonslayer-cropped.jpeg', 'https://i.imgur.com/13CTCSc.jpg', 'https://i.imgur.com/wF4dFDX.jpg', 'https://i.imgur.com/sm5GgWg.jpg', 'https://i.imgur.com/Ihu6y6n.jpg', 'https://i.imgur.com/wq08cRE.jpg']
+    otherPhotos: ['https://i.imgur.com/wq08cRE.jpg', 'https://i.imgur.com/OD3OFyC.jpg', '/assets/dragonslayer-cropped.jpeg', 'https://i.imgur.com/13CTCSc.jpg', 'https://i.imgur.com/sm5GgWg.jpg', 'https://i.imgur.com/Ihu6y6n.jpg']
   },
   {
     name: 'Phoenix',

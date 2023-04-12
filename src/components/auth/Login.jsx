@@ -16,7 +16,6 @@ const Login = () => {
   };
     
   useEffect(() => {
-    console.log('USER => ', user);
     if(user) {
       history.push('/admin');
     }

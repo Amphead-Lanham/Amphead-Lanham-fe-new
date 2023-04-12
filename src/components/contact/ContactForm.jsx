@@ -78,16 +78,8 @@ const ContactForm = ({ side, formId }) => {
         id={`contact-form${side}${formId}`}
         className={styles.contactForm}
         onSubmit={handleSubmit}
-        method={'POST'}>
-        {/* <input
-          type={'text'}
-          id={`name${side}${formId}`}
-          name={'name'}
-          value={name}
-          placeholder={'name required'}
-          className={styles.contactEl}
-          onChange={handleChange}
-        /> */}
+        method={'POST'}
+      >
         <div className={styles.inputWrapper}>
           <TextField
             fullWidth
@@ -100,15 +92,6 @@ const ContactForm = ({ side, formId }) => {
             onChange={handleChange}
           />
         </div>
-        {/* <input
-          type={'text'}
-          id={`email${side}${formId}`}
-          name={'email'}
-          value={senderEmail}
-          placeholder={'email required'}
-          className={styles.contactEl}
-          onChange={handleChange}
-        /> */}
         <div className={styles.inputWrapper}>
           <TextField
             fullWidth
@@ -135,14 +118,6 @@ const ContactForm = ({ side, formId }) => {
             rows={4}
           />
         </div>
-        {/* <textarea
-          id={`message${side}${formId}`}
-          name={'message'}
-          value={message}
-          placeholder={'message required'}
-          className={styles.messageEl}
-          onChange={handleChange}
-        /> */}
         <div className={styles.buttonWrapper}>
           <Button
             variant={'contained'}
@@ -152,7 +127,6 @@ const ContactForm = ({ side, formId }) => {
           Submit
           </Button>
         </div>
-        {/* <button className={styles.contactButton} >submit</button> */}
       </form>
       
     </div>

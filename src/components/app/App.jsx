@@ -22,6 +22,7 @@ import GalleryDetail from '../gallery/GalleryDetail';
 import styles from './App.css';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../../config/theme';
+import Meet from '../../meet-the-team/Meet';
 
 export default function App() {
   return (
@@ -30,8 +31,7 @@ export default function App() {
         <ParallaxProvider> 
           <div className={styles.view}>  
             <Router>
-              <Switch>
-                    
+              <Switch> 
                 <Route 
                   exact path="/" 
                   component={Amphead}
@@ -51,6 +51,10 @@ export default function App() {
                 <Route
                   exact path="/gallery/detail/:id"
                   component={GalleryDetail}
+                />
+                <Route
+                  exact path="/meet-us"
+                  component={Meet}
                 />
                 <Route
                   exact path="/lanham"

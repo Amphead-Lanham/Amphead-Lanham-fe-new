@@ -21,7 +21,7 @@ const PopUp = ({ side, formId }) => {
         </input>        
         <div className={styles.contain}><div></div></div>
         <div className={styles.form}>
-          <div>
+          <div className={styles[`${side}FormInner`]}>
             <div>
               <ContactForm
                 side={side}

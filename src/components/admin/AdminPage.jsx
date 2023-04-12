@@ -1,12 +1,28 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import CreateAnnouncement from './CreateAnnouncement';
 import styles from './admin.css';
 import CreateImage from './CreateImage';
 import { Link } from 'react-router-dom';
+import Notification from '../amphead/Notification';
+import { useDispatch } from 'react-redux';
+import { useCurrentUser } from '../../context/AuthContext';
+import { setNotification } from '../../actions/notificationActions';
 
 
 
 const AdminPage = () => {
+  const dispatch = useDispatch();
+  const user = useCurrentUser();
+
+  useEffect(() => {
+    if(user) {
+      dispatch(setNotification({ 
+        type: 'success', 
+        message: `Welcome Back ${user.firstName}` 
+      }));
+    }
+  }, [user]);
+
   return (
     <div className={styles.adminBox}>
       <div className={styles.adminHeader} >
@@ -20,6 +36,7 @@ const AdminPage = () => {
       </div>
       <CreateAnnouncement />
       <CreateImage />
+      <Notification/>
     </div>
   );
 };
