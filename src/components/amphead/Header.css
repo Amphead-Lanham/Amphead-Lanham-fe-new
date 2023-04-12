@@ -11,7 +11,7 @@
 }
 
 .headerBox {
-  animation: fadeIn ease-in 5s;
+  animation: fadeIn ease-in 2s;
   height: 53px;
   max-width: 100%;
   background-color: var(--medium-green);

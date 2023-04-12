@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import {
   createAnnouncement,
-  fetchAnnouncements }
-  from '../../actions/announcementActions';
+  fetchAnnouncements 
+} from '../../actions/announcementActions';
 import { selectAnnouncement } from '../../selectors/ampheadSelectors';
 import styles from './admin.css';
 import AnnouncementList from './AnnouncementList';
