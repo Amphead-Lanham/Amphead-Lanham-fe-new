@@ -35,9 +35,9 @@ const CreateAnnouncement = () => {
   }, []);
 
 
-  useEffect(() => {
-    (dispatch(fetchAnnouncements()));
-  }, [announcement]);
+  // useEffect(() => {
+  //   (dispatch(fetchAnnouncements()));
+  // }, []);
 
   const handleChange = ({ target }) => {
     if(target.name === 'side') setSide(target.value);
