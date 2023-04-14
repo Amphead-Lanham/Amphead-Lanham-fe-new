@@ -13,7 +13,9 @@ const CreateAnnouncement = () => {
   const [title, setTitle] = useState('');
   const [body, setBody] = useState('');
   const dispatch = useDispatch();
-  const announcement = useSelector(selectAnnouncement);
+  const announcements = useSelector(selectAnnouncement);
+
+  const depCheck = JSON.stringify(announcements);
   
 
 
@@ -36,8 +38,9 @@ const CreateAnnouncement = () => {
 
 
   useEffect(() => {
-    (dispatch(fetchAnnouncements()));
-  }, [announcement]);
+    dispatch(fetchAnnouncements());
+    console.log('in create => ', announcements);
+  }, [depCheck]);
 
   const handleChange = ({ target }) => {
     if(target.name === 'side') setSide(target.value);

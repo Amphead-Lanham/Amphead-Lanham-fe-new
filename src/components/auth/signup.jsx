@@ -9,10 +9,11 @@ const signup = () => {
   const signup = useSignup();
   const history = useHistory();
   const user = useCurrentUser();
+  const firstName = 'Jim';
 
   const handleSubmit = async(e) => {
     e.preventDefault();
-    await signup(email, password);
+    await signup(email, password, firstName);
   };
   
   useEffect(() => {

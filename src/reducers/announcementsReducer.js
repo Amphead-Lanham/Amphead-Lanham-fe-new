@@ -3,6 +3,7 @@ import {
   SET_ANNOUNCEMENT,
   SET_LOADING,
   APPEND_ANNOUNCEMENT,
+  DELETE_ANNOUNCEMENT
 } from '../actions/announcementActions';
 import {
   APPEND_IMAGE,
@@ -45,6 +46,12 @@ export default function reducer(state = initialState, action) {
       return {
         ...state,
         announcement: action.payload
+      };
+    case DELETE_ANNOUNCEMENT:
+      return {
+        ...state,
+        announcements: state.announcements.filter(i => (
+          i.id !== action.payload))
       };
     case SET_IMAGE:
       return {

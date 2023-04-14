@@ -7,8 +7,8 @@ const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   
 
-  const signup = (email, password) => {
-    postSignup(email, password)
+  const signup = (email, password, firstName) => {
+    postSignup(email, password, firstName)
       .then(user => setCurrentUser(user))
       .finally(() => setLoading(false));
   };
