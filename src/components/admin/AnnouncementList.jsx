@@ -1,26 +1,33 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import {
   fetchAnnouncements,
   removeAnnouncement
 } from '../../actions/announcementActions';
-import { selectAnnouncements } from '../../selectors/ampheadSelectors';
+import { 
+  selectAnnouncements,
+  selectLoading,
+} from '../../selectors/ampheadSelectors';
 import styles from './admin.css';
 
 
 const AnnouncementList = () => {
   const announcements = useSelector(selectAnnouncements);
   const dispatch = useDispatch();
-  
+  const loading = useSelector(selectLoading);
+
+  const depCheck = JSON.stringify(announcements);
 
   useEffect(() => {
+    console.log('in list => ', announcements.length);
     dispatch(fetchAnnouncements());
-  }, [announcements]);
+  }, [depCheck]);
 
   const handleDelete = ({ target }) => {
     confirm(
-      'are you sure yoou wish to delete this announcement?') ?
+      'are you sure yoou wish to delete this announcement?'
+    ) ?
       dispatch(removeAnnouncement(target.value))
       : console.log('deletion cancelled');
   
