@@ -7,6 +7,9 @@ import {
 import { selectAnnouncement } from '../../selectors/ampheadSelectors';
 import styles from './admin.css';
 import AnnouncementList from './AnnouncementList';
+import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
+import { Tooltip, tooltipClasses } from '@mui/material';
+import styled from '@emotion/styled';
 
 const CreateAnnouncement = () => {
   const [side, setSide] = useState('');
@@ -16,8 +19,6 @@ const CreateAnnouncement = () => {
   const announcements = useSelector(selectAnnouncement);
 
   const depCheck = JSON.stringify(announcements);
-  
-
 
   const handleSubmit = e => {
     e.preventDefault();
@@ -39,7 +40,6 @@ const CreateAnnouncement = () => {
 
   useEffect(() => {
     dispatch(fetchAnnouncements());
-    console.log('in create => ', announcements);
   }, [depCheck]);
 
   const handleChange = ({ target }) => {
@@ -47,6 +47,19 @@ const CreateAnnouncement = () => {
     if(target.name === 'title') setTitle(target.value);
     if(target.name === 'body') setBody(target.value);
   };
+
+  // eslint-disable-next-line max-len
+  const toolTipText = 'For sentence to begin on a new line, add "<br>" to the end of the previous sentence. To add a blank line between sentences add "<br>blank_line<br>"';
+
+  const AmpheadTooltip = styled(({ className, ...props }) => (
+    <Tooltip {...props} classes={{ popper: className }} />
+  ))(({ theme }) => ({
+    [`& .${tooltipClasses.tooltip}`]: {
+      fontSize: 14,
+      boxShadow: theme.shadows[1],
+      maxWidth: 220
+    }
+  }));
 
   return (
     <div className={styles.createBox}>
@@ -79,6 +92,16 @@ const CreateAnnouncement = () => {
           onChange={handleChange}
           className={styles.formText}
         />
+        <AmpheadTooltip
+          placement="top-start"
+          arrow
+          title={toolTipText}
+        >
+          <HelpOutlineIcon 
+            className={styles.helpIcon} 
+            size="large" color="secondary"
+          />
+        </AmpheadTooltip>
         <button className={styles.formButton}>submit</button>
       </form>
       <div className={styles.buttonBox}>

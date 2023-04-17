@@ -32,6 +32,15 @@
     margin-top: 15px;
   }
 
+  .aBody {
+    max-width: fit-content;
+    padding: 0 20px;
+  }
+
+  .aBodyLine {
+    text-align: left;
+  }
+
   button {
     width: 75px;
     margin-bottom: 10px;
@@ -97,6 +106,9 @@
       font-family: 'roboto';
     }
 
+    .helpIcon {
+      margin-left: 10px;
+    }
 }
 
 .buttonBox {
