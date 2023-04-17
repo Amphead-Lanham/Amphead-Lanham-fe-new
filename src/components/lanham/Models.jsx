@@ -34,6 +34,7 @@ const Models = ({ forMainPage }) => {
       }
       <div className={styles.banner}>
         <h1>All of our Amps are Custom Built</h1>
+        <h3>With hand wired construction and come with our 5 year, no questions warranty.</h3>
         <h3>Select a model, then choose function, voicing and finish options to create a unique instrument for your style and sound.</h3>
       </div>
       <div className={styles.modelsBox}>

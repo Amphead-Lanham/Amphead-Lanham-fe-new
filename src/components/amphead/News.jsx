@@ -3,6 +3,7 @@ import React, { useEffect }  from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchAnnouncements } from '../../actions/announcementActions';
 import { selectAnnouncements } from '../../selectors/ampheadSelectors';
+import AnnouncementBody from '../admin/AnnouncementBody';
 import PopUp from '../contact/PopUp';
 import BigLogo from './BigLogo';
 import styles from './News.css';
@@ -19,7 +20,7 @@ const News = () => {
     announcement.side === 'amphead')).map(announcement => (
     <li key={announcement.id} className={styles.announcement} >
       <h2>{announcement.title}</h2>
-      <p>{announcement.body}</p>
+      <AnnouncementBody bodyString={announcement.body} />
     </li>
   ));
 

@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 export const models = [
   {
-    name: 'Dragon Slayer',
+    name: 'Dragonslayer',
     modelStyleCode: 'dragonSlayer',
     quickPitch: 'The Dragonslayer is a super versatile amp based on an exceptional sounding 1973 Plexi Marshall.',
     description: 'It has two gain controls voiced bright and dark to shape the tone and the distortion character before the cathode follower tone stack. The Dragonslayer utilizes a post phase inverter master volume. It creates warm tube overdrive and fluid sustain and at any volume and punch and girth when loud.',

@@ -3,8 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { selectAnnouncements } from '../../selectors/ampheadSelectors';
 import { fetchAnnouncements } from '../../actions/announcementActions';
 import lanhamLogo from '../../../public/assets/lanham-logo-white-highlight.png';
-// import ModelsSplashElement from './ModelsSplashElement';
 import styles from './LandingPage.css';
+import AnnouncementBody from '../admin/AnnouncementBody';
 
 
 const LandingPage = () => {
@@ -19,7 +19,7 @@ const LandingPage = () => {
     announcement.side === 'lanham')).map(announcement => (
     <li key={announcement.id} className={styles.announcement} >
       <h2>{announcement.title}</h2>
-      <p>{announcement.body}</p>
+      <AnnouncementBody bodyString={announcement.body} /> 
     </li>
   ));
 
@@ -34,9 +34,6 @@ const LandingPage = () => {
               <h2 className={styles.headerB} >Hand Built in Portland, OR.</h2>
             </div>
           </div>
-          {/* <div className={styles.infoBox} >
-            <ModelsSplashElement />
-          </div> */}
           <div className={styles.announcementBox}>
             <ul className={styles.announcementList}>
               {announcementElements}
