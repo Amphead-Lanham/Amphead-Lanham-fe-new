@@ -88,10 +88,18 @@ const Header = ({ isHome }) => {
           </Link> */}
           <a
             href={'https://www.instagram.com/jim_amphead/'}
-            className={styles.hItem}>Instagram</a>
+            target="blank"
+            className={styles.hItem}
+          >
+            Instagram
+          </a>
           <a
             href={'https://www.facebook.com/ampheadpdx'}
-            className={styles.hItem}>Facebook</a>
+            target="blank"
+            className={styles.hItem}
+          >
+            Facebook
+          </a>
         </>
         }
         <Link

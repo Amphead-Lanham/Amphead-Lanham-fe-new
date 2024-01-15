@@ -47,6 +47,10 @@
     color: var(--white);
   }
 
+  ul.picBox {
+    list-style: none;
+  }
+
   @media screen and (max-width: 780px) {
     min-height: 100vh;
     
@@ -120,7 +124,7 @@
 
   img {
     margin: 2em;
-    border: var(--white) solid 2px;
+    border: var(--white) solid 1px;
     border-radius: 8px;
     box-shadow: black 3px 3px 4px;
     background-color: var(--matte-black);
@@ -150,7 +154,7 @@
     border-radius: 4px;
     padding: 12px;
     cursor: pointer;
-    box-shadow: black 3px 3px 4px;
+    box-shadow: var(--light-green-super-alpha) 3px 3px 4px;
     transition: ease .5s;
   }
 
@@ -162,34 +166,37 @@
 
 
 .dragonSlayer {
-  background: url('https://i.imgur.com/xtGPSL3.jpg') var(--medium-green-super-alpha); 
+  background: var(--matte-black);
+  /*background: url('https://i.imgur.com/xtGPSL3.jpg') var(--medium-green-super-alpha); 
   background-blend-mode: overlay;
   background-position: center;
   background-size: contain;
-
-  
-  
+  */
 }
 
 .phoenix {
-  background: url('https://i.imgur.com/TrILlAD.jpg') var(--medium-green-super-alpha);
+  background: var(--matte-black);
+  /*background: url('https://i.imgur.com/TrILlAD.jpg') var(--medium-green-super-alpha);
   background-blend-mode: overlay;
   background-position: center;
   background-size: contain;
+  */
 }
 
 .pacificReverb {
-  background: url('https://i.imgur.com/AkDAXso.jpg') var(--medium-green-super-alpha);
+  background: var(--matte-black);
+  /*background: url('https://i.imgur.com/AkDAXso.jpg') var(--medium-green-super-alpha);
   background-blend-mode: overlay;
   background-position: center;
   background-size: contain;
-
-  
+  */
 }
 
 .JLT45 {
-  background: url('https://i.imgur.com/uAXh0xl.jpg') var(--medium-green-super-alpha);
+  background: var(--matte-black);
+  /*background: url('https://i.imgur.com/uAXh0xl.jpg') var(--medium-green-super-alpha);
   background-blend-mode: overlay;
   background-position: center;
   background-size: contain;
+  */
 }
