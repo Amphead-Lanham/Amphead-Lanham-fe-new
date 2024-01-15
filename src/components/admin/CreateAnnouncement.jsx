@@ -8,7 +8,7 @@ import { selectAnnouncement } from '../../selectors/ampheadSelectors';
 import styles from './admin.css';
 import AnnouncementList from './AnnouncementList';
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
-import { Tooltip, tooltipClasses } from '@mui/material';
+import { TextField, Tooltip, tooltipClasses } from '@mui/material';
 import styled from '@emotion/styled';
 
 const CreateAnnouncement = () => {
@@ -84,6 +84,13 @@ const CreateAnnouncement = () => {
           onChange={handleChange}
           className={styles.formEl}
         />
+        <div className={styles.fieldWrap}>
+          <TextField
+            label="title"
+            color="matteBlack"
+            variant="outlined"
+          />
+        </div>
         <label htmlFor="a-body" className={styles.formLabel} >Body</label>
         <textarea
           id="a-body"
@@ -91,6 +98,8 @@ const CreateAnnouncement = () => {
           value={body}
           onChange={handleChange}
           className={styles.formText}
+          rows="7"
+          cols="40"
         />
         <AmpheadTooltip
           placement="top-start"
