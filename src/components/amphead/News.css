@@ -83,6 +83,10 @@
     .announcementBox {
       margin-bottom: 400px;
       z-index: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding: 0;
     }
     
     .announcement {
@@ -92,9 +96,10 @@
       padding: 10px;
       background-color: var(--white-alpha-b);
       border: solid black 2px;
-      border-radius: 5px;
+/*       border-radius: 5px;
       min-width: 40vw;
       max-width: 75vw;
+      display: block; */
 
       h2 {
         font-family: 'Goldman', cursive;

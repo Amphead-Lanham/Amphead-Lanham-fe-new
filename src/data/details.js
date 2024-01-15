@@ -14,7 +14,7 @@ export const sections = [
     header: 'Guitar Service',
     photo: 'https://i.imgur.com/mgtsDvm.jpg',
     blurb:'Amphead provides quality electric guitar service. Repair, custom electronics and set up.',
-    info: 'Ampead has always provided quality guitar service. Set up, wiring and repair. Amphead stocks new tuning machines, knobs, replacement bridges and bridge parts, strap pegs and strap locks, and all the best quality electronic parts; controls, jacks, switches and capacitors.',
+    info: 'Amphead has always provided quality guitar service. Set up, wiring and repair. Amphead stocks new tuning machines, knobs, replacement bridges and bridge parts, strap pegs and strap locks, and all the best quality electronic parts; controls, jacks, switches and capacitors.',
     listInfo: [],
     figures: []
   },

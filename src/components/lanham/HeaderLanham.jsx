@@ -17,12 +17,12 @@ const HeaderLanham = ({ forHome }) => {
             className={styles.hItem}
           >models
           </Link>
-          <a
+          {/* <a
             // onClick={() => window.location.replace('#about-section')}
             href={'#about-section'}
             className={styles.hItem}
           >about
-          </a>
+          </a> */}
         </>
         }
         {!forHome &&
@@ -32,11 +32,11 @@ const HeaderLanham = ({ forHome }) => {
         >Home
         </Link>
         }
-        <Link
+        {/* <Link
           to={'/gallery/lanham'}
           className={styles.hItem}
         >gallery
-        </Link>
+        </Link> */}
         <div
           className={styles.hItem}>
           <PopUp
@@ -80,12 +80,12 @@ const HeaderLanham = ({ forHome }) => {
                   </Link>
                 </li>
                 <li>
-                  <Link
+                  {/* <Link
                     to={'/gallery/lanham'}
                     className={styles.link}
                     style={{ textDecoration:'none' }}>
                        gallery
-                  </Link>
+                  </Link> */}
                 </li>
                 <li>
                   <div  className={styles.lanhamPop} >

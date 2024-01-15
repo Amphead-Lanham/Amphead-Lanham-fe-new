@@ -82,9 +82,10 @@ const Header = ({ isHome }) => {
         </Link>
         { isHome &&
         <>
-          <Link
+          {/* <Link
             to={'/gallery/amphead'}
-            className={styles.hItem}>gallery</Link>
+            className={styles.hItem}>gallery
+          </Link> */}
           <a
             href={'https://www.instagram.com/jim_amphead/'}
             className={styles.hItem}>Instagram</a>
@@ -165,14 +166,14 @@ const Header = ({ isHome }) => {
                   >general info
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link
                     to={'/gallery/amphead'}
                     className={styles.link}
                     style={{ textDecoration:'none' }}>
                        gallery
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <Link
                     to={'/lanham'}

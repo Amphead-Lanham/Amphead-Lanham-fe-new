@@ -10,6 +10,7 @@ import {
 } from '../../selectors/ampheadSelectors';
 import styles from './admin.css';
 import AnnouncementBody from './AnnouncementBody';
+import { Button } from '@mui/material';
 
 
 const AnnouncementList = () => {
@@ -39,10 +40,34 @@ const AnnouncementList = () => {
         <div className={styles.aBody}>
           <AnnouncementBody bodyString={announcement.body}/>
         </div>
-        <Link to={`/admin/update/${announcement.id}`}>
-          <button>update</button>
-        </Link>
-        <button value={announcement.id} onClick={handleDelete}>delete</button>
+        <div className={styles.aButtonsBox}>
+          <Link to={`/admin/update/${announcement.id}`}>
+            {/* <button>update</button> */}
+            <Button 
+              variant="contained"
+              color="primary"
+              sx={{
+                color: '#000'
+              }}  
+            >
+            Update
+            </Button>
+          </Link>
+          <Button
+            variant="contained"
+            color="primary"
+            onClick={handleDelete}
+            value={announcement.id}
+            sx={{
+              color: '#000'
+            }}
+          >
+          Delete
+          </Button>
+        </div>
+        {/* 
+        <button value={announcement.id} onClick={handleDelete}>delete</button> 
+        */}
       </li>);
   });
 
