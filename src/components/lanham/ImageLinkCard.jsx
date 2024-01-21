@@ -12,6 +12,9 @@ const ImageButton = styled(ButtonBase)(({ theme }) => ({
     width: '100% !important',
     height: 100
   },
+  '.MuiTypography-root': {
+    fontSize: '2rem'
+  },
   '&:hover, &.Mui-focusVisible': {
     zIndex: 10,
     '& .MuiImageBackdrop-root': {
@@ -62,11 +65,11 @@ const ImageBackdrop = styled('span')(({ theme }) => ({
 
 const ImageMarked = styled('span')(({ theme }) => ({
   height: 3,
-  width: 18,
+  width: 24,
   backgroundColor: theme.palette.common.white,
   position: 'absolute',
   bottom: -2,
-  left: 'calc(50% - 9px)',
+  left: 'calc(50% - 12px)',
   transition: theme.transitions.create('opacity'),
 }));
 
