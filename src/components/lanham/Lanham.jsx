@@ -28,6 +28,9 @@ const Lanham = () => {
           <Carousel />
         </div>
         <div className={styles.imageLinksBox}>
+          <p className={styles.clickMsg}>
+            click any model below for more info
+          </p>
           <ImageLinkDisplay />
         </div>
         <div className={styles.secondBox}>

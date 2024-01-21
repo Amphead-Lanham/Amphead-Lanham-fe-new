@@ -5,6 +5,7 @@ import { useInterval } from '../../hooks/hooks';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import IconButton from '@mui/material/IconButton';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min.js';
 
 export default function carousel() {
   const [slidePositions, setSlidePositions] = useState({});
@@ -84,31 +85,36 @@ export default function carousel() {
   }, intLength);
 
   const slides = models.map((model, i) => (
-    <div 
-      className={`
-        ${styles.slide} 
-        ${styles[slidePositions[i]]}
-      `} 
-      id={`${model.name}_slide`}  
+    <Link 
       key={model.name}
+      to={`/lanham/model/${model.name}`}
     >
-      <div className={styles.slideInfo}>
-        <h1>
-          {model.name}
-        </h1>
-        <h3>{model.quickPitch}</h3>
-      </div>
-      <div className={styles.imageWrapper}>
-        <div style={{ position: 'relative' }}>
-          <img 
-            className={styles.slidePic} 
-            src={model.photoUrl} 
-          />
-          <div className={styles.psuedoPsuedo}></div>
+      <div 
+        className={`
+          ${styles.slide} 
+          ${styles[slidePositions[i]]}
+        `} 
+        id={`${model.name}_slide`}  
+        
+      >
+        <div className={styles.slideInfo}>
+          <h1>
+            {model.name}
+          </h1>
+          <h3>{model.quickPitch}</h3>
         </div>
+        <div className={styles.imageWrapper}>
+          <div style={{ position: 'relative' }}>
+            <img 
+              className={styles.slidePic} 
+              src={model.photoUrl} 
+            />
+            <div className={styles.psuedoPsuedo}></div>
+          </div>
+        </div>
+        
       </div>
-      
-    </div>
+    </Link>
   ));
 
   return (
