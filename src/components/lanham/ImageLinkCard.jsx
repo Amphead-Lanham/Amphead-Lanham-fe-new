@@ -59,6 +59,7 @@ const ImageBackdrop = styled('span')(({ theme }) => ({
   top: 0,
   bottom: 0,
   backgroundColor: theme.palette.common.black,
+  borderRadius: '10px',
   opacity: 0.4,
   transition: theme.transitions.create('opacity'),
 }));
