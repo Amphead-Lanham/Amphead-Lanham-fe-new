@@ -37,13 +37,23 @@ const ModelDetail = () => {
     <div className={styles[namedModel.modelStyleCode]}>
       <HeaderLanham forHome={false} />
       <h1>{namedModel.name}</h1>
-      <div className={styles.figBox}>
+      <div className={styles.figBox} >
         <img
           src={namedModel.displayPhoto}
           alt={namedModel.name}
-          className={styles.mainPic}/>
+          className={`${styles.mainPic} ${styles.pictureFrame}`}
+        />
         <h3>{namedModel.description}</h3>
       </div>
+      {namedModel.secondPic &&
+        <div className={styles.secondPicBox}>
+          <img 
+            src={namedModel.secondPic}
+            alt={namedModel.name}
+            className={`${styles.secondPic} ${styles.pictureFrame}`}
+          />
+        </div>
+      }
       <ul className={styles.listBox} >
         {listItems}
       </ul>

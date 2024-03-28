@@ -25,6 +25,18 @@
   width: 30vw;
 }
 
+.pictureFrame {
+  margin: 3em 1em;
+  border: var(--white) solid 1.5px;
+  border-radius: 8px;
+  box-shadow: black 3px 3px 4px;
+
+  @media screen and (max-width: 414px) {
+    margin: 2em 0;
+  }
+
+}
+
 .dragonSlayer, .phoenix, .pacificReverb, .JLT45 {
   display: flex;
   flex-direction: column;
@@ -32,7 +44,6 @@
   align-items: center;
   padding: 2em;
   
-
   h1 {
     font-family: 'Goldman';
     color: var(--white);
@@ -61,21 +72,24 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  align-items: start;
 
   @media screen and (max-width: 414px) {
     flex-direction: column;
     width: 80vw;
+    align-items: center;
   }
   
   h3 {
-    border: var(--white) solid 2px;
-    border-radius: 4px;
+    border: var(--white) solid 1px;
+    border-radius: 7px;
     box-shadow: black 3px 3px 4px;
-    padding: 1em;
+    background-color: #171717;
     text-align: center;
-    margin: 1em;
+    margin: 2.2em 1em;
     padding: 30px;
+    font-size: 1.4em;
+    line-height: 1.35em;
 
     @media screen and (max-width: 414px) {
       width: 80vw;
@@ -83,10 +97,7 @@
   }
 
   img {
-    margin: 1em;
-    border: var(--white) solid 2px;
-    border-radius: 8px;
-    box-shadow: black 3px 3px 4px;
+
 
     @media screen and (max-width: 414px) {
       width: 80vw;
@@ -95,13 +106,21 @@
 
 }
 
+.secondPicBox {
+  max-width: 80vw;
+}
+
+.secondPic {
+  max-width: 80vw;
+}
+
 .listBox {
   border: var(--white) solid 2px;
   border-radius: 4px;
   box-shadow: black 3px 3px 4px;
   padding: 1em 1em 1em 2em;
   margin: 1em;
-  background-color: var(--matte-black);
+  background-color: #171717;
   font-family: 'roboto';
   font-size: 1.15em;
   color: var(--white);
@@ -113,7 +132,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
   @media screen and (max-width: 414px) {
