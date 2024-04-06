@@ -32,8 +32,9 @@ export const models = [
     features: ['18 watts 6L6 or 12 watts 6V6', 'The TMB tone stack sweeps from classic Fender Black Panel to assertive, in your face rock tones.', 'Unique output level control for smooth tube breakup at lower volume', 'Updated power supply and phase inverter for better gigging headroom', 'All tube spring reverb', 'Celestion or Eminence speaker options', 'Tolex, grill and hardware options'],
     photoUrl: 'https://i.imgur.com/l8zPdIh.jpg',
     displayPhoto: 'https://i.imgur.com/dIrQMuV.jpg',
+    secondPic: 'https://i.imgur.com/JRqzWII.jpeg',
     buttonPhoto: 'https://i.imgur.com/9Om2tgg.jpg',
-    otherPhotos: ['/assets/pacific-reverb-cropped.jpeg', 'https://i.imgur.com/Lchpu1H.jpg', 'https://i.imgur.com/dIrQMuV.jpg']
+    otherPhotos: ['https://i.imgur.com/LVWtjve.jpeg', 'https://i.imgur.com/ETA8aCq.jpeg']
   },
   {
     name: 'JLT45',
