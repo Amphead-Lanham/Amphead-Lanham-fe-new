@@ -18,7 +18,7 @@ export const models = [
     quickPitch: 'A masterbuilt 2204 amp with updated voicing options and clean boost.',
     description: 'The Phoenix came about as the result of voicing hundreds of iconic Marshall 2204 amplifiers for diverse musicians for over 20 years. The Phoenix creates this classic voice of rock with an open, throaty bark. The Phoenix takes this Holy Grail of rock amp circuits and is upgraded with a lead voicing for increased gain with a warmer tone and a clean, dual master volume boost. Both update features are footswitchable.',
     features: ['65 watts KT88', 'Gain voicing and clean boost with footswitch', 'Fast, tight response with note definition and detail', 'Active buffered effects loop option', 'External bias contacts', 'High & Low gain inputs', '3-band EQ and output section Presence controls', 'Gain boost voicing switch that is also footswitchable', 'Solo/Rythym facility with 2 footswitchable master volumes', 'Large and small head shell option', 'Finish, Tolex and hardware options'],
-    photoUrl: 'https://i.imgur.com/P5jdLFh.jpg',
+    photoUrl: 'https://i.imgur.com/HNbhCiv.jpeg',
     displayPhoto: 'https://i.imgur.com/1vMJbZW.jpg',
     secondPic: 'https://i.imgur.com/LyCkdOj.jpeg',
     buttonPhoto: 'https://i.imgur.com/SmS66Ll.jpg',
