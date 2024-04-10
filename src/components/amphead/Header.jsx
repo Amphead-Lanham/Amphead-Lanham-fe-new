@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import styles from './Header.css';
 import PropTypes from 'prop-types';
@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 const Header = ({ isHome }) => {
   const [visible, setVisible] = useState(false);
   const [homeRoute, setHomeRoute] = useState('/');
+  const menu = useRef(null);
   const history = useHistory();
 
   const search = history.location.search;
@@ -15,17 +16,19 @@ const Header = ({ isHome }) => {
       const params = new URLSearchParams(search);
       const returnTo = params.get('return_to');
       setHomeRoute(`/#${returnTo}`);
-      console.log('here it is => ', returnTo);
     }
+    window.addEventListener('click', (e) => {
+      if(!menu.current.contains(e.target)) setVisible(false);
+    });
   }, []);
 
   const handleVisible = () => {
     setVisible(true);
   };
 
-  const handleInVisible = () => {
-    setVisible(false);
-  };
+  // const handleInVisible = () => {
+  //   setVisible(false);
+  // };
 
   return (
     <div className={styles.headerBox} >
@@ -36,13 +39,13 @@ const Header = ({ isHome }) => {
             className={styles.hItem}
           >home</Link>
         }
-        <div className={styles.servicesBox}>
+        <div className={styles.servicesBox} ref={menu}>
           <div className={visible 
             ? styles.serviceMenu
             : styles.hidden}>
-            <div  
+            {/* <div  
               onClick={handleInVisible} 
-              className={styles.hItem}>X</div>
+              className={styles.hItem}>X</div> */}
             <Link
               to={'/detail/service'}
               className={styles.hItem}
