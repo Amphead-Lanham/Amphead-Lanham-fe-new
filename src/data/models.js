@@ -17,7 +17,20 @@ export const models = [
     modelStyleCode: 'phoenix',
     quickPitch: 'A masterbuilt 2204 amp with updated voicing options and clean boost.',
     description: 'The Phoenix came about as the result of voicing hundreds of iconic Marshall 2204 amplifiers for diverse musicians for over 20 years. The Phoenix creates this classic voice of rock with an open, throaty bark. The Phoenix takes this Holy Grail of rock amp circuits and is upgraded with a lead voicing for increased gain with a warmer tone and a clean, dual master volume boost. Both update features are footswitchable.',
-    features: ['65 watts KT88', 'Gain voicing and clean boost with footswitch', 'Fast, tight response with note definition and detail', 'Active buffered effects loop option', 'External bias contacts', 'High & Low gain inputs', '3-band EQ and output section Presence controls', 'Gain boost voicing switch that is also footswitchable', 'Solo/Rythym facility with 2 footswitchable master volumes', 'Large and small head shell option', 'Finish, Tolex and hardware options'],
+    features: [
+      'High and Low gain inputs', 
+      '3 way gain selector for Classic, Lead and Heavy voicings', 
+      'TMB tone controls with presence',
+      '50 watts produced with EL34 power tubes',
+      '65 watt option with KT88 power tubes',
+      'Footswitch selects between Classic and Lead or Heavy settings',
+      'Footswitch control for clean boost',
+      'Active effects loop option',
+      'External bias contacts',
+      'Large and small head shell option',
+      'Finish, tolex and hardware options',
+      'Fast, tight response with note definition and detail'
+    ],
     photoUrl: 'https://i.imgur.com/HNbhCiv.jpeg',
     displayPhoto: 'https://i.imgur.com/1vMJbZW.jpg',
     secondPic: 'https://i.imgur.com/LyCkdOj.jpeg',
@@ -32,9 +45,9 @@ export const models = [
     features: ['18 watts 6L6 or 12 watts 6V6', 'The TMB tone stack sweeps from classic Fender Black Panel to assertive, in your face rock tones.', 'Unique output level control for smooth tube breakup at lower volume', 'Updated power supply and phase inverter for better gigging headroom', 'All tube spring reverb', 'Celestion or Eminence speaker options', 'Tolex, grill and hardware options'],
     photoUrl: 'https://i.imgur.com/l8zPdIh.jpg',
     displayPhoto: 'https://i.imgur.com/dIrQMuV.jpg',
-    secondPic: 'https://i.imgur.com/JRqzWII.jpeg',
+    secondPic: 'https://i.imgur.com/RSdp9p4.jpeg',
     buttonPhoto: 'https://i.imgur.com/9Om2tgg.jpg',
-    otherPhotos: ['https://i.imgur.com/LVWtjve.jpeg', 'https://i.imgur.com/ETA8aCq.jpeg']
+    otherPhotos: ['https://i.imgur.com/P7sVQnE.jpeg', 'https://i.imgur.com/ETA8aCq.jpg']
   },
   {
     name: 'JLT45',
