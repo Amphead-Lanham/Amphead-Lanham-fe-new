@@ -50,14 +50,26 @@ export const models = [
     otherPhotos: ['https://i.imgur.com/P7sVQnE.jpeg', 'https://i.imgur.com/ETA8aCq.jpg']
   },
   {
-    name: 'JLT45',
-    modelStyleCode: 'JLT45',
-    quickPitch: 'The JLT45 is a 1950\'s tweed type circuit and is the ultimate blues rock amp',
-    description: 'Based on Leo Fender\'s 5F6-A Bassman model. The JLT45 uses the GZ34 tube rectifier and KT66 output tubes. These are the tubes that Jim Marshall used to create the world changing sounds of the earliest Marshall heads.',
-    features: ['45 watts KT66 ', 'Tube rectifier 5AR4', 'Optional master volume', 'External bias contacts', 'Large and small head shell options', 'Finish, Tolex and hardware options '],
-    photoUrl: 'https://i.imgur.com/xZdp27C.jpg',
-    displayPhoto: 'https://i.imgur.com/xZdp27C.jpg',
-    buttonPhoto: 'https://i.imgur.com/xZdp27C.jpg',
-    otherPhotos: ['https://i.imgur.com/uAXh0xl.jpg']
+    name: 'Speaker Cabinets',
+    modelStyleCode: 'cabs',
+    quickPitch: 'Custom built to match your sound and your style.',
+    description: 'Lanham speaker cabinets are designed to match the Phoenix, Dragonslayer and Thor amps. Each cabinet is voiced and finished for the amp and player. ',
+    features: ['Made of 13 ply void free Baltic birch with 1/4" finger joints for rugged durability and focused warm tone.', 'Celestion Vintage 30, Creamback and Eminence speakers are selected to voice each cabinet for the player.', 'The wiring is 14g copper with switchcraft jacks.', 'Each cabinet is custom finished to match the Lanham amp.'],
+    photoUrl: 'https://i.imgur.com/am5B07e.jpeg',
+    displayPhoto: 'https://i.imgur.com/y4ZLTQu.jpeg',
+    secondPic: 'https://i.imgur.com/IIQEDsa.jpeg', 
+    buttonPhoto: 'https://i.imgur.com/rmIaAYU.jpeg',
+    otherPhotos: ['https://i.imgur.com/am5B07e.jpeg']
   }
+  // {
+  //   name: 'JLT45',
+  //   modelStyleCode: 'JLT45',
+  //   quickPitch: 'The JLT45 is a 1950\'s tweed type circuit and is the ultimate blues rock amp',
+  //   description: 'Based on Leo Fender\'s 5F6-A Bassman model. The JLT45 uses the GZ34 tube rectifier and KT66 output tubes. These are the tubes that Jim Marshall used to create the world changing sounds of the earliest Marshall heads.',
+  //   features: ['45 watts KT66 ', 'Tube rectifier 5AR4', 'Optional master volume', 'External bias contacts', 'Large and small head shell options', 'Finish, Tolex and hardware options '],
+  //   photoUrl: 'https://i.imgur.com/xZdp27C.jpg',
+  //   displayPhoto: 'https://i.imgur.com/xZdp27C.jpg',
+  //   buttonPhoto: 'https://i.imgur.com/xZdp27C.jpg',
+  //   otherPhotos: ['https://i.imgur.com/uAXh0xl.jpg']
+  // }
 ];
