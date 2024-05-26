@@ -105,12 +105,12 @@ const Header = ({ isHome }) => {
           </a>
         </>
         }
-        <Link
+        {/*<Link
           to={'/lanham'}
           className={styles.hItem}
         >
           LANHAM AMPS
-        </Link>
+        </Link>*/}
       </div>
       <div className={styles.mobileMenu}>
         <input
