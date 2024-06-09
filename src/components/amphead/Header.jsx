@@ -185,14 +185,14 @@ const Header = ({ isHome }) => {
                        gallery
                   </Link>
                 </li> */}
-                <li>
+                {/* <li>
                   <Link
                     to={'/lanham'}
                     className={styles.link}
                     style={{ textDecoration:'none' }}>
                         LANHAM AMPS
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
