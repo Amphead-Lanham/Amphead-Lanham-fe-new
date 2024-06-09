@@ -69,10 +69,10 @@ export default function App() {
                   component={ModelDetail}
                 />*/}
 
-                {/* <Route
+                <Route
                   exact path="/signup"
                   component={Signup}
-                /> */}
+                />
                 <Route
                   exact path="/login"
                   component={Login}

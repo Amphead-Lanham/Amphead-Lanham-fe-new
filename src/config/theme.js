@@ -17,6 +17,9 @@ const theme = createTheme({
     matteBlack: {
       main: '#23232b'
     },
+    white: {
+      main: 'rgb(238, 241, 239)'
+    },
     zomp: {
       main: '#36947F'
     },
