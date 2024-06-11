@@ -2,12 +2,12 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Route,
-  Switch
+  Switch,
 } from 'react-router-dom';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import AuthProvider from '../auth/AuthProvider';
 import PrivateRoute from '../auth/PrivateRoute';
-import Signup from '../auth/signup';
+// import Signup from '../auth/signup';
 import Login from '../auth/Login';
 import Amphead from '../amphead/Amphead';
 // import Lanham from '../lanham/Lanham';
@@ -23,6 +23,7 @@ import styles from './App.css';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../../config/theme';
 import Meet from '../../meet-the-team/Meet';
+import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
 
 export default function App() {
   return (
@@ -85,6 +86,8 @@ export default function App() {
                   exact path="/admin/update/:id"
                   component={UpdateAnnouncement}
                 />
+                {/* redirect 404s to home */}
+                <Redirect to="/"/>
               </Switch>
                     
             </Router>
