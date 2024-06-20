@@ -23,6 +23,15 @@
   animation: colorFade  ease infinite 4s;
 }
 
+.inline .formLabelamphead {
+  animation: colorFadeAlt ease infinite 4s;
+  color: var(--light-green);
+
+  &:hover{
+    color: var(--medium-green);
+  }
+}
+
 .formLabellanham {
   font-family: 'roboto';
   color: var(--white);
@@ -45,9 +54,9 @@
 .popUp .toggle {
   position: absolute;
   top: 0;
-  left: 0;
-  z-index: 2;
-  width: 50px;
+  left: -25px;
+  z-index: 12;
+  width: 150px;
   height: 50px;
   opacity: 0;
   cursor: pointer;
@@ -118,9 +127,20 @@
   border-color: var(--zomp);
 }
 
+.inline {
+  display: inline-block;
+  margin: 0 5px;
+}
+
 
 @keyframes colorFade {
   0% {color: var(--light-green)}
   50% {color: var(--dark-green)}
   100% {color: var(--light-green)}
+}
+
+@keyframes colorFadeAlt {
+  0% {color: var(--white)}
+  50% {color: var(--light-green)}
+  100% {color: var(--white)}
 }

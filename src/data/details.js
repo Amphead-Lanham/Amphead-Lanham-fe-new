@@ -73,7 +73,7 @@ export const sections = [
     header: 'General Info',
     photo: 'https://i.imgur.com/BqiMcmJ.jpg',
     blurb: '',
-    info: 'Service bench cost is $90 per hour. The schedule varies with the workload with most jobs completed within a week. Let us know your situation, we can usually accommodate. Rush service, when available, is $50.',
+    info: 'Service bench cost is $100 per hour. The schedule varies with the workload. Please contact us for current turnaround times. Let us know your situation, we can usually accommodate. Rush service, when available, is $60.',
     listInfo: [],
     figures: [],
 
