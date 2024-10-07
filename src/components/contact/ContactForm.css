@@ -73,6 +73,10 @@
    box-shadow: black 2px 2px 1px 1px;
    transition: ease .5s;
   }
+
+  @media screen and (max-width: 400px) {
+    width: 80vw;
+  }
   
 }
 .contactButton:hover {
