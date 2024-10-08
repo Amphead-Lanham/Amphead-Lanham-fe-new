@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { sendMessage } from '../../services/amphead-api';
@@ -7,11 +7,12 @@ import PropTypes from 'prop-types';
 import { TextField, Button } from '@mui/material';
 import { notify } from '../../actions/notificationActions';
 
-const ContactForm = ({ side, formId }) => {
+const ContactForm = ({ side, formId, handleClosePopup }) => {
   const [name, setName] = useState('');
   const [senderEmail, setSenderEmail] = useState('');
   const [message, setMessage] = useState('');
   const [messageSent, setMessageSent] = useState(false);
+  const checkBoxRef = useRef();
   const history = useHistory();
   const dispatch = useDispatch();
   const flag = `this message was sent from the ${side} contact form.`;
@@ -43,6 +44,11 @@ const ContactForm = ({ side, formId }) => {
       (side === 'amphead')
         ? history.push('/')
         : history.push('/lanham');
+
+      setTimeout(() => {
+        handleClosePopup();
+      }, 3000);
+
     } else {
       dispatch(notify({
         type: 'warning',
@@ -65,6 +71,7 @@ const ContactForm = ({ side, formId }) => {
         type={'checkbox'}
         id={`checkbox${formId}`}
         className={styles.checkbox}
+        ref={checkBoxRef}
       ></input>
       {messageSent &&
       <div className={styles.returnMessage}>
@@ -135,7 +142,8 @@ const ContactForm = ({ side, formId }) => {
 
 ContactForm.propTypes = {
   side: PropTypes.string.isRequired,
-  formId: PropTypes.string.isRequired
+  formId: PropTypes.string.isRequired,
+  handleClosePopup: PropTypes.func.isRequired
 };
 
 export default ContactForm;
