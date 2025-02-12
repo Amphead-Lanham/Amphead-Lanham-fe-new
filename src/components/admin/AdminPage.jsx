@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import CreateAnnouncement from './CreateAnnouncement';
 import styles from './admin.css';
-import CreateImage from './CreateImage';
+// import CreateImage from './CreateImage';
 import { Link } from 'react-router-dom';
 import Notification from '../amphead/Notification';
 import { useDispatch } from 'react-redux';
@@ -35,7 +35,7 @@ const AdminPage = () => {
         </Link>
       </div>
       <CreateAnnouncement />
-      <CreateImage />
+      {/* <CreateImage /> */}
       <Notification/>
     </div>
   );

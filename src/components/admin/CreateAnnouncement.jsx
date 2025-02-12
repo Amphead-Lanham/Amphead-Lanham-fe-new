@@ -84,13 +84,13 @@ const CreateAnnouncement = () => {
           onChange={handleChange}
           className={styles.formEl}
         />
-        <div className={styles.fieldWrap}>
+        {/* <div className={styles.fieldWrap}>
           <TextField
             label="title"
-            color="matteBlack"
+            color="white"
             variant="outlined"
           />
-        </div>
+        </div> */}
         <label htmlFor="a-body" className={styles.formLabel} >Body</label>
         <textarea
           id="a-body"
