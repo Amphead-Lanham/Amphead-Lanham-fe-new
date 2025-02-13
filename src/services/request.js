@@ -1,6 +1,5 @@
 const request = async(path, method, body) => {
-  const res = await fetch(`${process.env.AUTH_API_URL}${path}
-    ?client=amphead&cookiePlease=true`, {
+  const res = await fetch(`${process.env.AUTH_API_URL}${path}`, {
     method,
   
     headers: ['POST', 'PUT', 'PATCH'].includes(method)
