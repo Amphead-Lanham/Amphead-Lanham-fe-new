@@ -37,7 +37,7 @@
 
 }
 
-.dragonSlayer, .phoenix, .pacificReverb, .JLT45 {
+.dragonSlayer, .phoenix, .pacificReverb, .JLT45, .cabs {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -114,6 +114,12 @@
   max-width: 80vw;
 }
 
+.cabs {
+  .secondPic {
+    max-width: 60vw;
+  }
+}
+
 .listBox {
   border: var(--white) solid 2px;
   border-radius: 4px;
@@ -182,10 +188,14 @@
   }
 }
 
-
+.dragonSlayer,
+.phoenix,
+.pacificReverb,
+.cabs {
+  background: var(--matte-black);
+}
 
 .dragonSlayer {
-  background: var(--matte-black);
   /*background: url('https://i.imgur.com/xtGPSL3.jpg') var(--medium-green-super-alpha); 
   background-blend-mode: overlay;
   background-position: center;
@@ -194,7 +204,6 @@
 }
 
 .phoenix {
-  background: var(--matte-black);
   /*background: url('https://i.imgur.com/TrILlAD.jpg') var(--medium-green-super-alpha);
   background-blend-mode: overlay;
   background-position: center;
@@ -203,7 +212,6 @@
 }
 
 .pacificReverb {
-  background: var(--matte-black);
   /*background: url('https://i.imgur.com/AkDAXso.jpg') var(--medium-green-super-alpha);
   background-blend-mode: overlay;
   background-position: center;
@@ -212,7 +220,6 @@
 }
 
 .JLT45 {
-  background: var(--matte-black);
   /*background: url('https://i.imgur.com/uAXh0xl.jpg') var(--medium-green-super-alpha);
   background-blend-mode: overlay;
   background-position: center;

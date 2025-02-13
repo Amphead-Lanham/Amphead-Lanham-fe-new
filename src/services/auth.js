@@ -3,7 +3,7 @@ import { get, post } from './request';
 export const postSignup = (email, password, firstName) =>
   post('/signup', { 
     email, 
-    password, 
+    password,
     firstName,
     client: 'amphead', 
     cookiePlease: true 
