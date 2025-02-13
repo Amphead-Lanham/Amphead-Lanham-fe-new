@@ -3,8 +3,8 @@ import { get, post } from './request';
 export const postSignup = (email, password, firstName) =>
   post('/signup', { 
     email, 
-    password, 
-    firstName, 
+    password,
+    firstName,
     client: 'amphead', 
     cookiePlease: true 
   });
@@ -12,7 +12,7 @@ export const postSignup = (email, password, firstName) =>
 export const postLogin = (email, password) =>
   post('/login', { 
     email, 
-    password, 
+    password,
     client: 'amphead', 
     cookiePlease: true 
   });
