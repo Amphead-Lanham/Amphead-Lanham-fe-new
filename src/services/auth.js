@@ -15,7 +15,7 @@ export const postLogin = (email, password) =>
     password,
     client: 'amphead', 
     cookiePlease: true 
-  })
+  });
 
 export const getVerify = () =>
   get('/verify');
