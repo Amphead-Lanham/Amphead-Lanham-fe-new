@@ -16,7 +16,7 @@ const ContactForm = ({ side, formId, handleClosePopup }) => {
   const history = useHistory();
   const dispatch = useDispatch();
   const receiver = process.env.EMAIL_RECEIVER;
-  const clientName = 'amphead';
+  const clientName = 'amphead.org';
   const flag = `this message was sent from the ${side} contact form.`;
 
   const checkAllFields = () => {
