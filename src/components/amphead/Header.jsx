@@ -89,20 +89,20 @@ const Header = ({ isHome }) => {
             to={'/gallery/amphead'}
             className={styles.hItem}>gallery
           </Link> */}
-          <a
+          {/* <a
             href={'https://www.instagram.com/jim_amphead/'}
             target="blank"
             className={styles.hItem}
           >
             Instagram
-          </a>
-          <a
+          </a> */}
+          {/* <a
             href={'https://www.facebook.com/ampheadpdx'}
             target="blank"
             className={styles.hItem}
           >
             Facebook
-          </a>
+          </a> */}
         </>
         }
         {/*<Link
