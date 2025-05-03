@@ -105,12 +105,12 @@ const Header = ({ isHome }) => {
           </a> */}
         </>
         }
-        {/*<Link
+        <Link
           to={'/lanham'}
           className={styles.hItem}
         >
           LANHAM AMPS
-        </Link>*/}
+        </Link>
       </div>
       <div className={styles.mobileMenu}>
         <input
@@ -185,14 +185,14 @@ const Header = ({ isHome }) => {
                        gallery
                   </Link>
                 </li> */}
-                {/* <li>
+                <li>
                   <Link
                     to={'/lanham'}
                     className={styles.link}
                     style={{ textDecoration:'none' }}>
                         LANHAM AMPS
                   </Link>
-                </li> */}
+                </li> 
               </ul>
             </div>
           </div>
