@@ -89,28 +89,28 @@ const Header = ({ isHome }) => {
             to={'/gallery/amphead'}
             className={styles.hItem}>gallery
           </Link> */}
-          <a
+          {/* <a
             href={'https://www.instagram.com/jim_amphead/'}
             target="blank"
             className={styles.hItem}
           >
             Instagram
-          </a>
-          <a
+          </a> */}
+          {/* <a
             href={'https://www.facebook.com/ampheadpdx'}
             target="blank"
             className={styles.hItem}
           >
             Facebook
-          </a>
+          </a> */}
         </>
         }
-        {/*<Link
+        <Link
           to={'/lanham'}
           className={styles.hItem}
         >
           LANHAM AMPS
-        </Link>*/}
+        </Link>
       </div>
       <div className={styles.mobileMenu}>
         <input
@@ -185,14 +185,14 @@ const Header = ({ isHome }) => {
                        gallery
                   </Link>
                 </li> */}
-                {/* <li>
+                <li>
                   <Link
                     to={'/lanham'}
                     className={styles.link}
                     style={{ textDecoration:'none' }}>
                         LANHAM AMPS
                   </Link>
-                </li> */}
+                </li> 
               </ul>
             </div>
           </div>

@@ -18,4 +18,4 @@ export const postLogin = (email, password) =>
   });
 
 export const getVerify = () =>
-  get('/verify');
+  get('/verify&cookiePlease=true');

@@ -10,13 +10,13 @@ import PrivateRoute from '../auth/PrivateRoute';
 // import Signup from '../auth/signup';
 import Login from '../auth/Login';
 import Amphead from '../amphead/Amphead';
-// import Lanham from '../lanham/Lanham';
+import Lanham from '../lanham/Lanham';
 import UpdateAnnouncement from '../admin/UpdateAnnouncement';
 import AdminPage from '../admin/AdminPage';
 import DetailPage from '../amphead/DetailPage';
-// import Models from '../lanham/Models';
+import Models from '../lanham/Models';
 import ContactForm from '../contact/ContactForm';
-// import ModelDetail from '../lanham/ModelDetail';
+import ModelDetail from '../lanham/ModelDetail';
 // import GalleryB from '../gallery/GalleryB';
 // import GalleryDetail from '../gallery/GalleryDetail';
 import styles from './App.css';
@@ -57,7 +57,7 @@ export default function App() {
                   exact path="/meet-us"
                   component={Meet}
                 />
-                {/* <Route
+                <Route
                   exact path="/lanham"
                   component={Lanham}
                 /> 
@@ -68,7 +68,7 @@ export default function App() {
                 <Route
                   exact path="/lanham/model/:model"
                   component={ModelDetail}
-                />*/}
+                />
 
                 {/* <Route
                   exact path="/signup"
