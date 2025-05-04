@@ -31,7 +31,7 @@ export default function App() {
   <>
     <Helmet>
       <title>Amphead</title>
-      <meta name="description" content="A place to learn about and discuss tube amplifiers." /> 
+      <meta name="description" content="Repair for tube guitar amplifiers. Portland, OR" /> 
     </Helmet>
     <ThemeProvider theme={theme}>
       <AuthProvider>
