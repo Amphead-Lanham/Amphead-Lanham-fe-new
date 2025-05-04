@@ -4,6 +4,7 @@ import {
   Route,
   Switch,
 } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import AuthProvider from '../auth/AuthProvider';
 import PrivateRoute from '../auth/PrivateRoute';
@@ -27,6 +28,11 @@ import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
 
 export default function App() {
   return (
+  <>
+    <Helmet>
+      <title>Amphead</title>
+      <meta name="description" content="A place to learn about and discuss tube amplifiers." /> 
+    </Helmet>
     <ThemeProvider theme={theme}>
       <AuthProvider>
         <ParallaxProvider> 
@@ -95,5 +101,6 @@ export default function App() {
         </ParallaxProvider>
       </AuthProvider>
     </ThemeProvider>
+  </>
   );
 }
